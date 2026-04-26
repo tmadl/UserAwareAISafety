@@ -50,10 +50,12 @@ All analysis scripts run in seconds (under 1 minute even on a modest laptop). Th
 Scripts split into two tiers based on what data they need:
 
 **Tier 1 — runs out-of-the-box from bundled scored data** (no extra downloads):
+- `../reproduce_headline.py` (30-second main-text headline sanity check)
 - `01_costello_analysis.py` (headline + 24-moderator + within-study + quintile)
 - `02_cheng_analysis.py`
 - `03_salvi_analysis.py`
 - `08_scorer_validation.py`
+- `../figures/fig1_headline.py` and `../figures/fig2_costello_deepdive.py` (regenerate main-text Figs 1 and 2)
 
 **Tier 2 — requires the raw Costello publication CSV** (`AllDataForPublication.PPI.8.28.24.csv`, ~4 MB, downloadable from [OSF gdkb7](https://osf.io/gdkb7/), placed at `../data/costello2024/Data 8.28.24/`):
 - `06_absolute_change_engagement.py` (placebo arm fits)

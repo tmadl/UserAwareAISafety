@@ -75,21 +75,39 @@ QUADRATIC MODERATION — Primary (Q400 logit-EV)
 
 ## Reproducing each paper claim
 
+For a 30-second sanity check on the main-text headline:
+
+```bash
+python reproduce_headline.py
+# Costello inverted-U headline (Q400 logit-EV, paper-spec model)
+#   beta_IC^2   = -15.17    p_IC^2 = 3.7e-06    BF10 = 1,086    apex IC = 2.76 [2.50, 3.02]
+```
+
+To regenerate the main-text figures from data:
+
+```bash
+python figures/fig1_headline.py             # Fig 1: inverted-U
+python figures/fig2_costello_deepdive.py    # Fig 2: enrichment + leave-one-study-out (LOSO) operating point
+```
+
 Each numbered script in `analysis/` corresponds to a section of the paper. See `docs/REPRODUCIBILITY.md` for the full mapping (script → main-text section / SI Note).
 
 | Script | Reproduces |
 |---|---|
-| `01_costello_analysis.py` | Costello primary + within-study + quintile + discriminant validity |
+| `reproduce_headline.py` | Main-text headline (Costello inverted-U: β, p, BF, apex) |
+| `01_costello_analysis.py` | Costello primary + within-study + quintile + 24-moderator |
 | `02_cheng_analysis.py` | Cheng boundary condition (SI Note 5a) |
 | `03_salvi_analysis.py` | Salvi boundary condition (SI Note 5b) |
 | `06_absolute_change_engagement.py` | \|Δ\| persuasibility reanalysis (SI Note 9) |
 | `07_sentence_completion_stability.py` | Cross-content stability, *N* = 887 (SI Note 4) |
 | `08_scorer_validation.py` | Held-out validation on Suedfeld and Jakob (SI Note 2) |
-| `09_detection_proxy.py` | Out-of-sample enrichment / screening (SI Note 22) |
+| `note22_loso_enrichment.py` | Out-of-sample enrichment / LOSO (SI Note 22) |
 | `10_topic_fixed_effects.py` | Within-topic fixed-effects refit (SI Note 19) |
 | `11_baseline_anchor.py` | Control-arm placebo anchoring (SI Note 9) |
 | `12_quintile_demographics.py` | IH-quintile demographic composition (SI Note 23) |
 | `13_text_model_shape_test.py` | Generic text-model shape test (SI Note 26) — optional, requires `OPENAI_API_KEY` to refetch embeddings |
+| `figures/fig1_headline.py` | Main-text Figure 1 (Costello inverted-U) |
+| `figures/fig2_costello_deepdive.py` | Main-text Figure 2 (enrichment + LOSO) |
 
 ## Scoring new text
 
