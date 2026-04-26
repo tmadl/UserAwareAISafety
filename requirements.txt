@@ -1,0 +1,31 @@
+# Core analysis pipeline (analysis/*.py)
+numpy>=1.24,<2.0
+pandas>=2.0,<3.0
+scipy>=1.11,<2.0
+statsmodels>=0.14,<0.16
+scikit-learn>=1.3,<2.0
+matplotlib>=3.7,<4.0
+
+# Scoring with the LoRA adapters (scoring/score_*.py).
+# CUDA + bitsandbytes are required for 4-bit inference; install separately
+# matching your local CUDA version (e.g. `pip install bitsandbytes` for CUDA 12.x).
+unsloth>=2024.12
+torch>=2.4
+accelerate>=0.34
+peft>=0.13
+transformers>=4.46
+
+# Optional — only needed for SI Note 16 (analysis/note16_spline_shape_test.py)
+# GAM portion; the cubic-OLS comparison in the same script runs without pygam:
+# pygam>=0.9
+
+# Optional — only needed for SI Note 26 (analysis/13_text_model_shape_test.py)
+# if the bundled embeddings cache is missing and you want to re-fetch:
+# openai>=1.0
+
+# Bayes factors / spline tests (used by some analysis scripts)
+patsy>=0.5
+
+# Notebook tooling — optional
+# jupyter
+# ipykernel

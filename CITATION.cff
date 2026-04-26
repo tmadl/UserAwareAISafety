@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+title: >-
+  UserAwareAISafety — Reproducibility for "Text-measured cognitive
+  complexity predicts belief revision in AI persuasion"
+message: >-
+  If you use this code, scored data, or the released LoRA scorers,
+  please cite the paper.
+type: software
+authors:
+  - given-names: Tamas
+    family-names: Madl
+    email: tamas.madl@ofai.at
+    affiliation: >-
+      Austrian Research Institute for Artificial Intelligence (OFAI)
+repository-code: 'https://github.com/tmadl/UserAwareAISafety'
+url: 'https://huggingface.co/tmadl'
+abstract: >-
+  Reproducibility code, scored derivative data, and LoRA scorer
+  references for a reanalysis of large-scale conversational-AI
+  persuasion experiments demonstrating an inverted-U moderation by
+  text-measured integrative complexity.
+license: MIT
+preferred-citation:
+  type: unpublished
+  title: >-
+    Text-measured cognitive complexity predicts belief revision in
+    AI persuasion
+  authors:
+    - given-names: Tamas
+      family-names: Madl
+  year: 2026
+  notes: >-
+    Manuscript under review. Reproducibility:
+    https://github.com/tmadl/UserAwareAISafety

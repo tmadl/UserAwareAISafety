@@ -1,0 +1,956 @@
+participantId,Speaker,PromptType,BeliefType,PreBelief,PostBelief,Age,Gender,Education,PoliticalAff,Eval_Convincing,Eval_Logical,Eval_Trust,Eval_Credibility,belief_change
+23,Expert,Human-like,Epistemically unwarranted beliefs,70.0,78.0,76.0,Female,High school graduate,6.0,5.0,5.0,4.0,5.0,8.0
+26,AI,Neutral,Epistemically unwarranted beliefs,100.0,100.0,81.0,Female,Graduate degree,1.0,2.0,5.0,3.0,4.0,0.0
+28,Expert,Neutral,Conspiracy beliefs,75.0,100.0,51.0,Male,Graduate degree,6.0,5.0,6.0,6.0,6.0,25.0
+31,Expert,Neutral,Epistemically unwarranted beliefs,100.0,100.0,65.0,Female,Bachelor's degree,2.0,5.0,5.0,5.0,5.0,0.0
+35,AI,Neutral,Conspiracy beliefs,94.0,81.0,71.0,Female,Graduate degree,6.0,2.0,4.0,1.0,4.0,-13.0
+36,Expert,Human-like,Conspiracy beliefs,80.0,81.0,46.0,Male,Graduate degree,6.0,6.0,1.0,4.0,5.0,1.0
+41,Expert,Human-like,Conspiracy beliefs,98.0,96.0,70.0,Male,Attended college,5.0,2.0,1.0,4.0,4.0,-2.0
+45,Expert,Neutral,Conspiracy beliefs,91.0,90.0,69.0,Female,Graduate degree,4.0,1.0,2.0,1.0,2.0,-1.0
+53,AI,Human-like,Conspiracy beliefs,100.0,100.0,72.0,Female,Bachelor's degree,6.0,5.0,6.0,2.0,4.0,0.0
+56,Expert,Human-like,Conspiracy beliefs,99.0,100.0,62.0,Female,High school graduate,6.0,2.0,2.0,1.0,1.0,1.0
+59,Expert,Human-like,Epistemically unwarranted beliefs,80.0,81.0,53.0,Male,Graduate degree,2.0,5.0,5.0,5.0,4.0,1.0
+64,Expert,Neutral,Epistemically unwarranted beliefs,100.0,100.0,67.0,Female,Attended college,1.0,4.0,5.0,4.0,5.0,0.0
+66,AI,Neutral,Epistemically unwarranted beliefs,100.0,100.0,65.0,Male,High school graduate,3.0,6.0,6.0,6.0,6.0,0.0
+69,Expert,Human-like,Conspiracy beliefs,62.0,40.0,48.0,Male,Graduate degree,2.0,1.0,1.0,1.0,1.0,-22.0
+71,Expert,Human-like,Conspiracy beliefs,51.0,47.0,48.0,Female,Bachelor's degree,5.0,2.0,3.0,1.0,2.0,-4.0
+75,AI,Neutral,Conspiracy beliefs,90.0,69.0,32.0,Female,Bachelor's degree,2.0,5.0,5.0,5.0,5.0,-21.0
+76,Expert,Neutral,Epistemically unwarranted beliefs,82.0,79.0,71.0,Female,Bachelor's degree,5.0,3.0,4.0,3.0,3.0,-3.0
+78,AI,Human-like,Epistemically unwarranted beliefs,100.0,100.0,80.0,Female,High school graduate,6.0,5.0,5.0,5.0,5.0,0.0
+83,AI,Neutral,Epistemically unwarranted beliefs,100.0,100.0,83.0,Female,High school graduate,6.0,1.0,3.0,1.0,3.0,0.0
+84,Expert,Human-like,Conspiracy beliefs,70.0,50.0,68.0,Female,Attended college,1.0,4.0,4.0,3.0,3.0,-20.0
+85,Expert,Human-like,Epistemically unwarranted beliefs,52.0,53.0,66.0,Female,High school graduate,4.0,1.0,1.0,1.0,1.0,1.0
+92,Expert,Neutral,Epistemically unwarranted beliefs,72.0,81.0,66.0,Female,High school graduate,4.0,4.0,4.0,3.0,3.0,9.0
+96,AI,Human-like,Conspiracy beliefs,60.0,73.0,43.0,Male,Graduate degree,6.0,4.0,4.0,5.0,4.0,13.0
+97,Expert,Human-like,Conspiracy beliefs,60.0,61.0,61.0,Female,Bachelor's degree,2.0,5.0,5.0,5.0,5.0,1.0
+110,AI,Neutral,Conspiracy beliefs,81.0,81.0,77.0,Male,Bachelor's degree,2.0,4.0,4.0,3.0,5.0,0.0
+111,AI,Neutral,Conspiracy beliefs,87.0,91.0,66.0,Male,Attended college,4.0,4.0,5.0,4.0,5.0,4.0
+116,AI,Human-like,Conspiracy beliefs,90.0,87.0,77.0,Male,Bachelor's degree,5.0,1.0,2.0,1.0,1.0,-3.0
+117,Expert,Neutral,Conspiracy beliefs,84.0,100.0,72.0,Female,Graduate degree,4.0,3.0,4.0,3.0,4.0,16.0
+119,AI,Neutral,Epistemically unwarranted beliefs,91.0,53.0,71.0,Female,Bachelor's degree,4.0,2.0,2.0,2.0,2.0,-38.0
+129,AI,Human-like,Conspiracy beliefs,83.0,75.0,80.0,Female,Attended college,1.0,4.0,4.0,2.0,3.0,-8.0
+130,Expert,Human-like,Conspiracy beliefs,100.0,100.0,34.0,Female,Attended college,4.0,5.0,6.0,5.0,6.0,0.0
+131,AI,Neutral,Conspiracy beliefs,91.0,92.0,69.0,Female,Bachelor's degree,6.0,1.0,2.0,1.0,1.0,1.0
+134,Expert,Human-like,Conspiracy beliefs,100.0,100.0,71.0,Male,Attended college,3.0,2.0,4.0,3.0,3.0,0.0
+141,AI,Human-like,Epistemically unwarranted beliefs,98.0,94.0,53.0,Male,Attended college,4.0,5.0,5.0,5.0,5.0,-4.0
+148,AI,Human-like,Conspiracy beliefs,67.0,44.0,62.0,Female,Vocational training,6.0,4.0,5.0,3.0,4.0,-23.0
+149,Expert,Neutral,Conspiracy beliefs,100.0,100.0,67.0,Female,Graduate degree,4.0,1.0,1.0,1.0,1.0,0.0
+150,Expert,Human-like,Conspiracy beliefs,100.0,100.0,72.0,Female,Attended college,6.0,2.0,2.0,2.0,2.0,0.0
+155,Expert,Human-like,Epistemically unwarranted beliefs,100.0,76.0,58.0,Female,Vocational training,6.0,5.0,5.0,4.0,4.0,-24.0
+156,Expert,Neutral,Epistemically unwarranted beliefs,99.0,99.0,57.0,Female,Vocational training,5.0,5.0,5.0,5.0,5.0,0.0
+157,AI,Neutral,Conspiracy beliefs,91.0,59.0,70.0,Female,High school graduate,3.0,5.0,6.0,4.0,6.0,-32.0
+164,Expert,Human-like,Conspiracy beliefs,96.0,49.0,60.0,Male,Bachelor's degree,6.0,2.0,5.0,3.0,4.0,-47.0
+167,Expert,Neutral,Epistemically unwarranted beliefs,81.0,82.0,56.0,Male,Attended college,6.0,4.0,4.0,4.0,4.0,1.0
+170,Expert,Human-like,Conspiracy beliefs,51.0,49.0,61.0,Male,Attended college,5.0,5.0,5.0,5.0,5.0,-2.0
+175,AI,Human-like,Epistemically unwarranted beliefs,81.0,81.0,76.0,Male,Graduate degree,5.0,5.0,5.0,5.0,6.0,0.0
+178,Expert,Neutral,Conspiracy beliefs,100.0,99.0,72.0,Female,Attended college,1.0,5.0,6.0,3.0,5.0,-1.0
+179,AI,Human-like,Epistemically unwarranted beliefs,81.0,100.0,73.0,Female,Attended college,5.0,4.0,4.0,3.0,3.0,19.0
+268,Expert,Human-like,Epistemically unwarranted beliefs,70.0,98.0,75.0,Female,Graduate degree,1.0,5.0,6.0,5.0,5.0,28.0
+271,Expert,Neutral,Epistemically unwarranted beliefs,90.0,92.0,52.0,Male,Graduate degree,4.0,6.0,5.0,5.0,6.0,2.0
+278,Expert,Neutral,Conspiracy beliefs,100.0,100.0,61.0,Female,Bachelor's degree,2.0,6.0,6.0,6.0,6.0,0.0
+287,AI,Human-like,Epistemically unwarranted beliefs,56.0,54.0,53.0,Female,Attended college,1.0,5.0,6.0,4.0,5.0,-2.0
+303,Expert,Neutral,Conspiracy beliefs,77.0,74.0,50.0,Male,Attended college,3.0,4.0,5.0,4.0,4.0,-3.0
+307,AI,Neutral,Epistemically unwarranted beliefs,74.0,60.0,42.0,Male,Graduate degree,5.0,5.0,4.0,6.0,5.0,-14.0
+308,Expert,Human-like,Epistemically unwarranted beliefs,99.0,94.0,68.0,Female,High school graduate,6.0,6.0,5.0,5.0,6.0,-5.0
+311,AI,Neutral,Epistemically unwarranted beliefs,91.0,90.0,74.0,Male,Bachelor's degree,1.0,3.0,4.0,4.0,4.0,-1.0
+313,AI,Neutral,Conspiracy beliefs,100.0,1.0,67.0,Female,Attended college,4.0,6.0,6.0,6.0,6.0,-99.0
+328,Expert,Human-like,Epistemically unwarranted beliefs,71.0,81.0,34.0,Female,Bachelor's degree,4.0,4.0,5.0,4.0,4.0,10.0
+330,AI,Neutral,Conspiracy beliefs,72.0,69.0,51.0,Female,Graduate degree,5.0,2.0,2.0,2.0,3.0,-3.0
+346,AI,Neutral,Epistemically unwarranted beliefs,99.0,100.0,80.0,Male,Bachelor's degree,3.0,5.0,6.0,5.0,5.0,1.0
+348,AI,Human-like,Epistemically unwarranted beliefs,77.0,76.0,64.0,Male,Attended college,4.0,4.0,3.0,3.0,4.0,-1.0
+350,AI,Neutral,Epistemically unwarranted beliefs,74.0,26.0,66.0,Female,Vocational training,2.0,4.0,4.0,4.0,4.0,-48.0
+351,AI,Human-like,Epistemically unwarranted beliefs,100.0,100.0,72.0,Female,Graduate degree,5.0,4.0,4.0,3.0,4.0,0.0
+352,Expert,Human-like,Conspiracy beliefs,77.0,21.0,65.0,Female,Vocational training,1.0,6.0,6.0,5.0,6.0,-56.0
+356,Expert,Neutral,Conspiracy beliefs,71.0,70.0,74.0,Male,Bachelor's degree,6.0,5.0,5.0,4.0,5.0,-1.0
+358,Expert,Neutral,Epistemically unwarranted beliefs,72.0,72.0,73.0,Female,Graduate degree,2.0,4.0,5.0,2.0,5.0,0.0
+364,AI,Neutral,Conspiracy beliefs,100.0,85.0,42.0,Male,Bachelor's degree,1.0,3.0,5.0,3.0,4.0,-15.0
+370,Expert,Human-like,Epistemically unwarranted beliefs,81.0,81.0,30.0,Male,Bachelor's degree,1.0,3.0,2.0,1.0,3.0,0.0
+374,AI,Human-like,Conspiracy beliefs,100.0,100.0,56.0,Female,High school graduate,1.0,6.0,6.0,5.0,6.0,0.0
+377,AI,Neutral,Conspiracy beliefs,100.0,100.0,45.0,Male,Bachelor's degree,1.0,6.0,6.0,6.0,6.0,0.0
+381,AI,Neutral,Conspiracy beliefs,76.0,82.0,73.0,Female,High school graduate,6.0,5.0,5.0,4.0,5.0,6.0
+386,AI,Human-like,Epistemically unwarranted beliefs,100.0,100.0,36.0,Female,Bachelor's degree,5.0,4.0,3.0,1.0,1.0,0.0
+387,AI,Neutral,Conspiracy beliefs,99.0,100.0,64.0,Male,Graduate degree,4.0,5.0,5.0,5.0,5.0,1.0
+390,Expert,Human-like,Epistemically unwarranted beliefs,100.0,100.0,,,Less than high school,4.0,4.0,5.0,1.0,1.0,0.0
+391,AI,Neutral,Epistemically unwarranted beliefs,82.0,96.0,25.0,Male,Bachelor's degree,2.0,6.0,6.0,5.0,6.0,14.0
+394,AI,Human-like,Epistemically unwarranted beliefs,100.0,100.0,23.0,Male,Attended college,6.0,6.0,6.0,4.0,6.0,0.0
+395,AI,Neutral,Conspiracy beliefs,99.0,99.0,55.0,Female,Bachelor's degree,4.0,5.0,6.0,5.0,5.0,0.0
+399,Expert,Neutral,Epistemically unwarranted beliefs,89.0,93.0,78.0,Female,Graduate degree,4.0,5.0,5.0,5.0,5.0,4.0
+404,Expert,Human-like,Epistemically unwarranted beliefs,100.0,99.0,58.0,Female,Attended college,1.0,6.0,6.0,5.0,5.0,-1.0
+406,AI,Neutral,Conspiracy beliefs,100.0,100.0,64.0,Female,Attended college,2.0,2.0,5.0,4.0,5.0,0.0
+414,AI,Neutral,Epistemically unwarranted beliefs,80.0,65.0,51.0,Male,Attended college,5.0,3.0,4.0,3.0,4.0,-15.0
+422,Expert,Neutral,Epistemically unwarranted beliefs,100.0,100.0,26.0,Female,Attended college,1.0,6.0,6.0,6.0,6.0,0.0
+424,AI,Neutral,Epistemically unwarranted beliefs,97.0,96.0,66.0,Male,Attended college,2.0,6.0,5.0,5.0,5.0,-1.0
+428,Expert,Human-like,Conspiracy beliefs,82.0,82.0,33.0,Female,Bachelor's degree,4.0,5.0,5.0,4.0,4.0,0.0
+430,AI,Human-like,Epistemically unwarranted beliefs,100.0,98.0,31.0,Non-binary,High school graduate,4.0,4.0,5.0,4.0,4.0,-2.0
+431,Expert,Neutral,Conspiracy beliefs,100.0,91.0,56.0,Female,High school graduate,5.0,2.0,2.0,2.0,3.0,-9.0
+432,Expert,Human-like,Epistemically unwarranted beliefs,99.0,50.0,27.0,Female,Bachelor's degree,3.0,6.0,2.0,5.0,6.0,-49.0
+448,AI,Human-like,Epistemically unwarranted beliefs,80.0,80.0,67.0,Male,Bachelor's degree,5.0,4.0,5.0,4.0,4.0,0.0
+457,Expert,Human-like,Conspiracy beliefs,99.0,99.0,44.0,Male,Bachelor's degree,5.0,3.0,4.0,3.0,3.0,0.0
+465,Expert,Neutral,Conspiracy beliefs,82.0,58.0,62.0,Female,High school graduate,4.0,4.0,5.0,4.0,3.0,-24.0
+470,AI,Human-like,Epistemically unwarranted beliefs,99.0,100.0,66.0,Female,Bachelor's degree,4.0,4.0,4.0,3.0,4.0,1.0
+471,AI,Neutral,Conspiracy beliefs,81.0,66.0,44.0,Male,Bachelor's degree,3.0,2.0,2.0,2.0,2.0,-15.0
+474,Expert,Human-like,Epistemically unwarranted beliefs,95.0,93.0,60.0,Male,Bachelor's degree,4.0,4.0,4.0,2.0,4.0,-2.0
+482,Expert,Human-like,Epistemically unwarranted beliefs,100.0,100.0,60.0,Female,Attended college,4.0,5.0,6.0,6.0,6.0,0.0
+485,AI,Neutral,Conspiracy beliefs,100.0,100.0,83.0,Female,Graduate degree,1.0,4.0,4.0,5.0,4.0,0.0
+490,AI,Neutral,Epistemically unwarranted beliefs,100.0,100.0,66.0,Male,Graduate degree,3.0,2.0,2.0,4.0,5.0,0.0
+492,AI,Neutral,Epistemically unwarranted beliefs,60.0,60.0,70.0,Male,High school graduate,4.0,2.0,4.0,2.0,2.0,0.0
+512,AI,Neutral,Conspiracy beliefs,85.0,53.0,40.0,Female,Bachelor's degree,5.0,5.0,6.0,5.0,6.0,-32.0
+513,AI,Human-like,Conspiracy beliefs,100.0,74.0,63.0,Female,High school graduate,6.0,1.0,1.0,1.0,2.0,-26.0
+515,AI,Human-like,Epistemically unwarranted beliefs,90.0,85.0,49.0,Female,Attended college,3.0,3.0,5.0,3.0,3.0,-5.0
+534,Expert,Neutral,Epistemically unwarranted beliefs,97.0,91.0,70.0,Female,High school graduate,2.0,5.0,5.0,4.0,5.0,-6.0
+536,AI,Human-like,Conspiracy beliefs,81.0,54.0,36.0,Male,Attended college,3.0,4.0,6.0,5.0,5.0,-27.0
+541,AI,Neutral,Epistemically unwarranted beliefs,62.0,80.0,42.0,Male,High school graduate,5.0,5.0,5.0,4.0,5.0,18.0
+542,AI,Human-like,Conspiracy beliefs,91.0,39.0,71.0,Female,Bachelor's degree,1.0,6.0,6.0,5.0,5.0,-52.0
+547,Expert,Human-like,Conspiracy beliefs,71.0,50.0,67.0,Female,Bachelor's degree,4.0,5.0,5.0,2.0,4.0,-21.0
+548,AI,Human-like,Conspiracy beliefs,63.0,58.0,49.0,Male,Bachelor's degree,3.0,2.0,3.0,3.0,3.0,-5.0
+553,Expert,Neutral,Epistemically unwarranted beliefs,100.0,100.0,81.0,Female,Bachelor's degree,4.0,6.0,6.0,6.0,6.0,0.0
+554,Expert,Neutral,Epistemically unwarranted beliefs,71.0,71.0,59.0,Female,High school graduate,4.0,4.0,5.0,3.0,4.0,0.0
+557,Expert,Human-like,Conspiracy beliefs,79.0,82.0,42.0,Female,Bachelor's degree,3.0,4.0,5.0,2.0,2.0,3.0
+559,AI,Neutral,Conspiracy beliefs,71.0,71.0,53.0,Female,Attended college,4.0,4.0,3.0,2.0,3.0,0.0
+560,AI,Human-like,Conspiracy beliefs,81.0,81.0,65.0,Male,Attended college,5.0,2.0,5.0,4.0,4.0,0.0
+562,Expert,Neutral,Epistemically unwarranted beliefs,100.0,100.0,59.0,Female,Bachelor's degree,2.0,4.0,5.0,5.0,3.0,0.0
+567,Expert,Neutral,Epistemically unwarranted beliefs,100.0,100.0,76.0,Female,Attended college,3.0,1.0,1.0,1.0,1.0,0.0
+568,Expert,Neutral,Epistemically unwarranted beliefs,84.0,53.0,73.0,Male,Attended college,1.0,5.0,5.0,5.0,5.0,-31.0
+570,AI,Neutral,Conspiracy beliefs,80.0,83.0,68.0,Male,Bachelor's degree,5.0,1.0,2.0,1.0,1.0,3.0
+582,Expert,Human-like,Epistemically unwarranted beliefs,68.0,75.0,60.0,Female,Attended college,4.0,5.0,4.0,4.0,4.0,7.0
+584,AI,Human-like,Epistemically unwarranted beliefs,93.0,95.0,45.0,Female,Vocational training,6.0,1.0,1.0,1.0,3.0,2.0
+595,Expert,Neutral,Epistemically unwarranted beliefs,80.0,82.0,37.0,Female,Bachelor's degree,3.0,5.0,4.0,4.0,5.0,2.0
+608,AI,Neutral,Epistemically unwarranted beliefs,96.0,95.0,71.0,Male,Attended college,4.0,5.0,5.0,4.0,4.0,-1.0
+610,AI,Human-like,Conspiracy beliefs,73.0,74.0,78.0,Female,High school graduate,5.0,4.0,5.0,3.0,4.0,1.0
+619,Expert,Human-like,Conspiracy beliefs,61.0,50.0,61.0,Male,Bachelor's degree,4.0,5.0,5.0,5.0,5.0,-11.0
+621,Expert,Neutral,Conspiracy beliefs,99.0,96.0,56.0,Female,Vocational training,3.0,5.0,5.0,4.0,5.0,-3.0
+635,AI,Human-like,Epistemically unwarranted beliefs,64.0,71.0,73.0,Male,Bachelor's degree,1.0,2.0,3.0,2.0,3.0,7.0
+648,Expert,Human-like,Epistemically unwarranted beliefs,73.0,65.0,33.0,Male,Bachelor's degree,4.0,3.0,3.0,4.0,3.0,-8.0
+656,AI,Neutral,Epistemically unwarranted beliefs,70.0,70.0,71.0,Female,Bachelor's degree,3.0,3.0,4.0,3.0,3.0,0.0
+660,Expert,Human-like,Conspiracy beliefs,84.0,91.0,54.0,Female,Attended college,4.0,2.0,3.0,2.0,3.0,7.0
+667,AI,Human-like,Epistemically unwarranted beliefs,100.0,100.0,82.0,Female,Bachelor's degree,4.0,3.0,4.0,3.0,4.0,0.0
+669,AI,Neutral,Conspiracy beliefs,100.0,100.0,45.0,Female,Attended college,3.0,4.0,4.0,4.0,5.0,0.0
+701,Expert,Neutral,Conspiracy beliefs,87.0,96.0,76.0,Female,High school graduate,4.0,4.0,3.0,4.0,4.0,9.0
+711,AI,Neutral,Epistemically unwarranted beliefs,61.0,60.0,73.0,Male,Bachelor's degree,1.0,5.0,6.0,5.0,5.0,-1.0
+720,Expert,Neutral,Epistemically unwarranted beliefs,90.0,98.0,20.0,Female,Attended college,2.0,3.0,5.0,3.0,5.0,8.0
+722,Expert,Neutral,Conspiracy beliefs,91.0,70.0,35.0,Male,Bachelor's degree,2.0,3.0,3.0,2.0,2.0,-21.0
+727,AI,Neutral,Epistemically unwarranted beliefs,100.0,91.0,29.0,Male,Graduate degree,4.0,6.0,5.0,4.0,4.0,-9.0
+730,Expert,Human-like,Conspiracy beliefs,100.0,100.0,74.0,Female,Vocational training,6.0,6.0,6.0,6.0,6.0,0.0
+751,AI,Human-like,Epistemically unwarranted beliefs,100.0,100.0,60.0,Female,Attended college,1.0,5.0,6.0,6.0,5.0,0.0
+756,AI,Human-like,Conspiracy beliefs,94.0,98.0,71.0,Female,High school graduate,4.0,1.0,2.0,1.0,2.0,4.0
+775,Expert,Human-like,Conspiracy beliefs,100.0,88.0,41.0,Male,Attended college,4.0,6.0,6.0,6.0,6.0,-12.0
+780,Expert,Neutral,Epistemically unwarranted beliefs,70.0,69.0,55.0,Female,Graduate degree,2.0,3.0,5.0,4.0,5.0,-1.0
+781,Expert,Human-like,Conspiracy beliefs,89.0,16.0,75.0,Male,Attended college,1.0,5.0,6.0,5.0,5.0,-73.0
+801,Expert,Human-like,Epistemically unwarranted beliefs,92.0,95.0,83.0,Female,Attended college,6.0,5.0,4.0,4.0,4.0,3.0
+803,Expert,Neutral,Epistemically unwarranted beliefs,90.0,100.0,48.0,Female,Attended college,2.0,3.0,3.0,3.0,3.0,10.0
+805,AI,Neutral,Conspiracy beliefs,100.0,100.0,71.0,Female,Attended college,1.0,3.0,5.0,4.0,4.0,0.0
+809,AI,Human-like,Epistemically unwarranted beliefs,100.0,100.0,54.0,Female,Attended college,1.0,1.0,4.0,1.0,1.0,0.0
+817,AI,Neutral,Conspiracy beliefs,99.0,100.0,65.0,Female,Attended college,2.0,6.0,6.0,1.0,5.0,1.0
+829,Expert,Human-like,Epistemically unwarranted beliefs,93.0,94.0,76.0,Male,Bachelor's degree,2.0,5.0,4.0,2.0,4.0,1.0
+841,AI,Neutral,Conspiracy beliefs,88.0,59.0,27.0,Female,High school graduate,4.0,5.0,5.0,4.0,4.0,-29.0
+848,AI,Neutral,Conspiracy beliefs,99.0,100.0,54.0,Male,High school graduate,5.0,5.0,5.0,4.0,5.0,1.0
+860,AI,Neutral,Epistemically unwarranted beliefs,86.0,96.0,81.0,Female,Bachelor's degree,6.0,4.0,5.0,4.0,4.0,10.0
+861,Expert,Neutral,Epistemically unwarranted beliefs,72.0,100.0,64.0,Female,High school graduate,5.0,5.0,5.0,5.0,5.0,28.0
+863,AI,Neutral,Epistemically unwarranted beliefs,100.0,50.0,61.0,Female,Attended college,3.0,6.0,6.0,5.0,5.0,-50.0
+877,Expert,Human-like,Conspiracy beliefs,100.0,100.0,66.0,Male,Attended college,2.0,3.0,2.0,2.0,3.0,0.0
+878,AI,Human-like,Epistemically unwarranted beliefs,99.0,100.0,33.0,Male,Bachelor's degree,3.0,1.0,1.0,1.0,2.0,1.0
+882,AI,Neutral,Epistemically unwarranted beliefs,82.0,86.0,24.0,Male,Bachelor's degree,4.0,5.0,5.0,5.0,5.0,4.0
+895,AI,Neutral,Conspiracy beliefs,61.0,61.0,73.0,Female,Graduate degree,1.0,3.0,5.0,4.0,5.0,0.0
+904,Expert,Human-like,Epistemically unwarranted beliefs,93.0,57.0,71.0,Female,Bachelor's degree,5.0,4.0,4.0,4.0,4.0,-36.0
+905,AI,Human-like,Epistemically unwarranted beliefs,75.0,91.0,68.0,Male,High school graduate,6.0,1.0,1.0,1.0,1.0,16.0
+907,Expert,Human-like,Epistemically unwarranted beliefs,95.0,95.0,60.0,Male,High school graduate,3.0,3.0,5.0,3.0,5.0,0.0
+919,AI,Human-like,Conspiracy beliefs,97.0,40.0,84.0,Female,Attended college,5.0,6.0,6.0,5.0,5.0,-57.0
+932,AI,Neutral,Conspiracy beliefs,100.0,99.0,60.0,Female,Vocational training,1.0,5.0,6.0,4.0,4.0,-1.0
+933,AI,Neutral,Epistemically unwarranted beliefs,100.0,99.0,69.0,Female,Vocational training,5.0,4.0,5.0,4.0,4.0,-1.0
+943,Expert,Neutral,Conspiracy beliefs,83.0,51.0,64.0,Female,High school graduate,3.0,5.0,5.0,4.0,4.0,-32.0
+949,Expert,Human-like,Epistemically unwarranted beliefs,100.0,100.0,67.0,Female,Bachelor's degree,4.0,5.0,5.0,4.0,5.0,0.0
+965,Expert,Human-like,Conspiracy beliefs,81.0,81.0,66.0,Male,Bachelor's degree,6.0,2.0,4.0,3.0,2.0,0.0
+993,AI,Neutral,Epistemically unwarranted beliefs,62.0,77.0,61.0,Female,Bachelor's degree,2.0,1.0,1.0,1.0,1.0,15.0
+995,Expert,Human-like,Epistemically unwarranted beliefs,91.0,80.0,78.0,Female,High school graduate,2.0,5.0,5.0,4.0,5.0,-11.0
+1005,Expert,Human-like,Conspiracy beliefs,51.0,21.0,68.0,Female,Bachelor's degree,4.0,5.0,5.0,5.0,4.0,-30.0
+1008,Expert,Human-like,Conspiracy beliefs,70.0,82.0,64.0,Female,Graduate degree,6.0,2.0,2.0,2.0,3.0,12.0
+1011,AI,Neutral,Conspiracy beliefs,91.0,100.0,72.0,Female,Attended college,5.0,5.0,5.0,5.0,6.0,9.0
+1034,Expert,Human-like,Conspiracy beliefs,77.0,96.0,74.0,Male,Attended college,1.0,4.0,5.0,4.0,5.0,19.0
+1040,Expert,Neutral,Conspiracy beliefs,92.0,91.0,56.0,Female,Less than high school,5.0,6.0,1.0,2.0,1.0,-1.0
+1054,AI,Human-like,Conspiracy beliefs,61.0,3.0,86.0,Male,Attended college,6.0,5.0,6.0,5.0,5.0,-58.0
+1061,AI,Neutral,Conspiracy beliefs,97.0,81.0,73.0,Female,Attended college,5.0,2.0,5.0,3.0,4.0,-16.0
+1062,Expert,Neutral,Conspiracy beliefs,98.0,85.0,62.0,Male,Bachelor's degree,5.0,1.0,5.0,1.0,2.0,-13.0
+1066,AI,Human-like,Epistemically unwarranted beliefs,100.0,100.0,30.0,Male,Graduate degree,6.0,5.0,5.0,5.0,4.0,0.0
+1073,AI,Neutral,Conspiracy beliefs,94.0,95.0,64.0,Male,Attended college,5.0,2.0,3.0,2.0,2.0,1.0
+1086,AI,Neutral,Epistemically unwarranted beliefs,92.0,81.0,67.0,Female,Attended college,5.0,2.0,3.0,2.0,2.0,-11.0
+1089,AI,Neutral,Conspiracy beliefs,93.0,91.0,64.0,Male,Attended college,3.0,4.0,4.0,3.0,4.0,-2.0
+1090,Expert,Neutral,Epistemically unwarranted beliefs,100.0,100.0,65.0,Female,Bachelor's degree,1.0,1.0,1.0,1.0,1.0,0.0
+1092,Expert,Human-like,Conspiracy beliefs,100.0,97.0,76.0,Male,Graduate degree,1.0,3.0,5.0,4.0,4.0,-3.0
+1097,AI,Human-like,Conspiracy beliefs,57.0,54.0,57.0,Female,High school graduate,4.0,5.0,6.0,4.0,5.0,-3.0
+1098,Expert,Human-like,Conspiracy beliefs,99.0,100.0,57.0,Male,Attended college,6.0,1.0,1.0,1.0,1.0,1.0
+1099,Expert,Neutral,Conspiracy beliefs,81.0,40.0,67.0,Female,Vocational training,3.0,4.0,4.0,4.0,4.0,-41.0
+1102,AI,Human-like,Conspiracy beliefs,80.0,44.0,18.0,Female,High school graduate,3.0,3.0,4.0,4.0,4.0,-36.0
+1106,Expert,Human-like,Epistemically unwarranted beliefs,100.0,97.0,78.0,Male,Bachelor's degree,5.0,4.0,4.0,5.0,4.0,-3.0
+1115,AI,Human-like,Conspiracy beliefs,86.0,89.0,52.0,Male,Bachelor's degree,4.0,2.0,2.0,2.0,1.0,3.0
+1116,AI,Neutral,Epistemically unwarranted beliefs,81.0,82.0,20.0,Male,Vocational training,4.0,5.0,4.0,4.0,4.0,1.0
+1131,AI,Human-like,Conspiracy beliefs,95.0,100.0,70.0,Male,Bachelor's degree,4.0,1.0,2.0,1.0,1.0,5.0
+1147,AI,Neutral,Conspiracy beliefs,83.0,65.0,35.0,Female,Attended college,4.0,3.0,5.0,4.0,4.0,-18.0
+1151,Expert,Human-like,Conspiracy beliefs,78.0,100.0,32.0,Male,Attended college,1.0,6.0,6.0,5.0,5.0,22.0
+1158,AI,Neutral,Conspiracy beliefs,91.0,91.0,59.0,Male,Attended college,4.0,3.0,4.0,3.0,3.0,0.0
+1164,Expert,Neutral,Conspiracy beliefs,100.0,84.0,56.0,Male,Attended college,3.0,1.0,2.0,1.0,1.0,-16.0
+1171,AI,Human-like,Conspiracy beliefs,76.0,35.0,37.0,Female,Attended college,3.0,5.0,5.0,4.0,5.0,-41.0
+1177,Expert,Neutral,Conspiracy beliefs,88.0,70.0,62.0,Male,Graduate degree,4.0,4.0,5.0,4.0,5.0,-18.0
+1179,AI,Neutral,Epistemically unwarranted beliefs,100.0,100.0,56.0,Female,Attended college,3.0,6.0,6.0,5.0,6.0,0.0
+1182,Expert,Human-like,Conspiracy beliefs,98.0,31.0,75.0,Female,Graduate degree,4.0,4.0,6.0,4.0,6.0,-67.0
+1193,Expert,Human-like,Epistemically unwarranted beliefs,90.0,61.0,65.0,Female,Graduate degree,2.0,3.0,4.0,4.0,4.0,-29.0
+1195,AI,Human-like,Conspiracy beliefs,71.0,61.0,69.0,Female,Bachelor's degree,1.0,5.0,4.0,5.0,5.0,-10.0
+1211,Expert,Neutral,Epistemically unwarranted beliefs,100.0,100.0,57.0,Female,Graduate degree,2.0,5.0,5.0,4.0,5.0,0.0
+1217,AI,Neutral,Conspiracy beliefs,71.0,71.0,65.0,Male,Vocational training,5.0,4.0,5.0,5.0,5.0,0.0
+1221,Expert,Human-like,Conspiracy beliefs,99.0,98.0,71.0,Female,Bachelor's degree,4.0,1.0,3.0,2.0,2.0,-1.0
+1237,Expert,Human-like,Conspiracy beliefs,99.0,50.0,33.0,Female,Attended college,3.0,2.0,4.0,1.0,3.0,-49.0
+1248,Expert,Neutral,Conspiracy beliefs,99.0,80.0,71.0,Female,Bachelor's degree,3.0,4.0,5.0,4.0,4.0,-19.0
+1258,Expert,Neutral,Conspiracy beliefs,100.0,100.0,61.0,Male,High school graduate,3.0,3.0,5.0,3.0,5.0,0.0
+1270,AI,Neutral,Conspiracy beliefs,96.0,90.0,48.0,Female,Bachelor's degree,5.0,1.0,1.0,1.0,1.0,-6.0
+1278,Expert,Neutral,Conspiracy beliefs,77.0,100.0,47.0,Male,Vocational training,4.0,5.0,5.0,6.0,6.0,23.0
+1295,AI,Human-like,Conspiracy beliefs,92.0,47.0,30.0,Male,Bachelor's degree,2.0,5.0,6.0,5.0,6.0,-45.0
+1311,Expert,Human-like,Conspiracy beliefs,100.0,94.0,73.0,Female,High school graduate,4.0,5.0,5.0,5.0,5.0,-6.0
+1324,Expert,Human-like,Conspiracy beliefs,91.0,92.0,26.0,Female,Bachelor's degree,1.0,2.0,4.0,1.0,1.0,1.0
+1329,AI,Human-like,Epistemically unwarranted beliefs,85.0,89.0,71.0,Female,High school graduate,1.0,3.0,5.0,5.0,3.0,4.0
+1342,AI,Neutral,Epistemically unwarranted beliefs,100.0,70.0,25.0,Male,Bachelor's degree,3.0,3.0,5.0,2.0,2.0,-30.0
+1344,AI,Neutral,Conspiracy beliefs,81.0,9.0,74.0,Male,High school graduate,3.0,4.0,4.0,4.0,4.0,-72.0
+1345,Expert,Neutral,Conspiracy beliefs,76.0,76.0,71.0,Female,Attended college,6.0,1.0,1.0,1.0,1.0,0.0
+1356,AI,Human-like,Epistemically unwarranted beliefs,86.0,69.0,50.0,Female,Attended college,3.0,3.0,4.0,3.0,3.0,-17.0
+1358,Expert,Human-like,Epistemically unwarranted beliefs,100.0,100.0,49.0,Male,High school graduate,5.0,1.0,1.0,1.0,1.0,0.0
+1362,AI,Human-like,Conspiracy beliefs,89.0,91.0,30.0,Male,Graduate degree,2.0,5.0,6.0,6.0,5.0,2.0
+1365,Expert,Human-like,Conspiracy beliefs,83.0,92.0,35.0,Male,Bachelor's degree,5.0,4.0,4.0,4.0,5.0,9.0
+1375,AI,Neutral,Conspiracy beliefs,80.0,81.0,55.0,Male,Bachelor's degree,3.0,2.0,3.0,2.0,2.0,1.0
+1382,Expert,Neutral,Conspiracy beliefs,99.0,76.0,78.0,Male,Graduate degree,2.0,5.0,6.0,5.0,6.0,-23.0
+1391,AI,Human-like,Epistemically unwarranted beliefs,59.0,60.0,58.0,Male,Attended college,1.0,4.0,4.0,4.0,4.0,1.0
+1395,AI,Neutral,Conspiracy beliefs,55.0,56.0,47.0,Female,Graduate degree,4.0,4.0,3.0,3.0,3.0,1.0
+1398,AI,Neutral,Epistemically unwarranted beliefs,100.0,100.0,42.0,Female,Graduate degree,3.0,3.0,6.0,3.0,5.0,0.0
+1403,AI,Neutral,Epistemically unwarranted beliefs,100.0,99.0,48.0,Female,Bachelor's degree,2.0,5.0,6.0,3.0,5.0,-1.0
+1405,Expert,Human-like,Epistemically unwarranted beliefs,100.0,90.0,61.0,Female,High school graduate,3.0,5.0,6.0,6.0,6.0,-10.0
+1413,AI,Neutral,Conspiracy beliefs,91.0,91.0,68.0,Female,Graduate degree,3.0,2.0,2.0,3.0,3.0,0.0
+1421,AI,Human-like,Epistemically unwarranted beliefs,80.0,70.0,66.0,Male,Bachelor's degree,3.0,2.0,4.0,4.0,2.0,-10.0
+1427,Expert,Neutral,Epistemically unwarranted beliefs,98.0,91.0,56.0,Female,Bachelor's degree,2.0,1.0,5.0,2.0,3.0,-7.0
+1435,Expert,Neutral,Epistemically unwarranted beliefs,61.0,14.0,52.0,Male,Vocational training,4.0,6.0,6.0,5.0,6.0,-47.0
+1441,AI,Human-like,Epistemically unwarranted beliefs,99.0,99.0,46.0,Female,High school graduate,3.0,5.0,6.0,4.0,6.0,0.0
+1484,AI,Neutral,Conspiracy beliefs,94.0,81.0,42.0,Male,High school graduate,6.0,1.0,1.0,1.0,1.0,-13.0
+1490,AI,Neutral,Conspiracy beliefs,100.0,100.0,80.0,Female,High school graduate,6.0,3.0,4.0,2.0,3.0,0.0
+1511,Expert,Neutral,Conspiracy beliefs,71.0,48.0,21.0,Female,Bachelor's degree,2.0,5.0,5.0,4.0,5.0,-23.0
+1519,AI,Human-like,Conspiracy beliefs,70.0,71.0,68.0,Female,Graduate degree,4.0,2.0,2.0,3.0,2.0,1.0
+1528,Expert,Neutral,Conspiracy beliefs,100.0,100.0,63.0,Male,Bachelor's degree,4.0,5.0,4.0,4.0,4.0,0.0
+1536,AI,Neutral,Epistemically unwarranted beliefs,60.0,60.0,52.0,Male,Bachelor's degree,3.0,3.0,4.0,3.0,3.0,0.0
+1561,AI,Human-like,Epistemically unwarranted beliefs,100.0,100.0,88.0,Female,Bachelor's degree,5.0,4.0,5.0,5.0,5.0,0.0
+1569,Expert,Neutral,Conspiracy beliefs,76.0,71.0,78.0,Female,High school graduate,4.0,4.0,5.0,4.0,5.0,-5.0
+1572,Expert,Human-like,Conspiracy beliefs,92.0,99.0,49.0,Female,High school graduate,2.0,4.0,4.0,3.0,3.0,7.0
+1574,Expert,Neutral,Epistemically unwarranted beliefs,100.0,100.0,70.0,Male,Vocational training,1.0,4.0,5.0,4.0,5.0,0.0
+1582,AI,Neutral,Epistemically unwarranted beliefs,92.0,77.0,34.0,Male,High school graduate,4.0,5.0,6.0,5.0,5.0,-15.0
+1590,Expert,Human-like,Epistemically unwarranted beliefs,81.0,81.0,50.0,Male,Attended college,1.0,6.0,6.0,4.0,5.0,0.0
+1597,Expert,Human-like,Conspiracy beliefs,81.0,51.0,66.0,Female,Bachelor's degree,5.0,4.0,5.0,5.0,5.0,-30.0
+1603,Expert,Human-like,Epistemically unwarranted beliefs,100.0,100.0,70.0,Male,Bachelor's degree,3.0,2.0,3.0,1.0,2.0,0.0
+1617,AI,Human-like,Epistemically unwarranted beliefs,62.0,73.0,25.0,Female,Bachelor's degree,2.0,3.0,4.0,4.0,5.0,11.0
+1629,Expert,Human-like,Conspiracy beliefs,81.0,76.0,70.0,Female,High school graduate,5.0,3.0,4.0,2.0,3.0,-5.0
+1633,Expert,Neutral,Conspiracy beliefs,81.0,80.0,66.0,Male,Vocational training,5.0,3.0,4.0,4.0,4.0,-1.0
+1648,Expert,Human-like,Conspiracy beliefs,91.0,91.0,72.0,Female,Graduate degree,3.0,4.0,5.0,4.0,4.0,0.0
+1676,Expert,Human-like,Epistemically unwarranted beliefs,100.0,82.0,58.0,Female,Attended college,3.0,5.0,5.0,4.0,5.0,-18.0
+1683,AI,Neutral,Conspiracy beliefs,100.0,100.0,55.0,Male,Attended college,2.0,1.0,1.0,1.0,1.0,0.0
+1696,Expert,Human-like,Conspiracy beliefs,92.0,90.0,69.0,Male,Bachelor's degree,5.0,2.0,4.0,3.0,3.0,-2.0
+1700,AI,Neutral,Conspiracy beliefs,100.0,19.0,66.0,Female,Vocational training,4.0,5.0,6.0,4.0,5.0,-81.0
+1703,Expert,Neutral,Conspiracy beliefs,91.0,100.0,47.0,Male,Bachelor's degree,3.0,1.0,2.0,1.0,1.0,9.0
+1704,AI,Human-like,Epistemically unwarranted beliefs,78.0,73.0,49.0,Female,Bachelor's degree,2.0,4.0,4.0,4.0,4.0,-5.0
+1717,AI,Human-like,Conspiracy beliefs,51.0,50.0,50.0,Female,High school graduate,5.0,4.0,4.0,4.0,4.0,-1.0
+1729,Expert,Human-like,Conspiracy beliefs,58.0,40.0,31.0,Female,Bachelor's degree,3.0,5.0,5.0,5.0,4.0,-18.0
+1742,Expert,Neutral,Epistemically unwarranted beliefs,82.0,72.0,80.0,Female,Graduate degree,1.0,4.0,5.0,4.0,5.0,-10.0
+1745,Expert,Human-like,Conspiracy beliefs,82.0,80.0,60.0,Male,Bachelor's degree,5.0,5.0,5.0,5.0,6.0,-2.0
+1756,AI,Neutral,Epistemically unwarranted beliefs,100.0,100.0,50.0,Female,Attended college,5.0,3.0,5.0,4.0,5.0,0.0
+1769,AI,Neutral,Epistemically unwarranted beliefs,100.0,100.0,35.0,Male,High school graduate,1.0,6.0,6.0,6.0,6.0,0.0
+1801,AI,Human-like,Conspiracy beliefs,100.0,98.0,77.0,Male,High school graduate,3.0,5.0,5.0,4.0,4.0,-2.0
+1809,AI,Neutral,Epistemically unwarranted beliefs,95.0,4.0,78.0,Female,Attended college,5.0,6.0,6.0,5.0,6.0,-91.0
+1814,Expert,Neutral,Conspiracy beliefs,99.0,100.0,73.0,Female,Attended college,5.0,3.0,4.0,1.0,3.0,1.0
+1822,Expert,Human-like,Conspiracy beliefs,90.0,71.0,74.0,Female,Attended college,4.0,3.0,5.0,2.0,3.0,-19.0
+1826,AI,Neutral,Conspiracy beliefs,95.0,69.0,35.0,Male,High school graduate,5.0,2.0,4.0,2.0,2.0,-26.0
+1827,AI,Neutral,Conspiracy beliefs,86.0,86.0,71.0,Male,Bachelor's degree,3.0,4.0,4.0,4.0,4.0,0.0
+1832,AI,Human-like,Conspiracy beliefs,70.0,71.0,78.0,Male,Bachelor's degree,3.0,5.0,5.0,5.0,6.0,1.0
+1841,Expert,Neutral,Conspiracy beliefs,100.0,92.0,70.0,Female,Attended college,6.0,5.0,6.0,6.0,5.0,-8.0
+1845,Expert,Human-like,Conspiracy beliefs,100.0,100.0,73.0,Male,Bachelor's degree,6.0,1.0,1.0,1.0,1.0,0.0
+1884,AI,Human-like,Epistemically unwarranted beliefs,90.0,85.0,19.0,Male,Attended college,3.0,1.0,2.0,4.0,3.0,-5.0
+1895,AI,Neutral,Epistemically unwarranted beliefs,96.0,83.0,63.0,Female,Attended college,2.0,6.0,6.0,5.0,5.0,-13.0
+1902,Expert,Human-like,Epistemically unwarranted beliefs,100.0,100.0,72.0,Female,Graduate degree,4.0,6.0,6.0,5.0,6.0,0.0
+1904,Expert,Neutral,Conspiracy beliefs,91.0,88.0,71.0,Male,Attended college,5.0,5.0,5.0,5.0,5.0,-3.0
+1909,AI,Neutral,Conspiracy beliefs,72.0,59.0,39.0,Male,Attended college,4.0,3.0,3.0,3.0,2.0,-13.0
+1918,Expert,Neutral,Conspiracy beliefs,95.0,87.0,74.0,Female,Bachelor's degree,6.0,5.0,5.0,4.0,5.0,-8.0
+1924,AI,Human-like,Epistemically unwarranted beliefs,66.0,66.0,29.0,Female,Bachelor's degree,2.0,4.0,5.0,3.0,3.0,0.0
+1929,AI,Neutral,Epistemically unwarranted beliefs,75.0,60.0,31.0,Male,Bachelor's degree,3.0,4.0,4.0,4.0,3.0,-15.0
+1935,Expert,Neutral,Conspiracy beliefs,53.0,44.0,40.0,Male,Less than high school,3.0,3.0,3.0,2.0,2.0,-9.0
+1936,AI,Human-like,Conspiracy beliefs,93.0,29.0,66.0,Female,Attended college,5.0,5.0,6.0,5.0,6.0,-64.0
+1944,AI,Human-like,Conspiracy beliefs,95.0,87.0,22.0,Female,Attended college,3.0,4.0,4.0,1.0,4.0,-8.0
+1955,AI,Human-like,Conspiracy beliefs,99.0,61.0,49.0,Male,Vocational training,2.0,5.0,5.0,3.0,5.0,-38.0
+1972,AI,Neutral,Epistemically unwarranted beliefs,73.0,69.0,66.0,Male,High school graduate,4.0,3.0,5.0,4.0,3.0,-4.0
+2000,Expert,Human-like,Epistemically unwarranted beliefs,96.0,100.0,68.0,Female,High school graduate,3.0,2.0,2.0,2.0,2.0,4.0
+2001,AI,Neutral,Epistemically unwarranted beliefs,91.0,90.0,66.0,Female,Vocational training,3.0,5.0,6.0,5.0,5.0,-1.0
+2004,AI,Human-like,Conspiracy beliefs,96.0,100.0,47.0,,Bachelor's degree,4.0,1.0,1.0,1.0,1.0,4.0
+2006,Expert,Neutral,Epistemically unwarranted beliefs,100.0,100.0,66.0,Female,Attended college,3.0,4.0,5.0,4.0,5.0,0.0
+2017,AI,Neutral,Conspiracy beliefs,95.0,81.0,55.0,Male,Attended college,2.0,5.0,5.0,4.0,5.0,-14.0
+2018,AI,Human-like,Conspiracy beliefs,71.0,70.0,69.0,Female,Attended college,3.0,4.0,5.0,3.0,4.0,-1.0
+2032,AI,Neutral,Conspiracy beliefs,100.0,100.0,65.0,Female,High school graduate,4.0,2.0,3.0,2.0,1.0,0.0
+2035,Expert,Neutral,Conspiracy beliefs,95.0,95.0,52.0,Male,Graduate degree,6.0,6.0,6.0,5.0,5.0,0.0
+2038,Expert,Human-like,Conspiracy beliefs,96.0,100.0,68.0,Female,Bachelor's degree,1.0,5.0,6.0,5.0,6.0,4.0
+2047,Expert,Neutral,Epistemically unwarranted beliefs,100.0,99.0,30.0,Female,High school graduate,6.0,6.0,6.0,6.0,6.0,-1.0
+2056,AI,Human-like,Conspiracy beliefs,73.0,71.0,28.0,Female,High school graduate,4.0,4.0,4.0,4.0,3.0,-2.0
+2086,AI,Human-like,Epistemically unwarranted beliefs,70.0,100.0,49.0,Female,Attended college,5.0,6.0,6.0,5.0,5.0,30.0
+2097,AI,Human-like,Conspiracy beliefs,97.0,100.0,65.0,Female,Attended college,5.0,4.0,3.0,3.0,4.0,3.0
+2119,Expert,Neutral,Conspiracy beliefs,100.0,71.0,45.0,Female,Attended college,4.0,4.0,5.0,2.0,2.0,-29.0
+2122,Expert,Human-like,Epistemically unwarranted beliefs,100.0,100.0,42.0,Female,Attended college,4.0,6.0,6.0,6.0,6.0,0.0
+2125,AI,Human-like,Conspiracy beliefs,91.0,50.0,35.0,Male,Graduate degree,6.0,5.0,5.0,1.0,3.0,-41.0
+2138,Expert,Neutral,Conspiracy beliefs,76.0,51.0,27.0,Female,Vocational training,4.0,5.0,5.0,4.0,5.0,-25.0
+2143,AI,Human-like,Conspiracy beliefs,100.0,100.0,78.0,Male,Attended college,4.0,4.0,1.0,2.0,4.0,0.0
+2144,Expert,Neutral,Epistemically unwarranted beliefs,98.0,71.0,20.0,Male,Attended college,1.0,4.0,5.0,5.0,5.0,-27.0
+2151,AI,Human-like,Conspiracy beliefs,83.0,82.0,73.0,Male,Attended college,6.0,2.0,4.0,3.0,3.0,-1.0
+2152,Expert,Human-like,Conspiracy beliefs,100.0,96.0,72.0,Female,Bachelor's degree,4.0,4.0,5.0,4.0,5.0,-4.0
+2156,AI,Neutral,Conspiracy beliefs,72.0,62.0,18.0,Female,Less than high school,3.0,5.0,5.0,1.0,2.0,-10.0
+2157,AI,Human-like,Epistemically unwarranted beliefs,80.0,51.0,67.0,Female,High school graduate,2.0,5.0,5.0,5.0,5.0,-29.0
+2159,Expert,Neutral,Epistemically unwarranted beliefs,98.0,99.0,48.0,Female,Graduate degree,2.0,6.0,5.0,5.0,5.0,1.0
+2161,AI,Neutral,Epistemically unwarranted beliefs,100.0,98.0,23.0,Female,Attended college,6.0,1.0,5.0,1.0,2.0,-2.0
+2177,Expert,Human-like,Epistemically unwarranted beliefs,100.0,100.0,55.0,Female,High school graduate,4.0,4.0,6.0,4.0,4.0,0.0
+2181,AI,Neutral,Epistemically unwarranted beliefs,100.0,100.0,40.0,Female,Attended college,5.0,4.0,3.0,3.0,3.0,0.0
+2186,Expert,Human-like,Epistemically unwarranted beliefs,100.0,99.0,,,Less than high school,3.0,1.0,1.0,1.0,1.0,-1.0
+2193,AI,Neutral,Epistemically unwarranted beliefs,98.0,99.0,77.0,Male,Graduate degree,3.0,5.0,5.0,5.0,5.0,1.0
+2196,AI,Human-like,Epistemically unwarranted beliefs,70.0,81.0,21.0,Male,High school graduate,3.0,3.0,3.0,1.0,1.0,11.0
+2198,AI,Human-like,Conspiracy beliefs,92.0,91.0,54.0,Male,Bachelor's degree,4.0,3.0,5.0,2.0,3.0,-1.0
+2205,Expert,Neutral,Conspiracy beliefs,83.0,83.0,65.0,Female,Attended college,1.0,4.0,5.0,4.0,5.0,0.0
+2216,Expert,Human-like,Conspiracy beliefs,100.0,91.0,73.0,Male,Bachelor's degree,2.0,1.0,2.0,1.0,1.0,-9.0
+2219,Expert,Human-like,Conspiracy beliefs,98.0,48.0,24.0,Male,Bachelor's degree,4.0,3.0,1.0,6.0,4.0,-50.0
+2229,Expert,Human-like,Conspiracy beliefs,100.0,100.0,69.0,Male,Graduate degree,4.0,1.0,2.0,2.0,1.0,0.0
+2234,AI,Human-like,Conspiracy beliefs,79.0,68.0,,,High school graduate,2.0,4.0,5.0,4.0,3.0,-11.0
+2243,AI,Human-like,Epistemically unwarranted beliefs,100.0,100.0,25.0,Male,Attended college,3.0,6.0,6.0,4.0,6.0,0.0
+2245,Expert,Human-like,Conspiracy beliefs,83.0,81.0,55.0,Female,Graduate degree,5.0,3.0,4.0,2.0,4.0,-2.0
+2256,Expert,Neutral,Epistemically unwarranted beliefs,92.0,94.0,83.0,Male,Bachelor's degree,4.0,1.0,1.0,1.0,1.0,2.0
+2265,AI,Human-like,Epistemically unwarranted beliefs,100.0,100.0,68.0,Female,High school graduate,3.0,4.0,4.0,4.0,5.0,0.0
+2266,AI,Human-like,Epistemically unwarranted beliefs,89.0,40.0,22.0,Male,Attended college,4.0,5.0,5.0,5.0,4.0,-49.0
+2275,AI,Neutral,Epistemically unwarranted beliefs,100.0,99.0,53.0,Female,Bachelor's degree,5.0,5.0,5.0,5.0,6.0,-1.0
+2278,Expert,Human-like,Conspiracy beliefs,99.0,100.0,74.0,Male,High school graduate,4.0,4.0,3.0,1.0,1.0,1.0
+2286,AI,Neutral,Conspiracy beliefs,85.0,85.0,50.0,Female,Attended college,4.0,4.0,3.0,2.0,3.0,0.0
+2292,Expert,Neutral,Conspiracy beliefs,94.0,92.0,71.0,Female,Attended college,4.0,5.0,5.0,2.0,4.0,-2.0
+2297,AI,Human-like,Epistemically unwarranted beliefs,81.0,61.0,20.0,Female,High school graduate,3.0,4.0,4.0,4.0,4.0,-20.0
+2303,AI,Human-like,Conspiracy beliefs,77.0,50.0,34.0,Male,Bachelor's degree,4.0,3.0,4.0,3.0,4.0,-27.0
+2313,AI,Human-like,Conspiracy beliefs,98.0,100.0,68.0,Female,Bachelor's degree,4.0,1.0,1.0,1.0,1.0,2.0
+2320,Expert,Human-like,Conspiracy beliefs,82.0,82.0,81.0,Female,Bachelor's degree,4.0,6.0,5.0,5.0,6.0,0.0
+2331,AI,Neutral,Conspiracy beliefs,86.0,64.0,45.0,Male,Bachelor's degree,4.0,5.0,5.0,5.0,5.0,-22.0
+2332,Expert,Human-like,Conspiracy beliefs,82.0,69.0,22.0,Female,High school graduate,4.0,4.0,5.0,3.0,3.0,-13.0
+2352,AI,Human-like,Epistemically unwarranted beliefs,100.0,99.0,78.0,Female,Attended college,1.0,5.0,6.0,5.0,6.0,-1.0
+2353,Expert,Neutral,Epistemically unwarranted beliefs,94.0,100.0,30.0,Female,High school graduate,3.0,1.0,5.0,3.0,4.0,6.0
+2358,AI,Human-like,Epistemically unwarranted beliefs,82.0,74.0,37.0,Female,Attended college,3.0,5.0,4.0,4.0,6.0,-8.0
+2362,AI,Human-like,Conspiracy beliefs,60.0,50.0,,,Less than high school,3.0,2.0,4.0,2.0,4.0,-10.0
+2372,Expert,Neutral,Conspiracy beliefs,79.0,49.0,55.0,Female,Attended college,6.0,5.0,5.0,5.0,5.0,-30.0
+2374,Expert,Human-like,Conspiracy beliefs,99.0,71.0,72.0,Female,Graduate degree,6.0,5.0,5.0,5.0,6.0,-28.0
+2386,AI,Human-like,Conspiracy beliefs,100.0,37.0,72.0,Female,Attended college,4.0,5.0,5.0,4.0,4.0,-63.0
+2402,Expert,Human-like,Epistemically unwarranted beliefs,87.0,92.0,67.0,Male,High school graduate,1.0,2.0,3.0,3.0,4.0,5.0
+2415,Expert,Human-like,Epistemically unwarranted beliefs,96.0,95.0,68.0,Male,Bachelor's degree,4.0,3.0,5.0,5.0,5.0,-1.0
+2418,AI,Human-like,Conspiracy beliefs,91.0,89.0,27.0,Female,Graduate degree,2.0,1.0,5.0,2.0,1.0,-2.0
+2422,Expert,Human-like,Conspiracy beliefs,65.0,40.0,69.0,Female,Bachelor's degree,5.0,3.0,5.0,3.0,4.0,-25.0
+2423,AI,Human-like,Epistemically unwarranted beliefs,100.0,91.0,18.0,Male,High school graduate,4.0,5.0,5.0,5.0,5.0,-9.0
+2426,AI,Human-like,Conspiracy beliefs,67.0,66.0,29.0,Male,Bachelor's degree,5.0,1.0,5.0,1.0,1.0,-1.0
+2427,AI,Neutral,Epistemically unwarranted beliefs,81.0,91.0,24.0,Female,Bachelor's degree,1.0,2.0,5.0,5.0,4.0,10.0
+2441,Expert,Human-like,Conspiracy beliefs,51.0,50.0,50.0,Male,Bachelor's degree,6.0,3.0,5.0,2.0,2.0,-1.0
+2446,AI,Human-like,Conspiracy beliefs,62.0,69.0,55.0,Female,High school graduate,6.0,4.0,5.0,3.0,5.0,7.0
+2449,AI,Neutral,Epistemically unwarranted beliefs,75.0,70.0,33.0,Male,Attended college,2.0,2.0,3.0,1.0,3.0,-5.0
+2453,AI,Neutral,Conspiracy beliefs,84.0,50.0,35.0,Female,Graduate degree,2.0,3.0,3.0,3.0,3.0,-34.0
+2484,Expert,Neutral,Epistemically unwarranted beliefs,100.0,100.0,46.0,Male,Attended college,3.0,3.0,3.0,1.0,2.0,0.0
+2486,AI,Neutral,Conspiracy beliefs,90.0,83.0,75.0,Female,Attended college,4.0,2.0,2.0,1.0,3.0,-7.0
+2490,AI,Human-like,Epistemically unwarranted beliefs,99.0,100.0,46.0,Female,Bachelor's degree,2.0,5.0,5.0,4.0,5.0,1.0
+2491,Expert,Neutral,Epistemically unwarranted beliefs,100.0,100.0,65.0,Female,Bachelor's degree,3.0,6.0,6.0,6.0,6.0,0.0
+2493,Expert,Neutral,Epistemically unwarranted beliefs,91.0,98.0,27.0,Male,Bachelor's degree,6.0,6.0,6.0,6.0,5.0,7.0
+2507,AI,Human-like,Epistemically unwarranted beliefs,95.0,100.0,45.0,Male,Graduate degree,6.0,5.0,4.0,5.0,5.0,5.0
+2508,AI,Human-like,Conspiracy beliefs,91.0,81.0,65.0,Female,Attended college,1.0,1.0,3.0,1.0,1.0,-10.0
+2511,AI,Neutral,Epistemically unwarranted beliefs,78.0,78.0,32.0,Female,Attended college,4.0,4.0,4.0,2.0,4.0,0.0
+2521,AI,Human-like,Epistemically unwarranted beliefs,100.0,68.0,37.0,Male,Attended college,4.0,4.0,4.0,4.0,5.0,-32.0
+2525,Expert,Neutral,Conspiracy beliefs,93.0,91.0,64.0,Female,Attended college,4.0,4.0,5.0,4.0,5.0,-2.0
+2534,Expert,Human-like,Epistemically unwarranted beliefs,92.0,50.0,72.0,Female,Bachelor's degree,5.0,3.0,3.0,2.0,2.0,-42.0
+2542,AI,Neutral,Conspiracy beliefs,71.0,57.0,73.0,Female,Attended college,4.0,5.0,6.0,5.0,5.0,-14.0
+2550,Expert,Human-like,Conspiracy beliefs,96.0,90.0,42.0,Male,Vocational training,4.0,5.0,5.0,5.0,5.0,-6.0
+2570,AI,Neutral,Conspiracy beliefs,100.0,22.0,80.0,Female,Vocational training,6.0,6.0,6.0,6.0,6.0,-78.0
+2572,Expert,Human-like,Conspiracy beliefs,100.0,100.0,80.0,Male,Bachelor's degree,5.0,2.0,2.0,1.0,2.0,0.0
+2591,Expert,Neutral,Epistemically unwarranted beliefs,98.0,100.0,76.0,Female,High school graduate,6.0,5.0,5.0,5.0,5.0,2.0
+2592,Expert,Neutral,Epistemically unwarranted beliefs,83.0,71.0,76.0,Female,Graduate degree,2.0,4.0,4.0,3.0,4.0,-12.0
+2608,AI,Human-like,Conspiracy beliefs,76.0,50.0,77.0,Female,High school graduate,6.0,3.0,4.0,3.0,4.0,-26.0
+2613,AI,Human-like,Epistemically unwarranted beliefs,99.0,99.0,76.0,Female,Attended college,1.0,3.0,4.0,1.0,3.0,0.0
+2618,AI,Neutral,Epistemically unwarranted beliefs,94.0,95.0,67.0,Female,Graduate degree,4.0,5.0,5.0,5.0,5.0,1.0
+2622,Expert,Neutral,Conspiracy beliefs,90.0,92.0,37.0,Male,Attended college,3.0,5.0,5.0,4.0,5.0,2.0
+2635,AI,Neutral,Conspiracy beliefs,61.0,56.0,77.0,Female,Graduate degree,3.0,5.0,5.0,5.0,5.0,-5.0
+2639,Expert,Human-like,Epistemically unwarranted beliefs,100.0,72.0,59.0,Female,High school graduate,3.0,4.0,4.0,4.0,5.0,-28.0
+2651,AI,Neutral,Conspiracy beliefs,76.0,77.0,66.0,Male,Vocational training,6.0,1.0,1.0,1.0,2.0,1.0
+2665,AI,Human-like,Epistemically unwarranted beliefs,91.0,92.0,67.0,Male,Bachelor's degree,2.0,3.0,5.0,2.0,3.0,1.0
+2670,AI,Human-like,Conspiracy beliefs,98.0,91.0,74.0,Female,Attended college,4.0,6.0,6.0,4.0,5.0,-7.0
+2689,AI,Human-like,Conspiracy beliefs,100.0,98.0,59.0,Male,Less than high school,6.0,6.0,1.0,1.0,2.0,-2.0
+2690,AI,Neutral,Epistemically unwarranted beliefs,100.0,100.0,61.0,Female,Attended college,3.0,3.0,5.0,5.0,5.0,0.0
+2698,AI,Human-like,Conspiracy beliefs,100.0,82.0,63.0,Male,Bachelor's degree,6.0,2.0,2.0,1.0,1.0,-18.0
+2700,AI,Neutral,Epistemically unwarranted beliefs,99.0,97.0,72.0,Male,Attended college,1.0,4.0,4.0,2.0,4.0,-2.0
+2702,Expert,Human-like,Conspiracy beliefs,99.0,94.0,73.0,Female,Bachelor's degree,2.0,2.0,1.0,1.0,1.0,-5.0
+2710,AI,Neutral,Conspiracy beliefs,81.0,72.0,34.0,Male,Attended college,3.0,2.0,4.0,3.0,3.0,-9.0
+2711,Expert,Human-like,Conspiracy beliefs,81.0,78.0,66.0,Female,Bachelor's degree,3.0,1.0,3.0,1.0,1.0,-3.0
+2712,Expert,Human-like,Epistemically unwarranted beliefs,100.0,100.0,79.0,Female,Bachelor's degree,6.0,2.0,3.0,2.0,2.0,0.0
+2720,Expert,Neutral,Epistemically unwarranted beliefs,98.0,97.0,71.0,Female,Attended college,2.0,5.0,5.0,6.0,5.0,-1.0
+2722,AI,Human-like,Epistemically unwarranted beliefs,91.0,91.0,62.0,Male,Bachelor's degree,5.0,2.0,4.0,4.0,3.0,0.0
+2726,AI,Neutral,Epistemically unwarranted beliefs,71.0,92.0,76.0,Male,Graduate degree,4.0,4.0,3.0,2.0,3.0,21.0
+2727,AI,Human-like,Conspiracy beliefs,71.0,60.0,38.0,Male,High school graduate,4.0,6.0,6.0,4.0,5.0,-11.0
+2732,Expert,Neutral,Epistemically unwarranted beliefs,89.0,92.0,82.0,Female,Attended college,2.0,5.0,5.0,3.0,4.0,3.0
+2743,Expert,Neutral,Conspiracy beliefs,100.0,100.0,65.0,Female,Vocational training,6.0,4.0,5.0,3.0,4.0,0.0
+2757,AI,Human-like,Conspiracy beliefs,53.0,53.0,,,Less than high school,3.0,6.0,6.0,4.0,4.0,0.0
+2758,Expert,Human-like,Conspiracy beliefs,100.0,100.0,55.0,Male,Bachelor's degree,6.0,3.0,4.0,3.0,4.0,0.0
+2759,AI,Neutral,Conspiracy beliefs,96.0,94.0,68.0,Male,Attended college,3.0,3.0,3.0,4.0,4.0,-2.0
+2793,Expert,Human-like,Conspiracy beliefs,90.0,90.0,62.0,Male,Attended college,4.0,5.0,5.0,5.0,5.0,0.0
+2803,Expert,Neutral,Conspiracy beliefs,77.0,50.0,,,High school graduate,5.0,5.0,5.0,4.0,4.0,-27.0
+2813,Expert,Neutral,Conspiracy beliefs,80.0,71.0,62.0,Female,Graduate degree,6.0,5.0,5.0,4.0,5.0,-9.0
+2816,AI,Human-like,Conspiracy beliefs,98.0,76.0,42.0,Female,Bachelor's degree,5.0,5.0,6.0,3.0,4.0,-22.0
+2819,Expert,Neutral,Conspiracy beliefs,100.0,58.0,47.0,Female,Attended college,4.0,5.0,6.0,4.0,5.0,-42.0
+2835,AI,Neutral,Conspiracy beliefs,92.0,86.0,64.0,Female,Graduate degree,3.0,4.0,5.0,4.0,5.0,-6.0
+2839,AI,Neutral,Epistemically unwarranted beliefs,99.0,99.0,67.0,Male,Bachelor's degree,5.0,3.0,3.0,4.0,4.0,0.0
+2842,Expert,Human-like,Conspiracy beliefs,77.0,97.0,39.0,Female,Attended college,1.0,5.0,5.0,5.0,5.0,20.0
+2845,Expert,Neutral,Conspiracy beliefs,81.0,60.0,77.0,Female,Bachelor's degree,1.0,3.0,3.0,2.0,3.0,-21.0
+2853,Expert,Human-like,Conspiracy beliefs,61.0,66.0,68.0,Male,Bachelor's degree,4.0,3.0,6.0,5.0,5.0,5.0
+2870,AI,Human-like,Epistemically unwarranted beliefs,77.0,99.0,56.0,Female,Attended college,4.0,6.0,6.0,5.0,5.0,22.0
+2912,AI,Neutral,Conspiracy beliefs,92.0,28.0,78.0,Male,Bachelor's degree,3.0,5.0,5.0,4.0,5.0,-64.0
+2916,Expert,Human-like,Epistemically unwarranted beliefs,74.0,75.0,29.0,Male,Attended college,1.0,4.0,3.0,3.0,4.0,1.0
+2920,Expert,Human-like,Conspiracy beliefs,80.0,83.0,32.0,Male,Bachelor's degree,5.0,5.0,5.0,4.0,5.0,3.0
+2922,AI,Neutral,Conspiracy beliefs,100.0,100.0,24.0,Female,Bachelor's degree,2.0,5.0,6.0,6.0,5.0,0.0
+2924,AI,Neutral,Epistemically unwarranted beliefs,69.0,80.0,38.0,Female,Attended college,2.0,6.0,6.0,6.0,6.0,11.0
+2926,Expert,Neutral,Conspiracy beliefs,100.0,100.0,50.0,Male,Bachelor's degree,4.0,1.0,1.0,1.0,2.0,0.0
+2928,Expert,Neutral,Epistemically unwarranted beliefs,91.0,91.0,66.0,Female,Vocational training,1.0,5.0,6.0,5.0,5.0,0.0
+2951,Expert,Human-like,Epistemically unwarranted beliefs,100.0,100.0,72.0,Female,Attended college,6.0,3.0,5.0,4.0,4.0,0.0
+2953,AI,Human-like,Epistemically unwarranted beliefs,100.0,100.0,47.0,Female,Attended college,4.0,4.0,4.0,3.0,3.0,0.0
+2984,Expert,Neutral,Epistemically unwarranted beliefs,100.0,100.0,45.0,Male,High school graduate,5.0,5.0,5.0,5.0,5.0,0.0
+2988,Expert,Human-like,Epistemically unwarranted beliefs,100.0,100.0,51.0,Male,Attended college,4.0,1.0,1.0,1.0,1.0,0.0
+2993,Expert,Neutral,Epistemically unwarranted beliefs,96.0,96.0,68.0,Male,Bachelor's degree,2.0,2.0,5.0,3.0,4.0,0.0
+3006,Expert,Human-like,Conspiracy beliefs,81.0,71.0,66.0,Female,Graduate degree,5.0,1.0,3.0,1.0,1.0,-10.0
+3010,AI,Neutral,Epistemically unwarranted beliefs,70.0,63.0,62.0,Male,Bachelor's degree,5.0,6.0,4.0,4.0,3.0,-7.0
+3022,AI,Human-like,Conspiracy beliefs,92.0,95.0,65.0,Female,Graduate degree,6.0,5.0,5.0,4.0,5.0,3.0
+3030,Expert,Human-like,Conspiracy beliefs,92.0,89.0,66.0,Female,Attended college,6.0,5.0,5.0,2.0,5.0,-3.0
+3036,Expert,Neutral,Epistemically unwarranted beliefs,71.0,72.0,70.0,Female,Bachelor's degree,2.0,4.0,5.0,4.0,4.0,1.0
+3038,Expert,Human-like,Conspiracy beliefs,79.0,76.0,,,Less than high school,5.0,4.0,3.0,2.0,4.0,-3.0
+3057,Expert,Neutral,Conspiracy beliefs,77.0,76.0,52.0,Female,Attended college,3.0,3.0,5.0,3.0,4.0,-1.0
+3067,AI,Neutral,Conspiracy beliefs,100.0,100.0,68.0,Male,Bachelor's degree,4.0,5.0,5.0,5.0,5.0,0.0
+3077,AI,Human-like,Epistemically unwarranted beliefs,100.0,100.0,18.0,Female,Attended college,3.0,5.0,5.0,3.0,4.0,0.0
+3080,Expert,Neutral,Conspiracy beliefs,97.0,5.0,,,Less than high school,2.0,3.0,6.0,6.0,6.0,-92.0
+3085,Expert,Neutral,Epistemically unwarranted beliefs,100.0,100.0,69.0,Female,Bachelor's degree,4.0,3.0,3.0,3.0,4.0,0.0
+3094,AI,Neutral,Epistemically unwarranted beliefs,78.0,80.0,22.0,Female,High school graduate,4.0,6.0,3.0,6.0,4.0,2.0
+3100,Expert,Neutral,Epistemically unwarranted beliefs,99.0,87.0,82.0,Male,Attended college,3.0,6.0,5.0,5.0,5.0,-12.0
+3101,Expert,Neutral,Epistemically unwarranted beliefs,66.0,68.0,54.0,Female,Vocational training,5.0,2.0,2.0,3.0,3.0,2.0
+3117,Expert,Human-like,Epistemically unwarranted beliefs,71.0,74.0,69.0,Female,High school graduate,1.0,6.0,6.0,6.0,6.0,3.0
+3123,Expert,Neutral,Conspiracy beliefs,74.0,71.0,50.0,Female,High school graduate,4.0,5.0,5.0,4.0,4.0,-3.0
+3183,Expert,Human-like,Conspiracy beliefs,100.0,72.0,44.0,Male,Graduate degree,6.0,4.0,4.0,4.0,4.0,-28.0
+3186,AI,Human-like,Conspiracy beliefs,77.0,76.0,70.0,Female,Attended college,6.0,1.0,3.0,1.0,3.0,-1.0
+3194,AI,Neutral,Epistemically unwarranted beliefs,90.0,100.0,40.0,Female,Graduate degree,4.0,4.0,3.0,2.0,5.0,10.0
+3198,Expert,Neutral,Conspiracy beliefs,75.0,74.0,29.0,Female,Vocational training,3.0,4.0,5.0,3.0,5.0,-1.0
+3200,AI,Neutral,Epistemically unwarranted beliefs,93.0,99.0,66.0,Female,Attended college,1.0,5.0,5.0,5.0,5.0,6.0
+3203,Expert,Neutral,Epistemically unwarranted beliefs,92.0,91.0,54.0,Male,Bachelor's degree,4.0,3.0,3.0,3.0,2.0,-1.0
+3212,Expert,Human-like,Conspiracy beliefs,100.0,100.0,68.0,Female,Attended college,1.0,6.0,6.0,6.0,5.0,0.0
+3226,Expert,Neutral,Epistemically unwarranted beliefs,79.0,55.0,26.0,Female,High school graduate,1.0,4.0,4.0,5.0,6.0,-24.0
+3231,AI,Human-like,Conspiracy beliefs,71.0,50.0,66.0,Female,Graduate degree,4.0,5.0,5.0,4.0,5.0,-21.0
+3239,Expert,Neutral,Conspiracy beliefs,75.0,60.0,29.0,Male,High school graduate,6.0,6.0,6.0,4.0,6.0,-15.0
+3240,AI,Human-like,Conspiracy beliefs,96.0,100.0,66.0,Female,High school graduate,3.0,6.0,5.0,4.0,5.0,4.0
+3255,AI,Neutral,Conspiracy beliefs,71.0,61.0,32.0,Female,Bachelor's degree,4.0,3.0,5.0,4.0,3.0,-10.0
+3262,AI,Neutral,Epistemically unwarranted beliefs,82.0,87.0,76.0,Male,Attended college,3.0,5.0,6.0,5.0,5.0,5.0
+3267,AI,Human-like,Conspiracy beliefs,80.0,51.0,35.0,Female,High school graduate,4.0,5.0,5.0,5.0,5.0,-29.0
+3272,AI,Neutral,Epistemically unwarranted beliefs,82.0,51.0,29.0,Female,Graduate degree,3.0,3.0,4.0,4.0,4.0,-31.0
+3291,Expert,Human-like,Conspiracy beliefs,59.0,41.0,30.0,Female,High school graduate,5.0,4.0,5.0,4.0,4.0,-18.0
+3301,AI,Neutral,Conspiracy beliefs,81.0,69.0,28.0,Female,High school graduate,3.0,4.0,4.0,3.0,3.0,-12.0
+3306,AI,Human-like,Epistemically unwarranted beliefs,100.0,96.0,75.0,Male,Attended college,3.0,1.0,2.0,4.0,2.0,-4.0
+3312,AI,Neutral,Epistemically unwarranted beliefs,77.0,39.0,45.0,Male,Graduate degree,2.0,1.0,1.0,1.0,1.0,-38.0
+3342,AI,Human-like,Epistemically unwarranted beliefs,100.0,94.0,68.0,Female,Attended college,3.0,4.0,5.0,4.0,4.0,-6.0
+3351,AI,Human-like,Conspiracy beliefs,71.0,61.0,75.0,Male,Bachelor's degree,6.0,5.0,5.0,4.0,5.0,-10.0
+3367,Expert,Human-like,Conspiracy beliefs,71.0,60.0,61.0,Male,Vocational training,4.0,4.0,5.0,3.0,4.0,-11.0
+3382,AI,Human-like,Epistemically unwarranted beliefs,100.0,100.0,49.0,Male,Graduate degree,6.0,6.0,6.0,6.0,6.0,0.0
+3384,AI,Human-like,Epistemically unwarranted beliefs,100.0,100.0,,,Less than high school,2.0,2.0,6.0,2.0,1.0,0.0
+3385,AI,Human-like,Epistemically unwarranted beliefs,100.0,100.0,66.0,Male,Vocational training,5.0,3.0,4.0,2.0,3.0,0.0
+3388,Expert,Human-like,Conspiracy beliefs,81.0,50.0,59.0,Male,Bachelor's degree,4.0,5.0,5.0,5.0,5.0,-31.0
+3389,AI,Neutral,Epistemically unwarranted beliefs,77.0,60.0,67.0,Female,Attended college,4.0,4.0,5.0,5.0,4.0,-17.0
+3401,Expert,Human-like,Conspiracy beliefs,90.0,90.0,38.0,Male,Attended college,3.0,3.0,3.0,3.0,2.0,0.0
+3439,AI,Human-like,Conspiracy beliefs,62.0,60.0,22.0,Female,Attended college,2.0,1.0,4.0,1.0,4.0,-2.0
+3444,AI,Neutral,Conspiracy beliefs,61.0,49.0,18.0,Male,Attended college,5.0,4.0,5.0,5.0,4.0,-12.0
+3451,Expert,Neutral,Conspiracy beliefs,98.0,100.0,80.0,Female,High school graduate,1.0,6.0,5.0,6.0,6.0,2.0
+3452,AI,Human-like,Conspiracy beliefs,76.0,25.0,,,Less than high school,3.0,5.0,5.0,4.0,3.0,-51.0
+3455,Expert,Neutral,Epistemically unwarranted beliefs,98.0,100.0,44.0,Female,Graduate degree,6.0,6.0,6.0,6.0,6.0,2.0
+3456,Expert,Neutral,Conspiracy beliefs,61.0,60.0,66.0,Male,High school graduate,6.0,3.0,3.0,2.0,1.0,-1.0
+3469,AI,Human-like,Conspiracy beliefs,99.0,99.0,73.0,Male,Graduate degree,6.0,1.0,2.0,1.0,1.0,0.0
+3483,AI,Neutral,Epistemically unwarranted beliefs,100.0,100.0,72.0,Female,High school graduate,3.0,3.0,3.0,3.0,3.0,0.0
+3503,AI,Neutral,Conspiracy beliefs,73.0,70.0,36.0,Female,Bachelor's degree,2.0,4.0,5.0,4.0,6.0,-3.0
+3508,AI,Human-like,Conspiracy beliefs,54.0,24.0,26.0,Female,Bachelor's degree,2.0,5.0,5.0,4.0,5.0,-30.0
+3519,AI,Human-like,Epistemically unwarranted beliefs,78.0,74.0,38.0,Female,High school graduate,3.0,5.0,5.0,4.0,4.0,-4.0
+3524,Expert,Human-like,Conspiracy beliefs,71.0,71.0,56.0,Female,Attended college,5.0,2.0,3.0,2.0,3.0,0.0
+3531,AI,Neutral,Epistemically unwarranted beliefs,61.0,77.0,71.0,Male,Bachelor's degree,3.0,5.0,6.0,5.0,5.0,16.0
+3533,AI,Human-like,Conspiracy beliefs,100.0,100.0,49.0,Male,Graduate degree,6.0,6.0,6.0,6.0,5.0,0.0
+3549,AI,Neutral,Conspiracy beliefs,80.0,82.0,73.0,Male,Bachelor's degree,6.0,3.0,5.0,2.0,2.0,2.0
+3550,AI,Human-like,Conspiracy beliefs,81.0,99.0,47.0,Female,High school graduate,5.0,1.0,1.0,1.0,1.0,18.0
+3558,AI,Human-like,Epistemically unwarranted beliefs,100.0,100.0,34.0,Male,Attended college,3.0,1.0,1.0,1.0,1.0,0.0
+3586,Expert,Human-like,Epistemically unwarranted beliefs,78.0,72.0,47.0,Female,Attended college,2.0,3.0,4.0,5.0,5.0,-6.0
+3594,Expert,Neutral,Epistemically unwarranted beliefs,92.0,91.0,58.0,Male,Attended college,1.0,5.0,5.0,4.0,4.0,-1.0
+3601,AI,Human-like,Conspiracy beliefs,68.0,72.0,43.0,Female,Attended college,5.0,4.0,4.0,5.0,5.0,4.0
+3614,AI,Human-like,Epistemically unwarranted beliefs,69.0,58.0,21.0,Female,High school graduate,3.0,4.0,4.0,4.0,4.0,-11.0
+3626,Expert,Human-like,Conspiracy beliefs,79.0,79.0,71.0,Male,Graduate degree,4.0,3.0,5.0,3.0,4.0,0.0
+3628,AI,Human-like,Epistemically unwarranted beliefs,100.0,99.0,64.0,Female,Bachelor's degree,3.0,6.0,6.0,6.0,6.0,-1.0
+3639,AI,Neutral,Conspiracy beliefs,84.0,82.0,84.0,Female,Attended college,5.0,3.0,4.0,2.0,3.0,-2.0
+3640,AI,Neutral,Conspiracy beliefs,100.0,96.0,69.0,Male,Attended college,6.0,1.0,2.0,2.0,3.0,-4.0
+3652,AI,Human-like,Epistemically unwarranted beliefs,56.0,59.0,38.0,Female,Less than high school,5.0,5.0,5.0,5.0,5.0,3.0
+3660,Expert,Neutral,Conspiracy beliefs,61.0,34.0,67.0,Female,Attended college,4.0,5.0,5.0,4.0,4.0,-27.0
+3671,AI,Human-like,Epistemically unwarranted beliefs,92.0,81.0,27.0,Female,Attended college,3.0,4.0,3.0,1.0,3.0,-11.0
+3676,AI,Neutral,Epistemically unwarranted beliefs,98.0,98.0,69.0,Male,Attended college,4.0,5.0,5.0,4.0,5.0,0.0
+3684,AI,Human-like,Conspiracy beliefs,99.0,99.0,78.0,Female,Graduate degree,1.0,1.0,4.0,2.0,3.0,0.0
+3691,AI,Neutral,Epistemically unwarranted beliefs,100.0,100.0,68.0,Female,Attended college,6.0,2.0,3.0,1.0,2.0,0.0
+3705,Expert,Neutral,Conspiracy beliefs,82.0,82.0,77.0,Male,Vocational training,4.0,2.0,2.0,2.0,2.0,0.0
+3716,AI,Neutral,Conspiracy beliefs,89.0,47.0,35.0,Male,High school graduate,2.0,6.0,5.0,4.0,5.0,-42.0
+3719,Expert,Human-like,Conspiracy beliefs,63.0,80.0,47.0,Male,Bachelor's degree,4.0,4.0,3.0,3.0,3.0,17.0
+3721,Expert,Human-like,Conspiracy beliefs,57.0,51.0,47.0,Female,Attended college,2.0,2.0,3.0,3.0,3.0,-6.0
+3735,AI,Neutral,Conspiracy beliefs,82.0,81.0,76.0,Female,High school graduate,1.0,4.0,5.0,4.0,5.0,-1.0
+3743,Expert,Neutral,Epistemically unwarranted beliefs,93.0,92.0,28.0,Female,Attended college,1.0,3.0,5.0,3.0,3.0,-1.0
+3753,AI,Neutral,Conspiracy beliefs,92.0,94.0,63.0,,Bachelor's degree,4.0,1.0,2.0,1.0,1.0,2.0
+3771,Expert,Human-like,Conspiracy beliefs,56.0,10.0,75.0,Female,Attended college,4.0,6.0,5.0,6.0,6.0,-46.0
+3776,Expert,Neutral,Conspiracy beliefs,65.0,99.0,76.0,Male,High school graduate,2.0,1.0,4.0,1.0,1.0,34.0
+3779,AI,Human-like,Epistemically unwarranted beliefs,91.0,70.0,47.0,Female,Bachelor's degree,3.0,3.0,4.0,4.0,2.0,-21.0
+3785,Expert,Neutral,Epistemically unwarranted beliefs,97.0,100.0,81.0,Male,Attended college,4.0,5.0,5.0,1.0,5.0,3.0
+3821,AI,Human-like,Epistemically unwarranted beliefs,67.0,79.0,37.0,Male,Attended college,2.0,4.0,5.0,4.0,4.0,12.0
+3833,AI,Neutral,Epistemically unwarranted beliefs,81.0,70.0,72.0,Male,Bachelor's degree,4.0,3.0,5.0,5.0,5.0,-11.0
+3841,Expert,Neutral,Conspiracy beliefs,83.0,74.0,44.0,Male,Bachelor's degree,4.0,6.0,4.0,3.0,5.0,-9.0
+3853,Expert,Human-like,Epistemically unwarranted beliefs,100.0,99.0,75.0,Male,Graduate degree,5.0,1.0,1.0,1.0,2.0,-1.0
+3891,Expert,Human-like,Epistemically unwarranted beliefs,99.0,19.0,74.0,Female,Bachelor's degree,2.0,5.0,5.0,5.0,6.0,-80.0
+4335,Expert,Neutral,Conspiracy beliefs,71.0,50.0,43.0,Male,Vocational training,3.0,5.0,5.0,4.0,4.0,-21.0
+4351,Expert,Neutral,Epistemically unwarranted beliefs,100.0,100.0,54.0,Female,Attended college,3.0,4.0,3.0,5.0,5.0,0.0
+4352,AI,Human-like,Epistemically unwarranted beliefs,100.0,100.0,74.0,Female,Bachelor's degree,1.0,5.0,5.0,4.0,5.0,0.0
+4354,AI,Neutral,Conspiracy beliefs,92.0,91.0,32.0,Female,Bachelor's degree,3.0,6.0,6.0,4.0,5.0,-1.0
+4380,AI,Neutral,Conspiracy beliefs,96.0,95.0,38.0,Male,Graduate degree,6.0,5.0,6.0,5.0,5.0,-1.0
+4384,AI,Neutral,Conspiracy beliefs,100.0,86.0,44.0,Male,Attended college,4.0,4.0,5.0,5.0,5.0,-14.0
+4395,AI,Human-like,Epistemically unwarranted beliefs,100.0,100.0,71.0,Female,Attended college,4.0,1.0,3.0,3.0,4.0,0.0
+4415,Expert,Human-like,Epistemically unwarranted beliefs,99.0,61.0,41.0,Male,Bachelor's degree,6.0,6.0,5.0,5.0,6.0,-38.0
+4423,AI,Neutral,Conspiracy beliefs,82.0,92.0,24.0,Female,Bachelor's degree,2.0,5.0,4.0,4.0,5.0,10.0
+4433,Expert,Human-like,Conspiracy beliefs,100.0,100.0,46.0,Male,Graduate degree,6.0,4.0,6.0,5.0,6.0,0.0
+4436,Expert,Human-like,Epistemically unwarranted beliefs,82.0,81.0,26.0,Male,Bachelor's degree,5.0,5.0,6.0,6.0,5.0,-1.0
+4439,AI,Neutral,Conspiracy beliefs,92.0,91.0,70.0,Female,Attended college,4.0,4.0,6.0,4.0,5.0,-1.0
+4447,Expert,Neutral,Conspiracy beliefs,71.0,49.0,54.0,Female,Attended college,1.0,3.0,4.0,4.0,5.0,-22.0
+4456,AI,Neutral,Conspiracy beliefs,88.0,87.0,70.0,Male,Vocational training,4.0,5.0,5.0,5.0,5.0,-1.0
+4472,Expert,Human-like,Epistemically unwarranted beliefs,88.0,64.0,68.0,Female,High school graduate,4.0,4.0,4.0,3.0,4.0,-24.0
+4483,AI,Human-like,Epistemically unwarranted beliefs,81.0,61.0,63.0,Male,Bachelor's degree,3.0,5.0,5.0,5.0,5.0,-20.0
+4486,Expert,Neutral,Conspiracy beliefs,77.0,81.0,27.0,Male,Bachelor's degree,5.0,5.0,5.0,5.0,5.0,4.0
+4487,AI,Human-like,Epistemically unwarranted beliefs,100.0,100.0,40.0,Male,Graduate degree,6.0,5.0,6.0,6.0,6.0,0.0
+4504,Expert,Human-like,Epistemically unwarranted beliefs,82.0,83.0,44.0,Male,Bachelor's degree,3.0,5.0,5.0,4.0,6.0,1.0
+4507,AI,Neutral,Epistemically unwarranted beliefs,100.0,100.0,82.0,Female,Graduate degree,6.0,6.0,6.0,6.0,6.0,0.0
+4559,AI,Human-like,Conspiracy beliefs,97.0,98.0,63.0,Male,High school graduate,4.0,2.0,4.0,4.0,5.0,1.0
+4566,AI,Neutral,Conspiracy beliefs,81.0,61.0,28.0,Male,Attended college,3.0,4.0,6.0,5.0,6.0,-20.0
+4569,AI,Human-like,Conspiracy beliefs,91.0,91.0,59.0,Female,Attended college,3.0,2.0,5.0,4.0,4.0,0.0
+4585,AI,Neutral,Conspiracy beliefs,100.0,100.0,48.0,Male,High school graduate,6.0,1.0,1.0,2.0,2.0,0.0
+4596,AI,Neutral,Conspiracy beliefs,97.0,78.0,67.0,Female,Attended college,4.0,5.0,5.0,4.0,4.0,-19.0
+4601,Expert,Human-like,Conspiracy beliefs,91.0,61.0,35.0,Male,Bachelor's degree,4.0,5.0,3.0,4.0,4.0,-30.0
+4602,Expert,Human-like,Epistemically unwarranted beliefs,99.0,71.0,53.0,Female,Graduate degree,1.0,3.0,5.0,3.0,5.0,-28.0
+4610,Expert,Neutral,Epistemically unwarranted beliefs,82.0,100.0,29.0,Male,Bachelor's degree,6.0,6.0,5.0,5.0,6.0,18.0
+4614,AI,Neutral,Conspiracy beliefs,100.0,100.0,40.0,Female,Bachelor's degree,4.0,6.0,6.0,6.0,6.0,0.0
+4638,AI,Neutral,Epistemically unwarranted beliefs,53.0,60.0,59.0,Female,Vocational training,1.0,6.0,6.0,6.0,6.0,7.0
+4643,Expert,Human-like,Conspiracy beliefs,100.0,100.0,74.0,Male,Bachelor's degree,4.0,1.0,1.0,2.0,2.0,0.0
+4657,AI,Neutral,Epistemically unwarranted beliefs,100.0,98.0,83.0,Female,Vocational training,3.0,2.0,2.0,2.0,2.0,-2.0
+4665,Expert,Human-like,Conspiracy beliefs,71.0,72.0,54.0,Male,Bachelor's degree,5.0,2.0,4.0,3.0,4.0,1.0
+4671,Expert,Neutral,Conspiracy beliefs,82.0,82.0,53.0,Male,Attended college,4.0,4.0,4.0,2.0,3.0,0.0
+4672,Expert,Human-like,Epistemically unwarranted beliefs,100.0,100.0,79.0,Male,Bachelor's degree,3.0,1.0,2.0,2.0,1.0,0.0
+4679,AI,Neutral,Epistemically unwarranted beliefs,100.0,100.0,72.0,Female,Vocational training,5.0,5.0,5.0,4.0,5.0,0.0
+4683,Expert,Human-like,Epistemically unwarranted beliefs,100.0,100.0,72.0,Female,Bachelor's degree,1.0,3.0,2.0,2.0,2.0,0.0
+4685,Expert,Human-like,Conspiracy beliefs,69.0,84.0,31.0,Female,Bachelor's degree,4.0,3.0,5.0,3.0,4.0,15.0
+4690,Expert,Human-like,Epistemically unwarranted beliefs,72.0,24.0,32.0,Female,High school graduate,1.0,5.0,6.0,4.0,5.0,-48.0
+4698,AI,Neutral,Epistemically unwarranted beliefs,100.0,99.0,80.0,Male,Bachelor's degree,3.0,1.0,1.0,4.0,2.0,-1.0
+4704,AI,Human-like,Epistemically unwarranted beliefs,77.0,60.0,25.0,Male,High school graduate,4.0,3.0,4.0,3.0,3.0,-17.0
+4708,Expert,Human-like,Epistemically unwarranted beliefs,70.0,96.0,24.0,Male,High school graduate,2.0,5.0,4.0,6.0,4.0,26.0
+4717,Expert,Neutral,Epistemically unwarranted beliefs,100.0,92.0,42.0,Female,Less than high school,3.0,4.0,4.0,2.0,3.0,-8.0
+4723,Expert,Human-like,Epistemically unwarranted beliefs,100.0,100.0,74.0,Male,Attended college,6.0,2.0,6.0,5.0,4.0,0.0
+4736,Expert,Human-like,Epistemically unwarranted beliefs,81.0,65.0,38.0,Male,Graduate degree,3.0,3.0,4.0,3.0,4.0,-16.0
+4740,AI,Neutral,Epistemically unwarranted beliefs,100.0,100.0,18.0,Female,High school graduate,1.0,5.0,5.0,4.0,3.0,0.0
+4743,AI,Neutral,Epistemically unwarranted beliefs,90.0,100.0,21.0,Female,High school graduate,3.0,1.0,1.0,2.0,2.0,10.0
+4748,Expert,Human-like,Epistemically unwarranted beliefs,59.0,61.0,35.0,Male,Bachelor's degree,2.0,5.0,3.0,5.0,4.0,2.0
+4749,AI,Human-like,Epistemically unwarranted beliefs,81.0,68.0,18.0,Female,Less than high school,3.0,5.0,6.0,4.0,5.0,-13.0
+4753,AI,Neutral,Conspiracy beliefs,100.0,100.0,44.0,Male,Graduate degree,6.0,6.0,5.0,5.0,6.0,0.0
+4763,AI,Neutral,Epistemically unwarranted beliefs,100.0,100.0,77.0,Male,Bachelor's degree,1.0,4.0,3.0,2.0,2.0,0.0
+4765,AI,Neutral,Conspiracy beliefs,97.0,88.0,77.0,Female,High school graduate,6.0,5.0,5.0,5.0,5.0,-9.0
+4771,Expert,Human-like,Conspiracy beliefs,75.0,75.0,29.0,Female,Bachelor's degree,3.0,2.0,4.0,2.0,2.0,0.0
+4783,AI,Neutral,Conspiracy beliefs,81.0,91.0,61.0,Female,High school graduate,6.0,1.0,5.0,2.0,2.0,10.0
+4785,Expert,Human-like,Conspiracy beliefs,71.0,81.0,72.0,Female,Graduate degree,4.0,4.0,4.0,4.0,4.0,10.0
+4791,AI,Neutral,Epistemically unwarranted beliefs,90.0,89.0,64.0,Female,Vocational training,4.0,3.0,5.0,4.0,3.0,-1.0
+4792,AI,Neutral,Epistemically unwarranted beliefs,77.0,77.0,43.0,Male,Graduate degree,6.0,4.0,3.0,5.0,3.0,0.0
+4794,Expert,Neutral,Epistemically unwarranted beliefs,100.0,100.0,71.0,Male,Bachelor's degree,3.0,5.0,5.0,1.0,5.0,0.0
+4818,Expert,Neutral,Conspiracy beliefs,100.0,49.0,30.0,Female,Attended college,1.0,5.0,5.0,6.0,6.0,-51.0
+4820,Expert,Human-like,Conspiracy beliefs,91.0,92.0,75.0,Female,Graduate degree,4.0,5.0,5.0,4.0,4.0,1.0
+4826,AI,Human-like,Epistemically unwarranted beliefs,82.0,83.0,33.0,Female,Attended college,5.0,5.0,5.0,3.0,3.0,1.0
+4827,Expert,Neutral,Epistemically unwarranted beliefs,93.0,70.0,30.0,Male,High school graduate,4.0,4.0,5.0,4.0,5.0,-23.0
+4829,Expert,Human-like,Conspiracy beliefs,59.0,1.0,23.0,Male,Graduate degree,5.0,5.0,5.0,5.0,6.0,-58.0
+4830,AI,Human-like,Epistemically unwarranted beliefs,86.0,86.0,79.0,Female,Bachelor's degree,3.0,4.0,5.0,5.0,3.0,0.0
+4836,Expert,Human-like,Conspiracy beliefs,100.0,99.0,27.0,Female,Attended college,1.0,6.0,6.0,6.0,6.0,-1.0
+4841,AI,Neutral,Conspiracy beliefs,84.0,85.0,47.0,Male,Graduate degree,5.0,5.0,4.0,5.0,4.0,1.0
+4845,Expert,Neutral,Epistemically unwarranted beliefs,76.0,25.0,21.0,Male,Attended college,2.0,5.0,5.0,3.0,3.0,-51.0
+4846,AI,Human-like,Conspiracy beliefs,87.0,87.0,30.0,Male,Attended college,4.0,1.0,4.0,4.0,3.0,0.0
+4848,AI,Neutral,Epistemically unwarranted beliefs,85.0,100.0,57.0,,Graduate degree,1.0,1.0,1.0,1.0,1.0,15.0
+4859,Expert,Neutral,Epistemically unwarranted beliefs,84.0,91.0,28.0,Male,Attended college,1.0,5.0,5.0,5.0,5.0,7.0
+4861,Expert,Human-like,Epistemically unwarranted beliefs,99.0,100.0,87.0,Male,High school graduate,4.0,5.0,5.0,4.0,3.0,1.0
+4865,AI,Neutral,Epistemically unwarranted beliefs,98.0,99.0,75.0,Male,Bachelor's degree,5.0,3.0,6.0,6.0,5.0,1.0
+4873,Expert,Human-like,Conspiracy beliefs,81.0,41.0,25.0,Male,Attended college,5.0,3.0,4.0,5.0,4.0,-40.0
+4874,Expert,Neutral,Epistemically unwarranted beliefs,71.0,60.0,,,Attended college,3.0,2.0,4.0,3.0,3.0,-11.0
+4880,AI,Neutral,Conspiracy beliefs,72.0,77.0,27.0,Male,Attended college,2.0,5.0,6.0,4.0,4.0,5.0
+4885,Expert,Human-like,Conspiracy beliefs,94.0,90.0,60.0,Male,High school graduate,3.0,2.0,2.0,2.0,2.0,-4.0
+4887,AI,Neutral,Conspiracy beliefs,90.0,89.0,50.0,Male,Graduate degree,1.0,5.0,4.0,4.0,4.0,-1.0
+4889,Expert,Human-like,Conspiracy beliefs,95.0,82.0,72.0,Female,High school graduate,2.0,5.0,5.0,5.0,6.0,-13.0
+4892,Expert,Neutral,Conspiracy beliefs,90.0,89.0,61.0,Female,Bachelor's degree,3.0,5.0,6.0,6.0,5.0,-1.0
+4902,Expert,Human-like,Epistemically unwarranted beliefs,98.0,99.0,79.0,Female,Bachelor's degree,1.0,4.0,5.0,5.0,5.0,1.0
+4916,AI,Human-like,Epistemically unwarranted beliefs,98.0,100.0,68.0,Male,Attended college,3.0,5.0,3.0,3.0,4.0,2.0
+4919,Expert,Neutral,Conspiracy beliefs,52.0,51.0,42.0,Male,Graduate degree,5.0,6.0,6.0,5.0,5.0,-1.0
+4926,Expert,Neutral,Epistemically unwarranted beliefs,100.0,89.0,51.0,Male,High school graduate,6.0,4.0,3.0,1.0,1.0,-11.0
+4933,AI,Neutral,Epistemically unwarranted beliefs,100.0,89.0,42.0,Male,Bachelor's degree,1.0,6.0,6.0,5.0,5.0,-11.0
+4949,AI,Human-like,Conspiracy beliefs,99.0,100.0,36.0,Male,Bachelor's degree,2.0,5.0,5.0,4.0,5.0,1.0
+4956,Expert,Human-like,Epistemically unwarranted beliefs,56.0,71.0,36.0,Male,Bachelor's degree,5.0,5.0,5.0,4.0,3.0,15.0
+4959,Expert,Human-like,Epistemically unwarranted beliefs,77.0,66.0,61.0,Male,Less than high school,1.0,5.0,5.0,3.0,4.0,-11.0
+4961,Expert,Human-like,Epistemically unwarranted beliefs,100.0,100.0,62.0,Male,Graduate degree,6.0,6.0,6.0,6.0,5.0,0.0
+4964,AI,Human-like,Epistemically unwarranted beliefs,64.0,47.0,32.0,Female,Bachelor's degree,4.0,2.0,4.0,4.0,3.0,-17.0
+4969,AI,Human-like,Epistemically unwarranted beliefs,77.0,73.0,44.0,Male,Bachelor's degree,2.0,3.0,3.0,4.0,4.0,-4.0
+4978,AI,Human-like,Conspiracy beliefs,60.0,50.0,30.0,Male,Graduate degree,5.0,5.0,5.0,5.0,5.0,-10.0
+4981,Expert,Neutral,Conspiracy beliefs,58.0,29.0,30.0,Female,Bachelor's degree,5.0,6.0,5.0,4.0,5.0,-29.0
+4984,AI,Human-like,Epistemically unwarranted beliefs,89.0,87.0,28.0,Female,Bachelor's degree,5.0,4.0,5.0,4.0,4.0,-2.0
+4988,AI,Neutral,Conspiracy beliefs,81.0,81.0,43.0,Male,High school graduate,4.0,3.0,5.0,2.0,3.0,0.0
+4989,Expert,Neutral,Conspiracy beliefs,75.0,64.0,27.0,Female,Bachelor's degree,5.0,3.0,5.0,2.0,3.0,-11.0
+4991,AI,Human-like,Epistemically unwarranted beliefs,59.0,27.0,39.0,Female,Bachelor's degree,5.0,4.0,5.0,4.0,5.0,-32.0
+4997,Expert,Neutral,Conspiracy beliefs,60.0,7.0,51.0,Female,Bachelor's degree,5.0,5.0,4.0,4.0,4.0,-53.0
+5005,AI,Human-like,Conspiracy beliefs,99.0,100.0,79.0,Female,High school graduate,6.0,1.0,2.0,1.0,1.0,1.0
+5009,Expert,Human-like,Epistemically unwarranted beliefs,93.0,61.0,38.0,Female,Attended college,5.0,5.0,5.0,4.0,4.0,-32.0
+5012,Expert,Human-like,Conspiracy beliefs,86.0,66.0,27.0,Female,Bachelor's degree,4.0,5.0,5.0,4.0,4.0,-20.0
+5020,AI,Neutral,Epistemically unwarranted beliefs,90.0,81.0,30.0,Female,High school graduate,5.0,5.0,4.0,4.0,4.0,-9.0
+5021,AI,Neutral,Epistemically unwarranted beliefs,74.0,83.0,50.0,Female,High school graduate,5.0,3.0,2.0,5.0,3.0,9.0
+5022,Expert,Human-like,Conspiracy beliefs,71.0,79.0,26.0,Female,Attended college,4.0,4.0,5.0,3.0,4.0,8.0
+5025,Expert,Human-like,Epistemically unwarranted beliefs,81.0,52.0,39.0,Male,Bachelor's degree,5.0,6.0,4.0,6.0,6.0,-29.0
+5034,Expert,Human-like,Conspiracy beliefs,84.0,70.0,42.0,Female,High school graduate,5.0,6.0,6.0,4.0,6.0,-14.0
+5035,Expert,Neutral,Conspiracy beliefs,99.0,100.0,27.0,Female,High school graduate,3.0,2.0,6.0,3.0,3.0,1.0
+5036,AI,Human-like,Conspiracy beliefs,81.0,81.0,63.0,Non-binary,Bachelor's degree,2.0,4.0,4.0,2.0,3.0,0.0
+5039,AI,Human-like,Epistemically unwarranted beliefs,83.0,81.0,64.0,Female,Bachelor's degree,1.0,1.0,2.0,1.0,3.0,-2.0
+5042,Expert,Neutral,Conspiracy beliefs,99.0,72.0,66.0,Male,Bachelor's degree,2.0,3.0,2.0,3.0,3.0,-27.0
+5059,AI,Neutral,Conspiracy beliefs,65.0,67.0,35.0,Female,Bachelor's degree,5.0,5.0,4.0,4.0,4.0,2.0
+5061,Expert,Neutral,Conspiracy beliefs,91.0,91.0,71.0,Male,Attended college,3.0,1.0,2.0,2.0,3.0,0.0
+5062,Expert,Human-like,Conspiracy beliefs,100.0,99.0,70.0,Male,High school graduate,5.0,1.0,1.0,1.0,1.0,-1.0
+5076,AI,Neutral,Epistemically unwarranted beliefs,100.0,100.0,25.0,Female,Graduate degree,4.0,4.0,6.0,6.0,5.0,0.0
+5086,AI,Human-like,Epistemically unwarranted beliefs,97.0,71.0,76.0,Female,Attended college,1.0,4.0,4.0,4.0,5.0,-26.0
+5098,AI,Neutral,Epistemically unwarranted beliefs,91.0,0.0,28.0,Male,Bachelor's degree,5.0,6.0,6.0,6.0,6.0,-91.0
+5101,AI,Human-like,Epistemically unwarranted beliefs,74.0,78.0,77.0,Female,High school graduate,1.0,4.0,3.0,5.0,2.0,4.0
+5103,AI,Neutral,Epistemically unwarranted beliefs,91.0,51.0,73.0,Female,Graduate degree,3.0,6.0,6.0,5.0,5.0,-40.0
+5106,Expert,Human-like,Epistemically unwarranted beliefs,100.0,99.0,66.0,Female,Bachelor's degree,4.0,5.0,4.0,4.0,5.0,-1.0
+5114,AI,Human-like,Conspiracy beliefs,72.0,67.0,35.0,Female,Bachelor's degree,5.0,4.0,5.0,5.0,3.0,-5.0
+5134,Expert,Human-like,Conspiracy beliefs,83.0,83.0,67.0,Male,Attended college,5.0,3.0,3.0,3.0,3.0,0.0
+5145,Expert,Human-like,Epistemically unwarranted beliefs,100.0,87.0,22.0,Male,Bachelor's degree,2.0,5.0,6.0,4.0,4.0,-13.0
+5152,AI,Neutral,Conspiracy beliefs,72.0,50.0,30.0,Non-binary,Graduate degree,2.0,5.0,5.0,4.0,5.0,-22.0
+5157,Expert,Neutral,Conspiracy beliefs,75.0,71.0,70.0,Male,Bachelor's degree,4.0,2.0,3.0,3.0,4.0,-4.0
+5167,AI,Neutral,Conspiracy beliefs,99.0,100.0,73.0,Male,Attended college,6.0,6.0,5.0,5.0,5.0,1.0
+5177,Expert,Human-like,Epistemically unwarranted beliefs,77.0,83.0,51.0,Male,Attended college,4.0,2.0,1.0,1.0,1.0,6.0
+5189,AI,Neutral,Conspiracy beliefs,86.0,81.0,45.0,Male,Vocational training,5.0,1.0,5.0,2.0,2.0,-5.0
+5191,AI,Neutral,Epistemically unwarranted beliefs,100.0,100.0,45.0,Female,High school graduate,4.0,4.0,5.0,4.0,5.0,0.0
+5192,AI,Neutral,Conspiracy beliefs,86.0,74.0,29.0,Male,Attended college,4.0,4.0,5.0,4.0,5.0,-12.0
+5201,Expert,Neutral,Conspiracy beliefs,100.0,99.0,36.0,Male,Graduate degree,1.0,4.0,6.0,5.0,6.0,-1.0
+5205,Expert,Human-like,Epistemically unwarranted beliefs,100.0,100.0,76.0,Male,Graduate degree,4.0,4.0,5.0,4.0,5.0,0.0
+5212,Expert,Human-like,Conspiracy beliefs,92.0,91.0,62.0,Male,Graduate degree,1.0,1.0,4.0,3.0,1.0,-1.0
+5217,Expert,Neutral,Conspiracy beliefs,90.0,91.0,59.0,Male,Attended college,5.0,1.0,1.0,1.0,1.0,1.0
+5220,AI,Neutral,Conspiracy beliefs,60.0,0.0,71.0,Male,Attended college,1.0,6.0,6.0,5.0,6.0,-60.0
+5226,AI,Human-like,Conspiracy beliefs,93.0,86.0,75.0,Male,Bachelor's degree,6.0,3.0,5.0,4.0,5.0,-7.0
+5228,Expert,Human-like,Conspiracy beliefs,95.0,95.0,68.0,Male,Vocational training,5.0,5.0,6.0,6.0,6.0,0.0
+5229,Expert,Neutral,Conspiracy beliefs,100.0,100.0,71.0,Male,Attended college,5.0,1.0,2.0,1.0,3.0,0.0
+5231,Expert,Neutral,Conspiracy beliefs,91.0,91.0,35.0,Non-binary,Bachelor's degree,5.0,1.0,4.0,1.0,1.0,0.0
+5233,Expert,Neutral,Conspiracy beliefs,59.0,81.0,63.0,Female,Bachelor's degree,3.0,4.0,5.0,2.0,3.0,22.0
+5243,Expert,Human-like,Conspiracy beliefs,80.0,70.0,51.0,Male,Graduate degree,4.0,2.0,4.0,2.0,4.0,-10.0
+5246,Expert,Human-like,Epistemically unwarranted beliefs,100.0,91.0,48.0,Male,Bachelor's degree,2.0,6.0,6.0,6.0,6.0,-9.0
+5250,AI,Neutral,Conspiracy beliefs,81.0,81.0,75.0,Male,Bachelor's degree,5.0,2.0,4.0,2.0,2.0,0.0
+5251,AI,Human-like,Epistemically unwarranted beliefs,88.0,75.0,56.0,Female,Attended college,4.0,5.0,5.0,4.0,5.0,-13.0
+5258,Expert,Neutral,Conspiracy beliefs,78.0,79.0,38.0,Female,Graduate degree,1.0,1.0,3.0,1.0,4.0,1.0
+5264,Expert,Human-like,Epistemically unwarranted beliefs,99.0,99.0,52.0,Female,Vocational training,3.0,5.0,5.0,3.0,5.0,0.0
+5269,AI,Neutral,Epistemically unwarranted beliefs,82.0,90.0,65.0,Female,Bachelor's degree,3.0,5.0,5.0,4.0,5.0,8.0
+5279,AI,Neutral,Epistemically unwarranted beliefs,96.0,95.0,40.0,Male,Bachelor's degree,6.0,5.0,5.0,6.0,6.0,-1.0
+5280,Expert,Human-like,Epistemically unwarranted beliefs,94.0,91.0,71.0,Female,Less than high school,5.0,4.0,5.0,4.0,5.0,-3.0
+5293,AI,Neutral,Epistemically unwarranted beliefs,87.0,58.0,25.0,Male,High school graduate,2.0,4.0,5.0,3.0,3.0,-29.0
+5297,Expert,Human-like,Epistemically unwarranted beliefs,100.0,100.0,62.0,Female,Attended college,1.0,1.0,2.0,1.0,1.0,0.0
+5308,Expert,Neutral,Conspiracy beliefs,67.0,64.0,82.0,Male,Bachelor's degree,4.0,2.0,5.0,2.0,2.0,-3.0
+5310,Expert,Human-like,Conspiracy beliefs,82.0,82.0,73.0,Male,Attended college,4.0,2.0,3.0,1.0,2.0,0.0
+5317,Expert,Human-like,Conspiracy beliefs,81.0,81.0,37.0,Female,Attended college,4.0,4.0,5.0,4.0,5.0,0.0
+5323,AI,Neutral,Conspiracy beliefs,100.0,61.0,61.0,Female,High school graduate,6.0,4.0,5.0,4.0,5.0,-39.0
+5332,AI,Neutral,Conspiracy beliefs,90.0,9.0,71.0,Female,Attended college,4.0,5.0,5.0,4.0,5.0,-81.0
+5339,AI,Neutral,Epistemically unwarranted beliefs,94.0,51.0,54.0,Male,Attended college,5.0,4.0,4.0,4.0,4.0,-43.0
+5350,AI,Neutral,Conspiracy beliefs,91.0,89.0,56.0,Male,Attended college,4.0,2.0,2.0,1.0,1.0,-2.0
+5355,AI,Neutral,Conspiracy beliefs,100.0,71.0,63.0,Male,Bachelor's degree,4.0,5.0,5.0,6.0,6.0,-29.0
+5356,Expert,Human-like,Conspiracy beliefs,90.0,69.0,59.0,Male,Bachelor's degree,5.0,5.0,5.0,4.0,5.0,-21.0
+5357,AI,Human-like,Epistemically unwarranted beliefs,100.0,100.0,70.0,Female,Attended college,1.0,6.0,6.0,5.0,6.0,0.0
+5369,Expert,Neutral,Epistemically unwarranted beliefs,92.0,60.0,43.0,Male,High school graduate,3.0,5.0,6.0,4.0,4.0,-32.0
+5382,AI,Human-like,Conspiracy beliefs,76.0,78.0,76.0,Male,Attended college,4.0,1.0,2.0,2.0,2.0,2.0
+5385,AI,Neutral,Epistemically unwarranted beliefs,72.0,7.0,20.0,Female,Vocational training,3.0,5.0,6.0,4.0,5.0,-65.0
+5388,AI,Human-like,Conspiracy beliefs,61.0,24.0,39.0,Male,Vocational training,1.0,5.0,5.0,5.0,5.0,-37.0
+5393,AI,Human-like,Conspiracy beliefs,85.0,82.0,66.0,Female,Graduate degree,4.0,5.0,5.0,5.0,5.0,-3.0
+5399,Expert,Neutral,Epistemically unwarranted beliefs,99.0,98.0,69.0,Female,Graduate degree,5.0,3.0,3.0,3.0,5.0,-1.0
+5400,Expert,Human-like,Epistemically unwarranted beliefs,93.0,91.0,77.0,Female,Vocational training,3.0,2.0,4.0,2.0,3.0,-2.0
+5417,Expert,Neutral,Conspiracy beliefs,81.0,79.0,38.0,Male,Bachelor's degree,6.0,5.0,6.0,4.0,6.0,-2.0
+5426,Expert,Human-like,Epistemically unwarranted beliefs,60.0,92.0,78.0,Male,Vocational training,3.0,5.0,5.0,4.0,5.0,32.0
+5428,AI,Neutral,Epistemically unwarranted beliefs,95.0,96.0,,,Less than high school,3.0,5.0,5.0,4.0,4.0,1.0
+5448,AI,Neutral,Epistemically unwarranted beliefs,100.0,99.0,25.0,Female,High school graduate,3.0,3.0,5.0,4.0,3.0,-1.0
+5453,Expert,Human-like,Conspiracy beliefs,92.0,96.0,45.0,Male,Bachelor's degree,1.0,6.0,6.0,6.0,6.0,4.0
+5468,AI,Neutral,Conspiracy beliefs,85.0,30.0,59.0,Female,Bachelor's degree,4.0,6.0,6.0,5.0,5.0,-55.0
+5476,AI,Human-like,Epistemically unwarranted beliefs,100.0,100.0,71.0,Female,High school graduate,3.0,2.0,4.0,3.0,5.0,0.0
+5484,AI,Neutral,Epistemically unwarranted beliefs,78.0,52.0,37.0,Male,Attended college,2.0,4.0,5.0,4.0,5.0,-26.0
+5486,Expert,Neutral,Conspiracy beliefs,99.0,92.0,66.0,Male,Attended college,1.0,5.0,6.0,4.0,5.0,-7.0
+5491,Expert,Neutral,Conspiracy beliefs,70.0,10.0,44.0,Male,Graduate degree,2.0,5.0,5.0,6.0,5.0,-60.0
+5501,Expert,Human-like,Epistemically unwarranted beliefs,65.0,75.0,24.0,Male,Bachelor's degree,2.0,6.0,5.0,5.0,6.0,10.0
+5508,AI,Human-like,Conspiracy beliefs,71.0,71.0,71.0,Female,Bachelor's degree,3.0,1.0,2.0,1.0,2.0,0.0
+5509,Expert,Neutral,Epistemically unwarranted beliefs,75.0,4.0,76.0,Female,Graduate degree,3.0,5.0,5.0,3.0,4.0,-71.0
+5528,AI,Human-like,Epistemically unwarranted beliefs,79.0,30.0,28.0,Female,Attended college,2.0,6.0,5.0,4.0,5.0,-49.0
+5531,Expert,Human-like,Conspiracy beliefs,100.0,6.0,25.0,Female,Bachelor's degree,3.0,2.0,2.0,2.0,2.0,-94.0
+5539,Expert,Human-like,Epistemically unwarranted beliefs,100.0,100.0,72.0,Female,Vocational training,5.0,3.0,5.0,2.0,4.0,0.0
+5541,Expert,Human-like,Epistemically unwarranted beliefs,71.0,70.0,67.0,Male,Graduate degree,1.0,1.0,2.0,1.0,3.0,-1.0
+5552,AI,Neutral,Conspiracy beliefs,100.0,54.0,70.0,Male,High school graduate,6.0,2.0,5.0,3.0,3.0,-46.0
+5555,Expert,Neutral,Epistemically unwarranted beliefs,100.0,100.0,67.0,Male,High school graduate,6.0,3.0,3.0,3.0,5.0,0.0
+5569,Expert,Human-like,Conspiracy beliefs,81.0,50.0,49.0,Male,Bachelor's degree,1.0,5.0,5.0,5.0,5.0,-31.0
+5574,AI,Human-like,Epistemically unwarranted beliefs,100.0,100.0,85.0,Male,High school graduate,1.0,2.0,4.0,2.0,2.0,0.0
+5587,AI,Neutral,Conspiracy beliefs,71.0,40.0,63.0,Female,Attended college,4.0,4.0,5.0,5.0,6.0,-31.0
+5589,AI,Neutral,Epistemically unwarranted beliefs,99.0,100.0,58.0,Female,Attended college,3.0,5.0,6.0,4.0,5.0,1.0
+5601,AI,Human-like,Epistemically unwarranted beliefs,100.0,91.0,54.0,Female,High school graduate,1.0,4.0,5.0,5.0,4.0,-9.0
+5606,AI,Human-like,Epistemically unwarranted beliefs,100.0,100.0,73.0,Female,Attended college,2.0,4.0,3.0,3.0,5.0,0.0
+5617,Expert,Neutral,Conspiracy beliefs,100.0,100.0,57.0,Female,Attended college,6.0,4.0,4.0,2.0,4.0,0.0
+5625,Expert,Neutral,Epistemically unwarranted beliefs,96.0,50.0,75.0,Male,Vocational training,3.0,5.0,5.0,4.0,5.0,-46.0
+5631,Expert,Neutral,Epistemically unwarranted beliefs,100.0,100.0,64.0,Female,Bachelor's degree,1.0,6.0,6.0,6.0,6.0,0.0
+5646,AI,Human-like,Conspiracy beliefs,97.0,100.0,39.0,Male,Bachelor's degree,1.0,2.0,5.0,4.0,4.0,3.0
+5648,AI,Human-like,Conspiracy beliefs,80.0,39.0,51.0,Female,Attended college,5.0,4.0,4.0,4.0,3.0,-41.0
+5654,AI,Human-like,Epistemically unwarranted beliefs,90.0,92.0,77.0,Female,Attended college,3.0,3.0,3.0,3.0,4.0,2.0
+5658,AI,Neutral,Epistemically unwarranted beliefs,97.0,76.0,69.0,Female,Attended college,2.0,5.0,5.0,4.0,5.0,-21.0
+5659,Expert,Human-like,Conspiracy beliefs,100.0,100.0,66.0,Male,Vocational training,5.0,3.0,3.0,2.0,2.0,0.0
+5662,AI,Neutral,Epistemically unwarranted beliefs,91.0,92.0,72.0,Female,Graduate degree,6.0,1.0,1.0,1.0,5.0,1.0
+5672,Expert,Human-like,Epistemically unwarranted beliefs,99.0,91.0,53.0,Male,Attended college,2.0,1.0,2.0,1.0,3.0,-8.0
+5680,Expert,Human-like,Conspiracy beliefs,99.0,61.0,20.0,Female,Attended college,4.0,2.0,3.0,2.0,2.0,-38.0
+5682,AI,Human-like,Epistemically unwarranted beliefs,86.0,65.0,54.0,Male,Bachelor's degree,5.0,5.0,5.0,4.0,4.0,-21.0
+5687,AI,Human-like,Conspiracy beliefs,71.0,74.0,39.0,Male,Bachelor's degree,3.0,1.0,1.0,1.0,3.0,3.0
+5688,AI,Neutral,Epistemically unwarranted beliefs,93.0,10.0,22.0,Male,High school graduate,1.0,2.0,4.0,3.0,4.0,-83.0
+5692,Expert,Human-like,Epistemically unwarranted beliefs,93.0,93.0,61.0,Female,Graduate degree,2.0,2.0,3.0,1.0,1.0,0.0
+5696,AI,Neutral,Epistemically unwarranted beliefs,84.0,87.0,21.0,Female,Attended college,3.0,3.0,6.0,3.0,4.0,3.0
+5708,Expert,Human-like,Epistemically unwarranted beliefs,91.0,93.0,59.0,Male,Bachelor's degree,5.0,1.0,2.0,2.0,2.0,2.0
+5727,Expert,Human-like,Epistemically unwarranted beliefs,80.0,76.0,78.0,Female,High school graduate,3.0,6.0,5.0,5.0,5.0,-4.0
+5733,Expert,Neutral,Epistemically unwarranted beliefs,88.0,80.0,62.0,Female,High school graduate,6.0,4.0,4.0,2.0,2.0,-8.0
+5736,Expert,Neutral,Epistemically unwarranted beliefs,100.0,99.0,53.0,Male,Attended college,2.0,4.0,4.0,2.0,3.0,-1.0
+5746,Expert,Neutral,Conspiracy beliefs,100.0,99.0,,,Unknown,4.0,3.0,2.0,3.0,2.0,-1.0
+5749,AI,Human-like,Conspiracy beliefs,69.0,76.0,63.0,Female,High school graduate,5.0,5.0,5.0,4.0,4.0,7.0
+5754,Expert,Human-like,Epistemically unwarranted beliefs,100.0,100.0,61.0,Male,Attended college,1.0,6.0,5.0,4.0,5.0,0.0
+5764,Expert,Neutral,Epistemically unwarranted beliefs,100.0,99.0,40.0,Female,High school graduate,4.0,4.0,6.0,6.0,5.0,-1.0
+5766,AI,Human-like,Conspiracy beliefs,98.0,99.0,60.0,Female,Graduate degree,1.0,4.0,4.0,2.0,5.0,1.0
+5788,Expert,Human-like,Epistemically unwarranted beliefs,96.0,91.0,62.0,Female,High school graduate,3.0,4.0,5.0,5.0,5.0,-5.0
+5799,AI,Neutral,Conspiracy beliefs,59.0,68.0,23.0,Female,High school graduate,3.0,4.0,4.0,2.0,3.0,9.0
+5830,Expert,Neutral,Conspiracy beliefs,76.0,50.0,56.0,Male,High school graduate,4.0,4.0,4.0,4.0,4.0,-26.0
+5831,Expert,Neutral,Conspiracy beliefs,82.0,81.0,34.0,Female,Bachelor's degree,2.0,4.0,4.0,4.0,4.0,-1.0
+5842,AI,Neutral,Conspiracy beliefs,71.0,88.0,24.0,Female,Attended college,3.0,2.0,3.0,2.0,4.0,17.0
+5849,AI,Neutral,Conspiracy beliefs,53.0,65.0,55.0,Male,Attended college,1.0,3.0,4.0,3.0,4.0,12.0
+5851,Expert,Neutral,Conspiracy beliefs,91.0,100.0,24.0,Female,Bachelor's degree,2.0,6.0,6.0,6.0,6.0,9.0
+5853,AI,Neutral,Conspiracy beliefs,75.0,81.0,40.0,Male,High school graduate,6.0,5.0,5.0,4.0,6.0,6.0
+5855,Expert,Neutral,Epistemically unwarranted beliefs,96.0,81.0,38.0,Male,Bachelor's degree,2.0,5.0,5.0,5.0,5.0,-15.0
+5864,AI,Neutral,Epistemically unwarranted beliefs,100.0,99.0,21.0,Female,Attended college,3.0,4.0,5.0,3.0,4.0,-1.0
+5870,Expert,Human-like,Epistemically unwarranted beliefs,90.0,72.0,66.0,Female,Bachelor's degree,4.0,4.0,3.0,4.0,3.0,-18.0
+5876,AI,Human-like,Epistemically unwarranted beliefs,74.0,30.0,36.0,Female,Bachelor's degree,6.0,6.0,6.0,6.0,5.0,-44.0
+5881,AI,Neutral,Conspiracy beliefs,100.0,100.0,28.0,Female,Attended college,3.0,1.0,3.0,2.0,3.0,0.0
+5885,Expert,Human-like,Conspiracy beliefs,81.0,81.0,72.0,Male,Bachelor's degree,6.0,3.0,3.0,3.0,3.0,0.0
+5891,Expert,Neutral,Conspiracy beliefs,94.0,100.0,77.0,Female,Attended college,5.0,1.0,3.0,1.0,3.0,6.0
+5898,Expert,Neutral,Epistemically unwarranted beliefs,62.0,71.0,44.0,Male,High school graduate,5.0,4.0,6.0,4.0,5.0,9.0
+5900,AI,Neutral,Conspiracy beliefs,81.0,60.0,63.0,Female,Graduate degree,4.0,2.0,2.0,1.0,2.0,-21.0
+5918,AI,Human-like,Conspiracy beliefs,89.0,77.0,32.0,Male,Bachelor's degree,6.0,4.0,6.0,5.0,5.0,-12.0
+5932,Expert,Human-like,Conspiracy beliefs,91.0,93.0,62.0,Male,Bachelor's degree,5.0,5.0,5.0,2.0,1.0,2.0
+5935,AI,Neutral,Conspiracy beliefs,100.0,7.0,24.0,Male,Bachelor's degree,2.0,5.0,5.0,6.0,4.0,-93.0
+5936,Expert,Human-like,Conspiracy beliefs,96.0,72.0,34.0,Male,Attended college,6.0,3.0,3.0,1.0,3.0,-24.0
+5943,AI,Neutral,Epistemically unwarranted beliefs,100.0,100.0,67.0,Female,Vocational training,2.0,6.0,5.0,3.0,5.0,0.0
+5949,AI,Neutral,Conspiracy beliefs,100.0,84.0,51.0,Male,High school graduate,5.0,5.0,5.0,4.0,5.0,-16.0
+5959,Expert,Human-like,Epistemically unwarranted beliefs,82.0,91.0,28.0,Female,Attended college,2.0,6.0,4.0,5.0,6.0,9.0
+5970,Expert,Neutral,Epistemically unwarranted beliefs,93.0,91.0,61.0,Female,Graduate degree,4.0,5.0,5.0,5.0,5.0,-2.0
+5983,Expert,Human-like,Conspiracy beliefs,79.0,71.0,34.0,Female,Attended college,1.0,6.0,6.0,4.0,4.0,-8.0
+5985,AI,Neutral,Conspiracy beliefs,71.0,100.0,33.0,Female,Vocational training,5.0,4.0,4.0,4.0,3.0,29.0
+5990,AI,Neutral,Conspiracy beliefs,100.0,77.0,34.0,Female,Bachelor's degree,1.0,6.0,6.0,6.0,6.0,-23.0
+5996,AI,Neutral,Conspiracy beliefs,55.0,58.0,69.0,Male,Graduate degree,4.0,2.0,3.0,2.0,3.0,3.0
+6006,Expert,Neutral,Epistemically unwarranted beliefs,84.0,84.0,55.0,Female,High school graduate,4.0,3.0,3.0,5.0,2.0,0.0
+6010,AI,Neutral,Epistemically unwarranted beliefs,90.0,95.0,57.0,Female,Bachelor's degree,2.0,5.0,6.0,4.0,5.0,5.0
+6013,AI,Human-like,Epistemically unwarranted beliefs,98.0,100.0,61.0,Female,Bachelor's degree,2.0,5.0,5.0,4.0,4.0,2.0
+6015,Expert,Human-like,Epistemically unwarranted beliefs,61.0,61.0,33.0,Male,Bachelor's degree,5.0,4.0,5.0,3.0,3.0,0.0
+6018,Expert,Neutral,Conspiracy beliefs,81.0,81.0,77.0,Male,Bachelor's degree,4.0,4.0,5.0,3.0,4.0,0.0
+6019,AI,Human-like,Conspiracy beliefs,99.0,75.0,67.0,Female,High school graduate,6.0,1.0,2.0,1.0,2.0,-24.0
+6022,Expert,Neutral,Epistemically unwarranted beliefs,100.0,99.0,60.0,Female,Attended college,5.0,4.0,5.0,5.0,5.0,-1.0
+6025,AI,Human-like,Epistemically unwarranted beliefs,85.0,80.0,51.0,Male,Bachelor's degree,5.0,5.0,5.0,4.0,4.0,-5.0
+6040,AI,Human-like,Conspiracy beliefs,88.0,83.0,70.0,Male,Graduate degree,1.0,5.0,5.0,5.0,5.0,-5.0
+6057,AI,Human-like,Epistemically unwarranted beliefs,98.0,70.0,53.0,Female,Attended college,4.0,5.0,6.0,5.0,6.0,-28.0
+6058,AI,Neutral,Epistemically unwarranted beliefs,100.0,92.0,22.0,Female,Attended college,2.0,3.0,4.0,1.0,2.0,-8.0
+6061,Expert,Neutral,Epistemically unwarranted beliefs,100.0,100.0,63.0,Male,High school graduate,6.0,5.0,6.0,5.0,5.0,0.0
+6070,AI,Neutral,Epistemically unwarranted beliefs,68.0,63.0,22.0,Female,High school graduate,4.0,4.0,5.0,4.0,4.0,-5.0
+6073,Expert,Human-like,Conspiracy beliefs,100.0,100.0,77.0,Male,Bachelor's degree,4.0,3.0,5.0,5.0,4.0,0.0
+6081,AI,Human-like,Epistemically unwarranted beliefs,100.0,29.0,56.0,Female,High school graduate,5.0,4.0,6.0,5.0,5.0,-71.0
+6088,Expert,Human-like,Epistemically unwarranted beliefs,100.0,100.0,73.0,Male,Attended college,1.0,1.0,1.0,1.0,2.0,0.0
+6104,AI,Neutral,Epistemically unwarranted beliefs,98.0,88.0,23.0,Male,Bachelor's degree,4.0,5.0,5.0,4.0,5.0,-10.0
+6112,Expert,Neutral,Conspiracy beliefs,90.0,100.0,50.0,Male,Attended college,2.0,6.0,6.0,6.0,6.0,10.0
+6114,AI,Neutral,Epistemically unwarranted beliefs,67.0,70.0,50.0,Female,High school graduate,5.0,3.0,5.0,4.0,6.0,3.0
+6117,AI,Human-like,Conspiracy beliefs,85.0,56.0,36.0,Female,High school graduate,5.0,3.0,6.0,6.0,3.0,-29.0
+6122,AI,Neutral,Conspiracy beliefs,93.0,100.0,55.0,Female,Attended college,5.0,6.0,6.0,4.0,6.0,7.0
+6134,AI,Neutral,Epistemically unwarranted beliefs,81.0,82.0,34.0,Female,Bachelor's degree,1.0,5.0,4.0,5.0,5.0,1.0
+6136,Expert,Neutral,Conspiracy beliefs,82.0,94.0,27.0,Female,High school graduate,4.0,4.0,3.0,3.0,3.0,12.0
+6140,Expert,Neutral,Conspiracy beliefs,82.0,73.0,27.0,Male,Bachelor's degree,5.0,5.0,5.0,5.0,4.0,-9.0
+6147,Expert,Human-like,Epistemically unwarranted beliefs,70.0,83.0,42.0,Female,Bachelor's degree,5.0,3.0,5.0,4.0,5.0,13.0
+6181,AI,Human-like,Epistemically unwarranted beliefs,87.0,68.0,44.0,Female,Attended college,6.0,3.0,5.0,6.0,4.0,-19.0
+6197,AI,Neutral,Conspiracy beliefs,100.0,100.0,33.0,Male,Attended college,4.0,1.0,3.0,1.0,2.0,0.0
+6198,AI,Neutral,Epistemically unwarranted beliefs,69.0,65.0,33.0,Male,Bachelor's degree,5.0,5.0,4.0,5.0,4.0,-4.0
+6203,Expert,Human-like,Conspiracy beliefs,56.0,28.0,44.0,Female,Vocational training,4.0,4.0,5.0,3.0,3.0,-28.0
+6204,AI,Human-like,Epistemically unwarranted beliefs,100.0,100.0,37.0,Female,High school graduate,2.0,1.0,1.0,1.0,2.0,0.0
+6210,AI,Human-like,Epistemically unwarranted beliefs,83.0,86.0,33.0,Female,Bachelor's degree,5.0,4.0,4.0,5.0,4.0,3.0
+6220,AI,Neutral,Conspiracy beliefs,82.0,91.0,39.0,Male,High school graduate,5.0,5.0,5.0,2.0,2.0,9.0
+6240,Expert,Human-like,Conspiracy beliefs,99.0,49.0,59.0,Male,High school graduate,3.0,5.0,5.0,5.0,5.0,-50.0
+6248,AI,Human-like,Epistemically unwarranted beliefs,81.0,75.0,42.0,Female,Attended college,5.0,5.0,4.0,4.0,5.0,-6.0
+6258,Expert,Neutral,Epistemically unwarranted beliefs,76.0,52.0,46.0,Male,Bachelor's degree,5.0,3.0,4.0,5.0,3.0,-24.0
+6259,Expert,Human-like,Epistemically unwarranted beliefs,82.0,70.0,39.0,Male,Bachelor's degree,5.0,5.0,6.0,5.0,4.0,-12.0
+6266,Expert,Neutral,Conspiracy beliefs,100.0,100.0,73.0,Female,Vocational training,5.0,2.0,4.0,2.0,2.0,0.0
+6272,Expert,Neutral,Epistemically unwarranted beliefs,100.0,100.0,33.0,Male,Bachelor's degree,4.0,4.0,5.0,4.0,5.0,0.0
+6296,AI,Neutral,Epistemically unwarranted beliefs,99.0,99.0,77.0,Female,Bachelor's degree,3.0,4.0,4.0,4.0,5.0,0.0
+6305,AI,Human-like,Conspiracy beliefs,99.0,100.0,41.0,Male,Bachelor's degree,1.0,6.0,6.0,6.0,6.0,1.0
+6314,AI,Human-like,Epistemically unwarranted beliefs,100.0,41.0,51.0,Female,Bachelor's degree,6.0,5.0,5.0,3.0,4.0,-59.0
+6330,AI,Human-like,Conspiracy beliefs,71.0,54.0,29.0,Male,Bachelor's degree,3.0,4.0,4.0,4.0,5.0,-17.0
+6335,Expert,Human-like,Epistemically unwarranted beliefs,100.0,99.0,58.0,Male,Graduate degree,6.0,1.0,1.0,1.0,1.0,-1.0
+6339,Expert,Neutral,Epistemically unwarranted beliefs,57.0,90.0,80.0,Male,Bachelor's degree,4.0,5.0,5.0,4.0,4.0,33.0
+6346,AI,Neutral,Epistemically unwarranted beliefs,82.0,51.0,69.0,Female,High school graduate,5.0,5.0,6.0,4.0,6.0,-31.0
+6348,AI,Neutral,Epistemically unwarranted beliefs,95.0,87.0,73.0,Male,Bachelor's degree,2.0,4.0,5.0,4.0,4.0,-8.0
+6361,Expert,Neutral,Epistemically unwarranted beliefs,61.0,50.0,70.0,Female,Attended college,2.0,3.0,4.0,3.0,3.0,-11.0
+6378,AI,Neutral,Conspiracy beliefs,54.0,56.0,75.0,Male,Bachelor's degree,6.0,4.0,4.0,3.0,3.0,2.0
+6381,Expert,Human-like,Epistemically unwarranted beliefs,72.0,82.0,40.0,Female,Graduate degree,1.0,3.0,3.0,3.0,3.0,10.0
+6392,AI,Human-like,Conspiracy beliefs,81.0,86.0,72.0,Female,Graduate degree,1.0,4.0,4.0,2.0,3.0,5.0
+6402,AI,Human-like,Epistemically unwarranted beliefs,87.0,99.0,76.0,Female,High school graduate,3.0,1.0,3.0,1.0,1.0,12.0
+6424,Expert,Neutral,Epistemically unwarranted beliefs,81.0,50.0,64.0,Male,Vocational training,4.0,5.0,5.0,5.0,5.0,-31.0
+6439,AI,Human-like,Conspiracy beliefs,100.0,100.0,,,Unknown,3.0,2.0,1.0,1.0,2.0,0.0
+6447,AI,Human-like,Conspiracy beliefs,65.0,50.0,36.0,Male,Vocational training,5.0,4.0,5.0,4.0,4.0,-15.0
+6451,AI,Neutral,Conspiracy beliefs,70.0,60.0,59.0,Female,Attended college,1.0,6.0,6.0,5.0,6.0,-10.0
+6454,Expert,Neutral,Epistemically unwarranted beliefs,75.0,65.0,18.0,Male,Less than high school,3.0,3.0,5.0,3.0,3.0,-10.0
+6467,Expert,Neutral,Epistemically unwarranted beliefs,98.0,100.0,69.0,Male,Graduate degree,5.0,6.0,1.0,6.0,1.0,2.0
+6484,Expert,Human-like,Epistemically unwarranted beliefs,96.0,97.0,81.0,Female,Vocational training,1.0,4.0,4.0,4.0,5.0,1.0
+6492,Expert,Human-like,Epistemically unwarranted beliefs,92.0,100.0,40.0,Female,High school graduate,4.0,1.0,1.0,1.0,3.0,8.0
+6496,Expert,Neutral,Conspiracy beliefs,100.0,81.0,60.0,Female,Attended college,6.0,3.0,5.0,4.0,4.0,-19.0
+6508,Expert,Neutral,Conspiracy beliefs,76.0,75.0,66.0,Female,Attended college,4.0,1.0,1.0,1.0,1.0,-1.0
+6530,AI,Neutral,Epistemically unwarranted beliefs,100.0,100.0,69.0,Male,Graduate degree,4.0,4.0,4.0,3.0,4.0,0.0
+6543,AI,Human-like,Conspiracy beliefs,100.0,96.0,37.0,Male,Attended college,4.0,1.0,4.0,2.0,4.0,-4.0
+6552,AI,Human-like,Conspiracy beliefs,76.0,60.0,50.0,Female,Attended college,4.0,3.0,3.0,3.0,3.0,-16.0
+6558,AI,Human-like,Conspiracy beliefs,100.0,100.0,59.0,Male,Vocational training,1.0,5.0,6.0,3.0,6.0,0.0
+6580,AI,Human-like,Conspiracy beliefs,62.0,60.0,78.0,Female,Graduate degree,4.0,5.0,5.0,5.0,6.0,-2.0
+6585,AI,Neutral,Conspiracy beliefs,67.0,49.0,61.0,Female,Bachelor's degree,1.0,5.0,5.0,4.0,5.0,-18.0
+6587,Expert,Neutral,Conspiracy beliefs,81.0,90.0,69.0,Male,High school graduate,2.0,5.0,5.0,5.0,5.0,9.0
+6589,Expert,Neutral,Epistemically unwarranted beliefs,100.0,100.0,27.0,Male,Bachelor's degree,4.0,4.0,4.0,3.0,4.0,0.0
+6614,AI,Human-like,Conspiracy beliefs,71.0,21.0,26.0,Female,Bachelor's degree,3.0,6.0,6.0,5.0,5.0,-50.0
+6621,AI,Human-like,Epistemically unwarranted beliefs,100.0,92.0,65.0,Male,Bachelor's degree,4.0,4.0,4.0,2.0,3.0,-8.0
+6631,AI,Neutral,Epistemically unwarranted beliefs,97.0,73.0,35.0,Female,Bachelor's degree,1.0,5.0,5.0,4.0,4.0,-24.0
+6645,Expert,Neutral,Epistemically unwarranted beliefs,70.0,71.0,75.0,Female,Graduate degree,1.0,3.0,4.0,2.0,3.0,1.0
+6657,AI,Human-like,Epistemically unwarranted beliefs,95.0,98.0,70.0,Male,Attended college,2.0,5.0,6.0,5.0,5.0,3.0
+6658,Expert,Neutral,Conspiracy beliefs,71.0,65.0,61.0,Female,Bachelor's degree,4.0,2.0,2.0,2.0,3.0,-6.0
+6667,AI,Human-like,Conspiracy beliefs,91.0,50.0,60.0,Male,Vocational training,3.0,5.0,4.0,4.0,4.0,-41.0
+6668,AI,Human-like,Conspiracy beliefs,80.0,82.0,66.0,Female,Graduate degree,3.0,6.0,6.0,6.0,6.0,2.0
+6669,Expert,Human-like,Conspiracy beliefs,91.0,76.0,72.0,Female,Graduate degree,3.0,4.0,4.0,4.0,5.0,-15.0
+6673,AI,Human-like,Epistemically unwarranted beliefs,70.0,71.0,68.0,Male,High school graduate,2.0,5.0,5.0,4.0,5.0,1.0
+6680,AI,Human-like,Conspiracy beliefs,93.0,89.0,75.0,Male,Bachelor's degree,4.0,4.0,5.0,3.0,4.0,-4.0
+6696,Expert,Neutral,Conspiracy beliefs,71.0,69.0,58.0,Female,Bachelor's degree,4.0,4.0,5.0,3.0,4.0,-2.0
+6697,AI,Human-like,Conspiracy beliefs,91.0,82.0,68.0,Female,Attended college,4.0,5.0,5.0,5.0,5.0,-9.0
+6726,Expert,Human-like,Conspiracy beliefs,82.0,54.0,28.0,Female,Graduate degree,4.0,4.0,5.0,4.0,4.0,-28.0
+6737,Expert,Human-like,Epistemically unwarranted beliefs,82.0,84.0,20.0,Female,Attended college,1.0,3.0,3.0,3.0,3.0,2.0
+6751,AI,Neutral,Epistemically unwarranted beliefs,81.0,93.0,65.0,Female,Bachelor's degree,2.0,5.0,5.0,4.0,5.0,12.0
+6758,AI,Neutral,Epistemically unwarranted beliefs,100.0,100.0,61.0,Female,Bachelor's degree,6.0,1.0,5.0,1.0,1.0,0.0
+6759,AI,Human-like,Conspiracy beliefs,100.0,73.0,26.0,Female,Bachelor's degree,1.0,5.0,5.0,4.0,5.0,-27.0
+6762,Expert,Human-like,Epistemically unwarranted beliefs,100.0,71.0,50.0,Female,Attended college,4.0,3.0,4.0,2.0,4.0,-29.0
+6774,AI,Human-like,Conspiracy beliefs,61.0,60.0,34.0,Female,Attended college,2.0,1.0,2.0,1.0,1.0,-1.0
+6797,Expert,Human-like,Conspiracy beliefs,100.0,100.0,61.0,Male,Graduate degree,4.0,1.0,1.0,1.0,1.0,0.0
+6806,Expert,Human-like,Epistemically unwarranted beliefs,100.0,100.0,18.0,Female,High school graduate,3.0,4.0,5.0,4.0,4.0,0.0
+6833,AI,Human-like,Epistemically unwarranted beliefs,61.0,50.0,40.0,Male,Vocational training,3.0,4.0,4.0,2.0,4.0,-11.0
+6854,Expert,Human-like,Epistemically unwarranted beliefs,81.0,80.0,60.0,Female,Graduate degree,1.0,2.0,3.0,1.0,2.0,-1.0
+6869,Expert,Neutral,Epistemically unwarranted beliefs,91.0,91.0,69.0,Male,Bachelor's degree,4.0,2.0,3.0,2.0,2.0,0.0
+6890,AI,Human-like,Epistemically unwarranted beliefs,100.0,100.0,50.0,Male,High school graduate,6.0,6.0,6.0,6.0,6.0,0.0
+6899,AI,Human-like,Conspiracy beliefs,81.0,50.0,56.0,Male,High school graduate,4.0,5.0,5.0,4.0,5.0,-31.0
+6901,AI,Neutral,Conspiracy beliefs,99.0,81.0,69.0,Female,High school graduate,6.0,5.0,6.0,5.0,5.0,-18.0
+6902,Expert,Human-like,Conspiracy beliefs,83.0,91.0,35.0,Female,Bachelor's degree,1.0,1.0,2.0,1.0,1.0,8.0
+6903,AI,Neutral,Conspiracy beliefs,91.0,94.0,66.0,Female,Attended college,2.0,1.0,2.0,2.0,2.0,3.0
+6905,Expert,Human-like,Conspiracy beliefs,100.0,60.0,67.0,Male,Attended college,6.0,4.0,4.0,5.0,5.0,-40.0
+6914,AI,Neutral,Conspiracy beliefs,75.0,75.0,70.0,Female,Graduate degree,4.0,4.0,5.0,4.0,4.0,0.0
+6916,Expert,Human-like,Epistemically unwarranted beliefs,97.0,100.0,46.0,Female,Bachelor's degree,3.0,1.0,5.0,1.0,4.0,3.0
+6924,Expert,Human-like,Conspiracy beliefs,58.0,52.0,75.0,Male,Bachelor's degree,6.0,5.0,5.0,5.0,5.0,-6.0
+6955,Expert,Human-like,Epistemically unwarranted beliefs,100.0,100.0,49.0,Female,High school graduate,4.0,6.0,6.0,6.0,6.0,0.0
+6960,AI,Neutral,Conspiracy beliefs,98.0,91.0,53.0,Female,Attended college,2.0,3.0,3.0,2.0,3.0,-7.0
+6980,AI,Human-like,Conspiracy beliefs,93.0,88.0,52.0,Female,High school graduate,2.0,5.0,5.0,3.0,5.0,-5.0
+6999,Expert,Human-like,Epistemically unwarranted beliefs,98.0,100.0,66.0,Male,Bachelor's degree,1.0,5.0,5.0,5.0,5.0,2.0
+7002,AI,Human-like,Conspiracy beliefs,87.0,71.0,78.0,Male,Attended college,1.0,4.0,4.0,4.0,4.0,-16.0
+7020,AI,Human-like,Conspiracy beliefs,90.0,81.0,63.0,Female,Attended college,3.0,4.0,4.0,4.0,3.0,-9.0
+7032,AI,Human-like,Conspiracy beliefs,70.0,71.0,,,Less than high school,5.0,2.0,2.0,1.0,4.0,1.0
+7060,AI,Human-like,Epistemically unwarranted beliefs,91.0,96.0,67.0,Male,Bachelor's degree,2.0,1.0,2.0,2.0,2.0,5.0
+7075,AI,Neutral,Conspiracy beliefs,100.0,100.0,69.0,Female,Graduate degree,3.0,3.0,3.0,2.0,2.0,0.0
+7100,Expert,Neutral,Conspiracy beliefs,80.0,80.0,31.0,Female,Attended college,2.0,6.0,5.0,6.0,5.0,0.0
+7111,AI,Human-like,Conspiracy beliefs,60.0,60.0,54.0,Male,Bachelor's degree,1.0,3.0,5.0,5.0,5.0,0.0
+7114,Expert,Neutral,Conspiracy beliefs,80.0,51.0,66.0,Female,Graduate degree,6.0,5.0,5.0,3.0,3.0,-29.0
+7115,Expert,Neutral,Epistemically unwarranted beliefs,88.0,96.0,56.0,Female,Attended college,5.0,4.0,2.0,4.0,5.0,8.0
+7122,AI,Human-like,Conspiracy beliefs,92.0,92.0,50.0,Female,Attended college,5.0,4.0,5.0,1.0,2.0,0.0
+7126,Expert,Neutral,Epistemically unwarranted beliefs,91.0,29.0,45.0,Female,Attended college,3.0,5.0,5.0,4.0,5.0,-62.0
+7129,AI,Human-like,Epistemically unwarranted beliefs,98.0,0.0,23.0,Male,Bachelor's degree,3.0,5.0,5.0,6.0,5.0,-98.0
+7146,AI,Neutral,Epistemically unwarranted beliefs,60.0,61.0,61.0,Female,Bachelor's degree,1.0,2.0,5.0,2.0,5.0,1.0
+7155,AI,Neutral,Epistemically unwarranted beliefs,99.0,100.0,67.0,Female,Bachelor's degree,1.0,1.0,3.0,2.0,2.0,1.0
+7169,Expert,Human-like,Epistemically unwarranted beliefs,99.0,100.0,51.0,Female,Bachelor's degree,3.0,1.0,1.0,2.0,2.0,1.0
+7177,AI,Human-like,Conspiracy beliefs,78.0,79.0,22.0,Female,Attended college,2.0,6.0,3.0,4.0,4.0,1.0
+7178,AI,Neutral,Epistemically unwarranted beliefs,100.0,100.0,68.0,Male,High school graduate,6.0,6.0,6.0,6.0,6.0,0.0
+7194,AI,Human-like,Epistemically unwarranted beliefs,94.0,96.0,,,Less than high school,4.0,6.0,6.0,4.0,5.0,2.0
+7197,Expert,Neutral,Conspiracy beliefs,72.0,69.0,45.0,Male,Bachelor's degree,4.0,4.0,4.0,4.0,4.0,-3.0
+7231,Expert,Human-like,Conspiracy beliefs,93.0,76.0,36.0,Male,Bachelor's degree,2.0,3.0,4.0,1.0,1.0,-17.0
+7236,Expert,Neutral,Epistemically unwarranted beliefs,100.0,100.0,53.0,Female,Graduate degree,5.0,4.0,6.0,5.0,5.0,0.0
+7247,Expert,Human-like,Epistemically unwarranted beliefs,71.0,69.0,38.0,Female,Bachelor's degree,2.0,5.0,6.0,5.0,6.0,-2.0
+7251,Expert,Neutral,Epistemically unwarranted beliefs,91.0,61.0,71.0,Male,Attended college,2.0,5.0,6.0,5.0,6.0,-30.0
+7253,AI,Neutral,Epistemically unwarranted beliefs,100.0,100.0,74.0,Male,Bachelor's degree,1.0,3.0,4.0,2.0,4.0,0.0
+7271,Expert,Human-like,Conspiracy beliefs,67.0,100.0,66.0,Female,High school graduate,6.0,4.0,4.0,1.0,4.0,33.0
+7277,AI,Human-like,Conspiracy beliefs,82.0,50.0,66.0,Female,Attended college,2.0,4.0,5.0,3.0,5.0,-32.0
+7279,AI,Neutral,Epistemically unwarranted beliefs,75.0,86.0,23.0,Female,Less than high school,5.0,5.0,4.0,4.0,5.0,11.0
+7285,Expert,Neutral,Epistemically unwarranted beliefs,87.0,50.0,23.0,Male,Bachelor's degree,3.0,5.0,5.0,5.0,3.0,-37.0
+7290,AI,Neutral,Epistemically unwarranted beliefs,93.0,92.0,76.0,Male,Bachelor's degree,1.0,5.0,5.0,5.0,5.0,-1.0
+7302,Expert,Neutral,Epistemically unwarranted beliefs,100.0,100.0,25.0,Male,Bachelor's degree,2.0,5.0,5.0,4.0,4.0,0.0
+7304,Expert,Neutral,Conspiracy beliefs,61.0,71.0,33.0,Female,High school graduate,4.0,4.0,5.0,5.0,4.0,10.0
+7327,AI,Human-like,Epistemically unwarranted beliefs,91.0,72.0,30.0,Male,Attended college,3.0,5.0,5.0,5.0,5.0,-19.0
+7332,Expert,Human-like,Conspiracy beliefs,59.0,38.0,39.0,Female,Graduate degree,2.0,3.0,5.0,1.0,3.0,-21.0
+7351,AI,Neutral,Epistemically unwarranted beliefs,100.0,100.0,26.0,Female,Bachelor's degree,3.0,2.0,4.0,3.0,2.0,0.0
+7365,Expert,Human-like,Epistemically unwarranted beliefs,83.0,63.0,18.0,Female,High school graduate,2.0,5.0,6.0,5.0,4.0,-20.0
+7366,Expert,Neutral,Conspiracy beliefs,85.0,50.0,27.0,Female,Attended college,2.0,5.0,5.0,4.0,4.0,-35.0
+7371,Expert,Human-like,Epistemically unwarranted beliefs,81.0,81.0,44.0,Male,High school graduate,4.0,1.0,5.0,4.0,4.0,0.0
+7374,AI,Human-like,Conspiracy beliefs,100.0,81.0,76.0,Female,Bachelor's degree,6.0,5.0,6.0,4.0,6.0,-19.0
+7385,AI,Human-like,Epistemically unwarranted beliefs,75.0,71.0,59.0,Female,Vocational training,2.0,4.0,4.0,4.0,4.0,-4.0
+7388,Expert,Neutral,Conspiracy beliefs,58.0,54.0,41.0,Female,High school graduate,5.0,5.0,5.0,5.0,5.0,-4.0
+7406,Expert,Neutral,Conspiracy beliefs,70.0,29.0,32.0,Male,Bachelor's degree,3.0,6.0,6.0,5.0,6.0,-41.0
+7409,AI,Human-like,Conspiracy beliefs,92.0,91.0,,,Less than high school,2.0,3.0,2.0,1.0,2.0,-1.0
+7436,Expert,Neutral,Conspiracy beliefs,100.0,100.0,55.0,Male,High school graduate,5.0,3.0,4.0,4.0,1.0,0.0
+7442,AI,Neutral,Epistemically unwarranted beliefs,74.0,95.0,43.0,Male,Graduate degree,5.0,6.0,5.0,5.0,6.0,21.0
+7453,Expert,Human-like,Conspiracy beliefs,100.0,100.0,23.0,Female,Bachelor's degree,6.0,1.0,6.0,1.0,1.0,0.0
+7494,Expert,Human-like,Epistemically unwarranted beliefs,91.0,91.0,55.0,Female,Bachelor's degree,4.0,2.0,2.0,1.0,2.0,0.0
+7499,AI,Human-like,Epistemically unwarranted beliefs,100.0,100.0,42.0,Male,Graduate degree,6.0,6.0,6.0,6.0,5.0,0.0
+7505,AI,Human-like,Conspiracy beliefs,100.0,100.0,71.0,Male,Bachelor's degree,6.0,4.0,5.0,4.0,3.0,0.0
+7507,Expert,Neutral,Conspiracy beliefs,81.0,68.0,57.0,Female,Less than high school,4.0,3.0,4.0,2.0,3.0,-13.0
+7521,AI,Neutral,Conspiracy beliefs,76.0,33.0,36.0,Male,Bachelor's degree,2.0,5.0,5.0,4.0,5.0,-43.0
+7528,AI,Human-like,Conspiracy beliefs,99.0,76.0,35.0,Male,High school graduate,3.0,1.0,1.0,2.0,2.0,-23.0
+7537,Expert,Neutral,Conspiracy beliefs,100.0,100.0,58.0,Male,Graduate degree,5.0,1.0,2.0,1.0,1.0,0.0
+7540,AI,Neutral,Epistemically unwarranted beliefs,100.0,100.0,50.0,Male,Graduate degree,1.0,6.0,6.0,6.0,6.0,0.0
+7545,Expert,Neutral,Conspiracy beliefs,81.0,50.0,67.0,Female,Bachelor's degree,4.0,4.0,6.0,3.0,4.0,-31.0
+7567,Expert,Neutral,Epistemically unwarranted beliefs,100.0,98.0,60.0,Male,Bachelor's degree,5.0,1.0,2.0,1.0,1.0,-2.0
+7595,AI,Human-like,Conspiracy beliefs,95.0,96.0,58.0,Female,Bachelor's degree,5.0,4.0,4.0,2.0,4.0,1.0
+7600,Expert,Neutral,Conspiracy beliefs,100.0,93.0,65.0,Female,Attended college,4.0,2.0,4.0,2.0,3.0,-7.0
+7601,Expert,Neutral,Conspiracy beliefs,70.0,70.0,27.0,Male,Bachelor's degree,2.0,3.0,3.0,3.0,3.0,0.0
+7602,Expert,Human-like,Conspiracy beliefs,87.0,49.0,21.0,Female,High school graduate,4.0,6.0,5.0,5.0,6.0,-38.0
+7609,AI,Human-like,Epistemically unwarranted beliefs,92.0,91.0,65.0,Female,Bachelor's degree,1.0,5.0,5.0,4.0,5.0,-1.0
+7610,Expert,Neutral,Conspiracy beliefs,75.0,75.0,19.0,Female,Attended college,2.0,5.0,5.0,4.0,4.0,0.0
+7614,Expert,Human-like,Epistemically unwarranted beliefs,100.0,100.0,55.0,Female,Bachelor's degree,6.0,1.0,2.0,1.0,1.0,0.0
+7625,Expert,Neutral,Conspiracy beliefs,97.0,96.0,34.0,Male,Graduate degree,6.0,5.0,5.0,6.0,6.0,-1.0
+7627,Expert,Human-like,Conspiracy beliefs,82.0,81.0,57.0,Male,Bachelor's degree,3.0,2.0,4.0,4.0,5.0,-1.0
+7631,AI,Human-like,Conspiracy beliefs,71.0,70.0,70.0,Female,High school graduate,6.0,5.0,3.0,3.0,3.0,-1.0
+7646,AI,Human-like,Conspiracy beliefs,100.0,99.0,40.0,Female,Bachelor's degree,3.0,1.0,2.0,1.0,1.0,-1.0
+7667,AI,Human-like,Conspiracy beliefs,70.0,50.0,67.0,Female,Attended college,4.0,3.0,5.0,3.0,5.0,-20.0
+7668,Expert,Neutral,Conspiracy beliefs,100.0,81.0,85.0,Male,High school graduate,6.0,3.0,5.0,4.0,4.0,-19.0
+7673,Expert,Human-like,Epistemically unwarranted beliefs,92.0,91.0,72.0,Female,Graduate degree,4.0,4.0,4.0,4.0,4.0,-1.0
+7677,AI,Human-like,Conspiracy beliefs,92.0,82.0,55.0,Female,Graduate degree,4.0,2.0,4.0,2.0,3.0,-10.0
+7685,AI,Human-like,Conspiracy beliefs,87.0,86.0,46.0,Female,Bachelor's degree,6.0,5.0,6.0,5.0,6.0,-1.0
+7696,AI,Human-like,Conspiracy beliefs,87.0,87.0,54.0,Female,Attended college,3.0,4.0,5.0,4.0,3.0,0.0
+7697,AI,Neutral,Epistemically unwarranted beliefs,87.0,99.0,49.0,Male,Graduate degree,5.0,6.0,5.0,6.0,5.0,12.0
+7700,AI,Neutral,Conspiracy beliefs,100.0,92.0,82.0,Male,Attended college,6.0,4.0,6.0,5.0,6.0,-8.0
+7704,Expert,Neutral,Epistemically unwarranted beliefs,81.0,81.0,38.0,Male,Graduate degree,5.0,5.0,5.0,5.0,6.0,0.0
+7705,AI,Neutral,Conspiracy beliefs,71.0,0.0,70.0,Male,Attended college,3.0,5.0,5.0,5.0,5.0,-71.0
+7710,AI,Neutral,Conspiracy beliefs,64.0,91.0,56.0,Female,Attended college,4.0,4.0,5.0,2.0,5.0,27.0
+7726,Expert,Human-like,Epistemically unwarranted beliefs,90.0,92.0,42.0,Male,Graduate degree,5.0,6.0,6.0,5.0,4.0,2.0
+7734,AI,Human-like,Epistemically unwarranted beliefs,100.0,100.0,87.0,Male,Vocational training,1.0,5.0,6.0,5.0,6.0,0.0
+7746,AI,Human-like,Conspiracy beliefs,100.0,100.0,74.0,Female,Bachelor's degree,6.0,3.0,4.0,3.0,3.0,0.0
+7755,AI,Neutral,Epistemically unwarranted beliefs,91.0,91.0,42.0,Male,Graduate degree,1.0,5.0,5.0,5.0,5.0,0.0
+7779,Expert,Human-like,Epistemically unwarranted beliefs,91.0,100.0,82.0,Female,High school graduate,4.0,1.0,1.0,1.0,1.0,9.0
+7784,Expert,Human-like,Epistemically unwarranted beliefs,100.0,100.0,50.0,Female,High school graduate,1.0,6.0,6.0,6.0,6.0,0.0
+7801,Expert,Neutral,Epistemically unwarranted beliefs,67.0,89.0,34.0,Male,Graduate degree,5.0,4.0,3.0,5.0,5.0,22.0
+8203,Expert,Neutral,Epistemically unwarranted beliefs,82.0,61.0,47.0,Male,Attended college,5.0,3.0,5.0,4.0,5.0,-21.0
+8205,Expert,Human-like,Epistemically unwarranted beliefs,100.0,100.0,72.0,Female,Vocational training,6.0,6.0,6.0,5.0,6.0,0.0
+8210,AI,Neutral,Conspiracy beliefs,82.0,81.0,75.0,Female,Bachelor's degree,6.0,5.0,5.0,2.0,5.0,-1.0
+8211,AI,Human-like,Conspiracy beliefs,60.0,50.0,70.0,Female,Attended college,3.0,5.0,5.0,4.0,4.0,-10.0
+8212,AI,Human-like,Epistemically unwarranted beliefs,97.0,80.0,25.0,Female,High school graduate,2.0,5.0,1.0,5.0,5.0,-17.0
+8218,AI,Neutral,Conspiracy beliefs,51.0,50.0,52.0,Male,Bachelor's degree,2.0,3.0,5.0,4.0,4.0,-1.0
+8219,Expert,Human-like,Epistemically unwarranted beliefs,58.0,52.0,46.0,Female,Graduate degree,1.0,3.0,5.0,3.0,4.0,-6.0
+8220,AI,Neutral,Epistemically unwarranted beliefs,75.0,96.0,69.0,Female,High school graduate,5.0,5.0,5.0,4.0,5.0,21.0
+8222,AI,Human-like,Epistemically unwarranted beliefs,90.0,86.0,64.0,Female,Bachelor's degree,3.0,1.0,2.0,1.0,1.0,-4.0
+8223,Expert,Neutral,Conspiracy beliefs,59.0,26.0,63.0,Female,High school graduate,2.0,4.0,5.0,4.0,4.0,-33.0
+8224,Expert,Human-like,Conspiracy beliefs,100.0,61.0,75.0,Male,Attended college,6.0,6.0,5.0,5.0,5.0,-39.0
+8225,Expert,Neutral,Conspiracy beliefs,75.0,71.0,65.0,Male,Attended college,5.0,5.0,5.0,4.0,5.0,-4.0
+8227,Expert,Neutral,Epistemically unwarranted beliefs,96.0,97.0,81.0,Female,Graduate degree,2.0,4.0,4.0,2.0,3.0,1.0
+8229,AI,Human-like,Epistemically unwarranted beliefs,60.0,61.0,59.0,Female,Vocational training,3.0,4.0,4.0,4.0,4.0,1.0
+8232,AI,Human-like,Conspiracy beliefs,100.0,100.0,48.0,Male,Graduate degree,6.0,6.0,5.0,6.0,6.0,0.0

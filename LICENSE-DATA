@@ -1,0 +1,40 @@
+Creative Commons Attribution 4.0 International (CC-BY-4.0)
+
+The derivative scored data files in this repository (`data/`) are licensed
+under CC-BY-4.0. You may share, copy, redistribute, adapt, and build upon
+the material for any purpose, even commercially, under the following terms:
+
+  Attribution — You must give appropriate credit, provide a link to the
+  licence, and indicate if changes were made. You may do so in any reasonable
+  manner, but not in any way that suggests the licensor endorses you or your use.
+
+  Citation — When using these data files, please cite:
+
+    Madl, T. (2026). Text-measured cognitive complexity predicts belief
+    revision in AI persuasion. (Manuscript under review.)
+
+Full text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+----
+
+IMPORTANT — original-dataset terms
+
+The scored data files in this repository are derivative works combining
+participant text and outcome variables from the source datasets cited in the
+paper with new IC and IH score columns produced by the LoRA scorers
+documented at https://huggingface.co/tmadl/IC-Qwen3.5-ORPO-400 and
+https://huggingface.co/tmadl/IH-Qwen3.5-ORPO-Guo.
+
+Use of the underlying participant text from the original datasets remains
+governed by the original-dataset licences:
+
+  - Costello et al. 2024 — OSF terms; see https://osf.io/gdkb7/
+  - Boissin et al. 2025 — OSF terms; see https://osf.io/wyvxf/
+  - Cheng et al. 2026 — terms set by the publication
+  - Salvi et al. 2025 — terms attached to https://huggingface.co/datasets/frasalvi/debategpt
+  - Tessler et al. 2024 — terms set by the *Science* data appendix
+  - Suedfeld/Jakob validation corpora — see citations in paper SI Note 2
+
+If you redistribute or transform any participant-text columns originally
+sourced from those datasets, you must comply with their terms in addition
+to (not instead of) CC-BY-4.0 on the new score columns.
