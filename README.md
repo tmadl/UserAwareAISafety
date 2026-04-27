@@ -2,7 +2,7 @@
 
 Reproducibility code and data for:
 
-> Madl, T. (2026). *Text-measured cognitive complexity predicts belief revision in AI persuasion.* (Manuscript under review.)
+> Madl, T. (2026). *Text-measured cognitive complexity predicts belief revision in AI persuasion.* PsyArXiv preprint. <https://osf.io/preprints/psyarxiv/mdxvs_v1>
 
 This repository contains the analysis pipeline, derivative scored data, and scoring scripts needed to reproduce the main-text empirical claims and the SI Appendix robustness checks. A coverage matrix in `docs/REPRODUCIBILITY.md` lists each SI Note's status; all numerical Notes reproduce from this repository (some require downloading the raw Costello publication CSV from OSF for participant-level fields not redistributed here). Model weights for the two fine-tuned LoRA scorers are released separately on HuggingFace.
 
@@ -141,12 +141,13 @@ The repository ships **derivative scored data only**. Raw participant text and o
 If you use this code, models, or scored data, please cite both the paper and the scorer model cards:
 
 ```bibtex
-@unpublished{madl2026cognitive,
-  author = {Madl, Tamas},
-  title  = {Text-measured cognitive complexity predicts belief revision in AI persuasion},
-  year   = {2026},
-  note   = {Manuscript under review.
-            Reproducibility: https://github.com/tmadl/UserAwareAISafety}
+@misc{madl2026cognitive,
+  author       = {Madl, Tamas},
+  title        = {Text-measured cognitive complexity predicts belief revision in AI persuasion},
+  year         = {2026},
+  howpublished = {PsyArXiv preprint},
+  url          = {https://osf.io/preprints/psyarxiv/mdxvs_v1},
+  note         = {Reproducibility: https://github.com/tmadl/UserAwareAISafety}
 }
 ```
 

@@ -21,7 +21,7 @@ abstract: >-
   text-measured integrative complexity.
 license: MIT
 preferred-citation:
-  type: unpublished
+  type: generic
   title: >-
     Text-measured cognitive complexity predicts belief revision in
     AI persuasion
@@ -29,6 +29,7 @@ preferred-citation:
     - given-names: Tamas
       family-names: Madl
   year: 2026
+  url: 'https://osf.io/preprints/psyarxiv/mdxvs_v1'
   notes: >-
-    Manuscript under review. Reproducibility:
+    PsyArXiv preprint. Reproducibility:
     https://github.com/tmadl/UserAwareAISafety
