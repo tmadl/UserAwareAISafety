@@ -24,7 +24,7 @@ The result is robust across scorer choice, within-study refits, demographic adju
 
 ### Practical significance
 
-The effect is modest in aggregate variance explained, as expected for an individual-difference moderator concentrated at the tails. But the tail pattern is practically meaningful: flagging only the lowest-IC quintile for adaptive pacing and comprehension safeguards would preserve **86%** of substantial belief revisions while capturing **24%** of post-conversation belief-strengthening cases. Leave-one-study-out performance gives **AUC = 0.69**.
+The effect is modest in aggregate variance explained, as expected for an individual-difference moderator concentrated at the tails. But the tail pattern is practically meaningful: flagging only the lowest-IC quintile for adaptive pacing and comprehension safeguards would preserve **86%** of substantial belief revisions while capturing **25%** of post-conversation belief-strengthening cases. Leave-one-study-out performance gives **AUC = 0.69**.
 
 ### Scope and boundary conditions
 
