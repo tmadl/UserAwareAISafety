@@ -1,10 +1,40 @@
 # UserAwareAISafety
 
-Reproducibility code and data for:
+Reproducibility code, derived scored data, figure scripts, and scorer utilities for:
 
-> Madl, T. (2026). *Text-measured cognitive complexity predicts belief revision in AI persuasion.* PsyArXiv preprint. <https://osf.io/preprints/psyarxiv/mdxvs_v1>
+> Madl, T. (2026). *Text-measured cognitive complexity predicts belief revision in AI persuasion.* PsyArXiv preprint / manuscript under review. <https://osf.io/preprints/psyarxiv/mdxvs_v2>
 
-This repository contains the analysis pipeline, derivative scored data, and scoring scripts needed to reproduce the main-text empirical claims and the SI Appendix robustness checks. A coverage matrix in `docs/REPRODUCIBILITY.md` lists each SI Note's status; all numerical Notes reproduce from this repository (some require downloading the raw Costello publication CSV from OSF for participant-level fields not redistributed here). Model weights for the two fine-tuned LoRA scorers are released separately on HuggingFace.
+This repository is primarily the reproducibility package for the Costello AI-persuasion reanalysis. It also serves as a public code and measurement-tooling entry point for the broader research programme **Human Cognitive Autonomy in AI Interaction**, which studies how AI dialogue affects users' reflective agency and reasoning processes.
+
+The reproducibility package contains the analysis pipeline, derived score tables, figure scripts, and scoring scripts needed to reproduce the main-text empirical claims and SI Appendix robustness checks. A coverage matrix in `docs/REPRODUCIBILITY.md` lists each SI Note's status; the numerical Notes covered by the matrix reproduce from this repository, with some requiring the raw Costello publication CSV from Dryad for participant-level fields not redistributed here. Model weights for the released scorers are hosted separately on Hugging Face.
+
+## Start here
+
+| Goal | Where to go |
+|---|---|
+| Reproduce the Costello reanalysis / IC paper | Start with [Quick start](#quick-start), then [Reproducing each paper claim](#reproducing-each-paper-claim). |
+| Check which scripts reproduce which claims | See `docs/REPRODUCIBILITY.md`. |
+| Score new text with the IC scorer or reproduce the paper-era IH checks | See [Scoring new text](#scoring-new-text) and `docs/SCORER_USAGE.md`. For new IH analyses, prefer `IH-scorer-v2` on Hugging Face. |
+| Find the released scorer weights / model cards | See [Released research scorers](#released-research-scorers-used-here). |
+| Understand the broader research programme | See [Programme context](#programme-context). |
+| Cite the paper, code, or models | See [Citation](#citation). |
+
+## Programme context
+
+This repository anchors one empirical component of a broader programme on
+Human Cognitive Autonomy in AI Interaction: when AI dialogue supports users'
+reflective agency, and when it instead narrows, substitutes for, or weakens 
+users' own reasoning processes.
+
+The present repository implements the reproducibility package for the Costello
+AI-persuasion reanalysis. It does not attempt to reproduce or document the broader 
+theoretical framework, which is developed in a separate manuscript currently under review.
+
+Related scorer model cards are linked below for transparency and reuse. Only
+the IC scorer is required for the main Costello reproduction; the IH scorers
+are included because they are used in construct-neighbour and reproducibility
+checks. Other programme-related instruments are documented separately and are
+not required to reproduce this paper.
 
 ## About the paper
 
@@ -18,41 +48,56 @@ IC moderates belief change in an **inverted-U** pattern. Belief revision is larg
 - $\text{BF}_{10} = 1{,}086$
 - $p < .001$
 
-This matches McGuire's reception–yielding trade-off. Low-IC users appear less able to receive dense, multi-step evidence; high-IC users appear better able to integrate new evidence into an already structured belief system without yielding. Mid-IC users revise most.
+This matches the inverted-U pattern predicted by McGuire's reception–yielding trade-off under reception-demanding, evidence-dense persuasion. Low-IC pre-treatment texts are associated with reduced revision under dense, multi-step evidence; high-IC pre-treatment texts are associated with attenuated revision, consistent with greater yielding resistance or integration of new evidence into an already structured belief system. Mid-IC contexts revise most.
 
-The result is robust across scorer choice, within-study refits, demographic adjustment, topic controls, and discriminant tests against nearby constructs (intellectual humility scored both via rubric prompting and via a construct-validated Guo-EMNLP-anchored text scorer; actively open-minded thinking; need for cognition; open-mindedness).
+The result is robust across IC-scoring variants, within-study refits, demographic adjustment, topic controls, and discriminant tests against nearby constructs, including intellectual humility, actively open-minded thinking, need for cognition, and open-mindedness.
 
 ### Practical significance
 
-The effect is modest in aggregate variance explained, as expected for an individual-difference moderator concentrated at the tails. But the tail pattern is practically meaningful: flagging only the lowest-IC quintile for adaptive pacing and comprehension safeguards would preserve **86%** of substantial belief revisions while capturing **25%** of post-conversation belief-strengthening cases. Leave-one-study-out performance gives **AUC = 0.69**.
+The effect is modest in aggregate variance explained, as expected for an individual-difference moderator concentrated at the tails. But the tail pattern is practically meaningful: in a post hoc enrichment analysis, assigning the lowest-IC quintile to a hypothetical adaptive-support path would preserve **86%** of substantial belief revisions while capturing **24%** of post-conversation belief-strengthening cases. Leave-one-study-out performance gives **AUC = 0.69**.
+
+This operating point is illustrative, not a proposed deployment threshold. The intended design implication is to study support mechanisms that preserve reflection under specified task conditions, not to assign users to exclusion, gating, profiling, or persistent labels.
 
 ### Scope and boundary conditions
 
-Across four additional conversational-AI datasets, the effect appears bounded: IC moderates AI-mediated belief change when both conditions hold:
-
-1. the AI has a directional persuasion target, and
-2. the belief is personally held.
-
-That pattern appears in the Costello and Boissin debunking datasets, but not in adversarial debate on assigned positions, interpersonal-conflict validation, or consensus-seeking deliberation.
+Across four additional conversational-AI datasets, IC moderation appears bounded by task structure. The Costello inverted-U appears in an evidence-dense, personally held, directional debunking dialogue. In the shorter Boissin debunking paradigm, IC shows the predicted yielding-resistance pattern rather than the full inverted-U. In paradigms lacking either a directional persuasion target or a personally held belief, the predicted Costello-style pattern is not recovered.
 
 ## What's in here
 
 | Directory | Contents |
 |---|---|
-| `analysis/` | Numbered Python scripts (`01`–`13`) that reproduce each main-text section and SI Note from the bundled scored data. |
-| `scoring/` | Inference scripts for the two fine-tuned scorers; loads weights from HuggingFace, scores text, writes CSVs. |
-| `data/` | Per-dataset scored CSVs (derivative works) and validation data. **Raw participant text from the source datasets is not redistributed**; pointers below. |
+| `analysis/` | Numbered Python scripts (`01`–`13`) that reproduce each main-text section and SI Note from the bundled scored datasets. |
+| `scoring/` | Inference scripts for the IC scorer and legacy IH reproducibility scorer; loads weights from Hugging Face, scores text, writes CSVs. |
+| `data/` | Per-dataset scored CSVs and validation data. **Raw participant text from the source datasets is not redistributed**; pointers below. |
 | `docs/` | Reproducibility walk-through, scorer-usage notes, data provenance. |
-| `figures/` | Figure-generating scripts (figures themselves regenerate from data). |
+| `figures/` | Figure-generating scripts; figures regenerate from data. |
 
-## Released model weights
+## Released research scorers used here
 
-| Scorer | HuggingFace | Held-out validation |
-|---|---|---|
-| Integrative Complexity (primary) | [`tmadl/IC-Qwen3.5-ORPO-400`](https://huggingface.co/tmadl/IC-Qwen3.5-ORPO-400) | Suedfeld-155: ICC(3,1) = .704, r = .757; Jakob-2275: ICC(3,1) = .797, r = .802 |
-| Intellectual Humility (construct-validated) | [`tmadl/IH-Qwen3.5-ORPO-Guo`](https://huggingface.co/tmadl/IH-Qwen3.5-ORPO-Guo) | Guo 2024 EMNLP held-out: r = .71 |
+The scorer weights used by this repository are hosted separately on Hugging Face.
 
-Both adapters are CC-BY-NC-4.0; LoRA on `unsloth/Qwen3.5-27B` (Apache-2.0).
+Exact reproduction of the Costello / IC paper uses the IC scorer and, for some
+construct-neighbour checks, the legacy IH reproducibility scorer. The legacy IH
+scorer is retained for reproducibility only. For new IH analyses outside this
+paper, use `IH-scorer-v2`.
+
+| Scorer | Role in this repo |
+|---|---|
+| [`IC-Qwen3.5-ORPO-400`](https://huggingface.co/tmadl/IC-Qwen3.5-ORPO-400) | Required for the Costello / IC paper. |
+| [`IH-Qwen3.5-ORPO-Guo`](https://huggingface.co/tmadl/IH-Qwen3.5-ORPO-Guo) | Frozen legacy IH scorer used for exact reproduction of paper-era construct-neighbour checks. |
+| [`IH-scorer-v2`](https://huggingface.co/tmadl/IH-scorer-v2) | Recommended current IH scorer for new analyses outside exact reproduction. |
+
+Full validation coefficients, training details, intended use, and limitations
+are documented in the linked Hugging Face model cards. This repository
+reproduces only the Costello / IC analyses.
+
+### Measurement-status note
+
+These scorers estimate expressed properties of passages under specified scoring
+conditions. They should not be used as stable labels for people. In particular,
+they are not suitable for diagnosis, individual-level profiling, eligibility
+decisions, psychological targeting, access restriction, third-party reporting,
+or deployment as standalone safety filters.
 
 ## Quick start
 
@@ -104,7 +149,7 @@ Each numbered script in `analysis/` corresponds to a section of the paper. See `
 | `note22_loso_enrichment.py` | Out-of-sample enrichment / LOSO (SI Note 22) |
 | `10_topic_fixed_effects.py` | Within-topic fixed-effects refit (SI Note 19) |
 | `11_baseline_anchor.py` | Control-arm placebo anchoring (SI Note 9) |
-| `12_quintile_demographics.py` | IH-quintile demographic composition (SI Note 23) |
+| `12_quintile_demographics.py` | IC-quintile demographic composition (SI Note 23) |
 | `13_text_model_shape_test.py` | Generic text-model shape test (SI Note 26) — optional, requires `OPENAI_API_KEY` to refetch embeddings |
 | `figures/fig1_headline.py` | Main-text Figure 1 (Costello inverted-U) |
 | `figures/fig2_costello_deepdive.py` | Main-text Figure 2 (enrichment + LOSO) |
@@ -119,6 +164,8 @@ python scoring/score_ic.py --input my_texts.jsonl --output my_ic_scores.csv
 python scoring/score_ih.py --input my_texts.jsonl --output my_ih_scores.csv
 ```
 
+**Note**: The bundled scripts reproduce the paper-era IC and legacy IH scoring paths. For new IH analyses, use the [`IH-scorer-v2`](https://huggingface.co/tmadl/IH-scorer-v2) Hugging Face inference code rather than `scoring/score_ih.py`.
+
 See `docs/SCORER_USAGE.md` for input format, hardware notes, and the exact prompts.
 
 ## Data provenance
@@ -127,14 +174,14 @@ The repository ships **derivative scored data only**. Raw participant text and o
 
 | Dataset | Source | Redistribution |
 |---|---|---|
-| Costello et al. 2024 | [OSF — gdkb7](https://osf.io/gdkb7/) | Bundled: scored derivatives + filtered analysis files. Not bundled: raw `AllDataForPublication.PPI.8.28.24.csv`. |
+| Costello et al. 2024 | [DRYAD — DOI 10.5061/dryad.v6wwpzh4h](https://datadryad.org/dataset/doi:10.5061/dryad.v6wwpzh4h) | Bundled: scored derivatives + filtered analysis files. Not bundled: raw `AllDataForPublication.PPI.8.28.24.csv` from the Dryad archive. |
 | Boissin et al. 2025 | [OSF — wyvxf](https://osf.io/wyvxf/) | Bundled: scored derivatives + analysis files. Not bundled: raw participant data. |
 | Cheng et al. 2026 | Original publication | Bundled: scored derivatives + analysis files. |
 | Salvi et al. 2025 | [`frasalvi/debategpt`](https://huggingface.co/datasets/frasalvi/debategpt) | Bundled: scored derivatives. |
 | Tessler et al. 2024 | *Science* data appendix | Bundled: scored derivatives. |
-| Suedfeld-155 | [Tetlock & Suedfeld 1977 corpus](https://github.com/.../suedfeld) | Bundled: held-out validation scores. |
+| Suedfeld-155 | [Tetlock & Suedfeld corpus](https://github.com/.../suedfeld) | Bundled: held-out validation scores. |
 | Jakob-2275 | [Jakob et al. 2022 corpus](https://github.com/.../jakob2022) | Bundled: cross-validation scores. |
-| Guo-EMNLP IH labels | [Guo 2024](https://github.com/xiaobo-guo/...) | Not bundled (used only in scorer training; weights on HF). |
+| Guo-EMNLP IH labels | [Guo 2024](https://github.com/xiaobo-guo/The-Computational-Anatomy-of-Humility-Modeling-Intellectual-Humility-in-Online-Public-Discourse) | Not bundled (used only in scorer training; weights on HF). |
 
 ## Citation
 
@@ -146,10 +193,12 @@ If you use this code, models, or scored data, please cite both the paper and the
   title        = {Text-measured cognitive complexity predicts belief revision in AI persuasion},
   year         = {2026},
   howpublished = {PsyArXiv preprint},
-  url          = {https://osf.io/preprints/psyarxiv/mdxvs_v1},
+  url          = {https://osf.io/preprints/psyarxiv/mdxvs_v2},
   note         = {Reproducibility: https://github.com/tmadl/UserAwareAISafety}
 }
 ```
+
+If you use a scorer, cite the corresponding Hugging Face model card and version in addition to the paper.
 
 ## Licensing
 
