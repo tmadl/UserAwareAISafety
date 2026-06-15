@@ -1,0 +1,46 @@
+N = 1783
+
+=== correlation matrix ===
+           IC_q400  AOT_rub  NFC_rub  OMI_rub  IH_rubric  IH_v2
+IC_q400      1.000    0.423    0.591    0.383      0.359  0.368
+AOT_rub      0.423    1.000    0.580    0.891      0.822  0.371
+NFC_rub      0.591    0.580    1.000    0.464      0.394  0.196
+OMI_rub      0.383    0.891    0.464    1.000      0.851  0.436
+IH_rubric    0.359    0.822    0.394    0.851      1.000  0.499
+IH_v2        0.368    0.371    0.196    0.436      0.499  1.000
+
+=== IC reference (standalone quadratic) ===
+IC_q400: n=1782, b_quad=-15.17 (p=0.0000), BF=1.09e+03
+
+=== REVERSE partials: IC_q400 residualised on each alternative ===
+IC | NFC_rub  : n=1782, b_lin=+1.84 (p=0.003), b_quad=-1.99 (p=0.0005), BF_quad=11.3
+IC | AOT_rub  : n=1782, b_lin=-1.29 (p=0.052), b_quad=-2.04 (p=0.0003), BF_quad=15.4
+IC | OMI_rub  : n=1782, b_lin=-1.87 (p=0.005), b_quad=-2.21 (p=0.0001), BF_quad=54.6
+IC | IH_rubric: n=1782, b_lin=-1.67 (p=0.012), b_quad=-2.66 (p=0.0000), BF_quad=1.77e+03
+IC | IH_v2    : n=1782, b_lin=-0.89 (p=0.167), b_quad=-2.39 (p=0.0000), BF_quad=222
+
+=== FORWARD partials (reference; published direction) ===
+NFC_rub   | IC: n=1782, b_quad=-2.09 (p=0.0004), BF_quad=13.3
+AOT_rub   | IC: n=1782, b_quad=-1.19 (p=0.0349), BF_quad=0.221
+OMI_rub   | IC: n=1782, b_quad=-1.18 (p=0.0371), BF_quad=0.209
+IH_rubric | IC: n=1782, b_quad=-1.97 (p=0.0011), BF_quad=4.75
+IH_v2     | IC: n=1782, b_quad=+0.07 (p=0.9144), BF_quad=0.0238
+
+=== MATCHED-WINDOW/CHANNEL: gpt-full-dialogue IC as the IC measure ===
+(rubric alternatives are scored on full dialogue via gpt-4.1-mini,
+ so IC_gptfull | alt and alt | IC_gptfull are the symmetric pair)
+-- positive control: FORWARD partials, should reproduce published
+   values (NFC|IC: BF 0.03; AOT 0.59; OMI 1.5; IH_rubric 285) --
+NFC_rub   | IC_gptfull: n=1783, b_quad=-0.31 (p=0.5920), BF_quad=0.0274
+AOT_rub   | IC_gptfull: n=1783, b_quad=-1.41 (p=0.0113), BF_quad=0.591
+OMI_rub   | IC_gptfull: n=1783, b_quad=-1.55 (p=0.0042), BF_quad=1.46
+IH_rubric | IC_gptfull: n=1783, b_quad=-2.40 (p=0.0000), BF_quad=285
+-- REVERSE: IC_gptfull residualised on each alternative --
+IC_gptfull | NFC_rub  : n=1783, b_quad=-0.29 (p=0.6138), BF_quad=0.0269
+IC_gptfull | AOT_rub  : n=1783, b_quad=-1.89 (p=0.0007), BF_quad=7.71
+IC_gptfull | OMI_rub  : n=1783, b_quad=-2.22 (p=0.0001), BF_quad=84.4
+IC_gptfull | IH_rubric: n=1783, b_quad=-2.94 (p=0.0000), BF_quad=2.97e+04
+r(IC_gptfull, NFC_rub) = 0.781; r(IC_gptfull, IC_q400) = 0.568
+
+=== joint model: IC + IC^2 + NFC + NFC^2 (head-to-head) ===
+n=1782: IC^2 b=-1.04 (p=0.0190); NFC^2 b=-3.94 (p=0.0000)

@@ -1,0 +1,14 @@
+======================================================================
+(A) Peak-to-trough: pooled vs within-topic (central IC range P5-P95)
+======================================================================
+  Pooled       : beta_IC^2=-1.987  apex=2.76  peak-to-trough = 7.23 belief-change points
+  Within-topic : beta_IC^2=-1.152  apex=2.54  peak-to-trough = 3.86 belief-change points
+  ratio within/pooled = 0.53
+
+======================================================================
+(B) Continuous IC^2 x density interaction on |Delta| (magnitude DV)
+======================================================================
+  base                   b(IC^2 x dens)=-0.464  p(2-sided)=0.236  p(1-sided)=0.118
+  + AI-side IC           b(IC^2 x dens)=-0.334  p(2-sided)=0.388  p(1-sided)=0.194
+  + topic FE             b(IC^2 x dens)=-0.394  p(2-sided)=0.308  p(1-sided)=0.154
+  + topic FE + AI-IC     b(IC^2 x dens)=-0.271  p(2-sided)=0.478  p(1-sided)=0.239

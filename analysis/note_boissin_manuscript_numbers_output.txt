@@ -1,0 +1,54 @@
+==============================================================================
+Boissin manuscript numbers (Qwen3.5-ORPO-400 logit-EV, length-fixed)
+N (complete cases) = 955
+==============================================================================
+
+### STEP 1 — ANCHORS (must match verified values) ###
+|Delta| full (n955): beta_lin=-2.31, p=<.001, BF(lin/null)=11.47  [anchor: -2.31, p<.001, 11.47]
+signed full  (n955): beta_lin=+1.72, p=0.023, BF=0.44  [anchor: +1.72, p=.023, 0.44]
+toward Delta<0 (n487): +4.16, p=<.001  [anchor: +4.16, p<.001]
+away   Delta>0 (n234): -0.59, p=0.275  [anchor: -0.59, p=.28]
+AI x HL |Delta| (n244): -3.48, p=0.005, BF=3.25  [anchor: -3.48, p=.005, 3.25]
+
+### (a) tab:absdv_summary — 3 Boissin rows [beta_lin, beta_quad, p, R2(=DeltaR2), BF] ###
+Boissin (955) signed : beta_lin=+1.72, beta_quad=+0.66, p=0.023 (lin), R2=0.005, BF=0.44
+Boissin (955) |Delta|: beta_lin=-2.31, beta_quad=-0.05, p=0.001 (lin), R2=0.012, BF=11.47
+Boissin AIxHL (244) |Delta|: beta_lin=-3.48, beta_quad=-1.48, p=0.005 (lin), R2=0.031, BF=3.25
+
+### (b) tab:absdv_extremity — Boissin (lin) M0/M1/M2 ###
+M0 (IC+pre)           : beta_IC=-2.31, p=0.001
+M1 (M0 + |pre-50|)    : beta_IC=-2.31, p=0.001
+M2 (M1 + IC x|pre-50|): beta_IC=-3.66, p=0.063; interaction beta=+0.0365, p=0.465
+AI x HL extremity-adj : M1 beta_IC=-3.48, p=0.005; interaction p=0.664
+  prose@426 should read M1 (after |pre-50| adjustment).
+
+### (c) tab:boissin_movers — signed belief_change ~ IC + pre ###
+Full                : n= 955  beta_lin=+1.72  p=0.023
+|Delta|>0           : n= 721  beta_lin=+1.98  p=0.039
+|Delta|>=5          : n= 447  beta_lin=+2.26  p=0.108
+Delta<0 toward      : n= 487  beta_lin=+4.16  p=<.001
+Delta>0 backfired   : n= 234  beta_lin=-0.59  p=0.275
+
+### (d) two-source table — text_all vs text_initial ###
+Q400 text_all (full)    : beta_lin=+1.72, p=0.023, BF(lin/null)=0.44, BF(quad/lin)=0.05
+Q400 text_initial (pre) : beta_lin=+0.59, p=0.459, BF(lin/null)=0.04, BF(quad/lin)=0.04
+AI x HL prose@642: pre-only beta_lin=+1.39 (p=0.328) vs full beta_lin=+3.15 (p=0.022)
+r(IC_all, IC_init) on same participants = 0.681
+
+### (e) tab:boissin_cells — per-cell signed fits [n, beta_lin, p, BF(lin vs null)] ###
+Pooled                            : n= 955  beta_lin=+1.72  p=0.023  BF=0.44
+AI                                : n= 499  beta_lin=+2.56  p=0.019  BF=0.72
+AI Human-like                     : n= 244  beta_lin=+3.15  p=0.022  BF=0.93
+AI Human-like x Conspiracy        : n= 129  beta_lin=+3.57  p=0.058  BF=0.56
+AI Human-like x Epist.unw.        : n= 115  beta_lin=+2.51  p=0.208  BF=0.21
+AI Neutral x Conspiracy           : n= 131  beta_lin=+0.09  p=0.975  BF=0.09
+AI Neutral x Epist.               : n= 124  beta_lin=+3.39  p=0.097  BF=0.37
+Expert (all)                      : n= 456  beta_lin=+0.79  p=0.445  BF=0.06
+Expert Human-like x Conspiracy    : n= 129  beta_lin=+3.72  p=0.119  BF=0.31
+Expert Human-like x Epist.        : n= 112  beta_lin=-0.09  p=0.954  BF=0.09
+Expert Neutral x Conspiracy       : n= 117  beta_lin=-1.02  p=0.643  BF=0.10
+Expert Neutral x Epist.           : n=  98  beta_lin=-1.33  p=0.529  BF=0.12
+
+### (f) movers-toward ratio (line-567 prose) ###
+toward-slope (+4.16) / full-signed-slope (+1.72) = 2.42x
+  ('triples' is wrong; report ~2.4-fold)

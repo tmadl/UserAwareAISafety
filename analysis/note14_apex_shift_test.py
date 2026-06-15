@@ -7,9 +7,9 @@ Within-Costello apex-shift test: does the inverted-U apex shift rightward
   (2) omnibus interaction: IC + IC² + log(wc) + IC×log(wc) [+ IC²×log(wc)]
 
 Result claim (SI Note 14): apex shift NOT supported. Apex locations across
-tertiles are 3.09 / 2.73 / 3.40 — not monotonic. Adding IC × log(wc) gives
-nominally-significant β = -1.78 (p = .010) but BF₁₀ = 0.67 (BIC penalises);
-adding IC²×log(wc) further worsens fit (BF₁₀ = 0.047).
+tertiles are 3.07 / 2.73 / 3.52 — not monotonic. Adding IC × log(wc) gives
+nominally-significant β = -1.78 (p = .010) but BF₁₀ = 0.66 (BIC penalises);
+adding IC²×log(wc) further worsens fit (BF₁₀ = 0.044).
 """
 import json
 import warnings
@@ -126,9 +126,9 @@ def main():
           f"{m_full.pvalues[5]:>4.3f}/{m_full.pvalues[6]:.3f} {bf_full:>14.3f}")
 
     print("\nClaim check (SI Note 14):")
-    print("  Apex locations should be ~3.09 / 2.73 / 3.40 (not monotonic) — see tertile table above.")
-    print("  IC × log(wc) BF₁₀ ≈ 0.67 (BIC penalises the interaction).")
-    print("  Adding IC² × log(wc) further attenuates: BF₁₀ ≈ 0.047 (worsens fit).")
+    print("  Apex locations should be ~3.07 / 2.73 / 3.52 (not monotonic) — see tertile table above.")
+    print("  IC × log(wc) BF₁₀ ≈ 0.66 (BIC penalises the interaction).")
+    print("  Adding IC² × log(wc) further attenuates: BF₁₀ ≈ 0.044 (worsens fit).")
 
 
 if __name__ == "__main__":

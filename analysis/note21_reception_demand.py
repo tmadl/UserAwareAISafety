@@ -42,21 +42,35 @@ def zs(x):
 
 
 def fit_quadratic(df):
+    """Paper-spec quadratic within a sample half.
+
+    Reports both curvature parameterisations: b_q is on the z(IC^2) scale
+    (zscore of IC^2; the larger-magnitude legacy scale) and b_q_zic2 is on
+    the headline z(IC)^2 scale (zscore of IC, then squared) used in the SI
+    Table tab:reception_demand and the main text. The BF and the raw-scale
+    apex are identical across the two parameterisations (same fitted curve)."""
     s = df.dropna(subset=["IC", "DV_BeliefChange_Specific",
                           "Pre_Belief_Specific", "OpenendedResponseWordCount"]).copy()
     y = s["DV_BeliefChange_Specific"].to_numpy(dtype=float)
     raw = s["IC"].to_numpy(dtype=float)
-    ic, ic2 = zs(raw), zs(raw ** 2)
+    ic = zs(raw)
+    ic2_legacy = zs(raw ** 2)        # z(IC^2) scale
+    ic2_head = ic ** 2               # z(IC)^2 headline scale
     cov = [zs(s[c].values) for c in ("Pre_Belief_Specific", "OpenendedResponseWordCount")]
     X1 = sm.add_constant(np.column_stack([ic, *cov]))
-    X2 = sm.add_constant(np.column_stack([ic, ic2, *cov]))
-    m1 = sm.OLS(y, X1).fit(); m2 = sm.OLS(y, X2).fit()
+    X2 = sm.add_constant(np.column_stack([ic, ic2_legacy, *cov]))
+    X2h = sm.add_constant(np.column_stack([ic, ic2_head, *cov]))
+    m1 = sm.OLS(y, X1).fit(); m2 = sm.OLS(y, X2).fit(); m2h = sm.OLS(y, X2h).fit()
     bf = float(np.exp((m1.bic - m2.bic) / 2))
     sig1, sig2 = float(np.std(raw, ddof=0)), float(np.std(raw ** 2, ddof=0))
     b_lin, b_q = float(m2.params[1]), float(m2.params[2])
     apex = -b_lin * sig2 / (2 * b_q * sig1) if b_q != 0 else np.nan
+    # headline-scale (z(IC)^2) coefficients + matching apex on the raw scale
+    bl_h, bq_h = float(m2h.params[1]), float(m2h.params[2])
+    apex_h = raw.mean() - bl_h / (2 * bq_h) * sig1 if bq_h != 0 else np.nan
     return dict(n=len(s), b_lin=b_lin, b_q=b_q, p_q=float(m2.pvalues[2]),
-                BF10=bf, apex=apex)
+                BF10=bf, apex=apex,
+                b_lin_zic2=bl_h, b_q_zic2=bq_h, apex_zic2=apex_h)
 
 
 def report_split(df, split_col, label):
@@ -101,6 +115,23 @@ def main():
           f"p = {ref['p_q']:.4f}  BF10 = {ref['BF10']:.1f}  apex = {ref['apex']:+.2f}")
 
     r_lo, r_hi = report_split(df, "demand_composite", "Median split on AI demand composite")
+
+    # SI Table tab:reception_demand is on the headline z(IC)^2 scale.
+    print("\n  -> SI Table tab:reception_demand (median-AI-demand split, z(IC)^2 scale):")
+    for name, r in (("Low demand ", r_lo), ("High demand", r_hi)):
+        print(f"     {name:<12} n={r['n']:>4}  beta_lin={r['b_lin_zic2']:+.3f}  "
+              f"beta_IC^2={r['b_q_zic2']:+.3f}  BF10={r['BF10']:.2f}  apex={r['apex_zic2']:+.3f}")
+    print(f"     delta(apex) = {r_hi['apex_zic2'] - r_lo['apex_zic2']:+.3f} IC units")
+
+    # Per-component apex shifts (median split on each density component).
+    print("\n  Per-component apex shifts (median split on each density component, z(IC)^2 apex):")
+    for col, lab in (("evid_100w_mean", "evidence-cue words"),
+                     ("num_100w_mean", "numeric references"),
+                     ("prop_100w_mean", "proper-noun density")):
+        med_c = df[col].median()
+        a_lo = fit_quadratic(df[df[col] <= med_c])["apex_zic2"]
+        a_hi = fit_quadratic(df[df[col] >  med_c])["apex_zic2"]
+        print(f"     {lab:<22} apex_lo={a_lo:+.3f}  apex_hi={a_hi:+.3f}  shift={a_hi - a_lo:+.3f}")
 
     # Reverse-causal: residualise demand on user IC, re-split
     s = df.dropna(subset=["IC", "demand_composite"]).copy()

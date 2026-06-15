@@ -8,8 +8,8 @@ IC×M + IC²×M interaction hierarchy and reports β/p/BF for each interaction
 plus the joint BF against the no-interaction alternative.
 
 Result claim (SI Note 6): "Every first-order Bayes factor is ≤ 0.04, every
-second-order Bayes factor is ≤ 0.15, and every joint Bayes factor against
-the two-interaction alternative is ≤ 0.005."
+second-order Bayes factor is ≤ 0.17, and every joint Bayes factor against
+the two-interaction alternative is ≤ 0.006."
 
 Reads:  data/costello2024/analysis_data.csv
         data/costello2024/texts_for_scoring.jsonl
@@ -64,7 +64,7 @@ def fit_hierarchy(df, mod_col, ctrl_cols):
     sub = df.dropna(subset=need).copy()
     y = sub["DV_BeliefChange_Specific"].values.astype(float)
     ic = zs(sub["IC_q400"].values)
-    ic2 = zs(sub["IC_q400"].values ** 2)
+    ic2 = ic ** 2  # z(IC)^2 headline scale (z-score, then square)
     m = zs(sub[mod_col].values)
     icm = ic * m
     ic2m = ic2 * m
@@ -125,8 +125,8 @@ def main():
 
     print("\nClaim check (SI Note 6):")
     print("  All first-order BFs ≤ 0.04   — IC×M  Bayes factors above")
-    print("  All second-order BFs ≤ 0.15  — IC²×M Bayes factors above")
-    print("  All joint BFs ≤ 0.005        — joint Bayes factors above")
+    print("  All second-order BFs ≤ 0.17  — IC²×M Bayes factors above")
+    print("  All joint BFs ≤ 0.006        — joint Bayes factors above")
 
 
 if __name__ == "__main__":

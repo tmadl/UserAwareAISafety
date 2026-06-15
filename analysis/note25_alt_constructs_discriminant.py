@@ -39,7 +39,12 @@ def fit_standalone(df, x_col):
                             "Pre_Belief_Specific", "OpenendedResponseWordCount"]).copy()
     y = sub["DV_BeliefChange_Specific"].values.astype(float)
     raw = sub[x_col].values.astype(float)
-    x_z, x2_z = zs(raw), zs(raw ** 2)
+    # Headline parameterisation: z-score the predictor, THEN square it -> z(X)^2.
+    # (The earlier z(X^2) parameterisation gave fit-identical p/BF but ~7.69x
+    #  larger coefficients; the manuscript reports the z(X)^2 scale throughout,
+    #  e.g. gpt-4.1-mini full-dialogue IC reference = -3.04, not -18.15.)
+    x_z = zs(raw)
+    x2_z = x_z ** 2
     pre = zs(sub["Pre_Belief_Specific"].values)
     wc = zs(sub["OpenendedResponseWordCount"].values)
     X_lin = sm.add_constant(np.column_stack([x_z, pre, wc]))
@@ -47,9 +52,10 @@ def fit_standalone(df, x_col):
     m_lin = sm.OLS(y, X_lin).fit()
     m_quad = sm.OLS(y, X_quad).fit()
     bf = float(np.exp((m_lin.bic - m_quad.bic) / 2))
-    sd_x, sd_sq = np.std(raw), np.std(raw ** 2)
+    sd_x = np.std(raw)
     b1, b2 = m_quad.params[1], m_quad.params[2]
-    apex = -b1 * sd_sq / (2 * b2 * sd_x) if abs(b2) > 1e-12 else np.nan
+    # apex on raw X scale: vertex in z(X) space at z* = -b1/(2 b2)
+    apex = np.mean(raw) + (-b1 / (2 * b2)) * sd_x if abs(b2) > 1e-12 else np.nan
     return dict(n=len(sub), b_lin=m_quad.params[1], p_lin=m_quad.pvalues[1],
                 b_quad=m_quad.params[2], p_quad=m_quad.pvalues[2],
                 bf=bf, apex=apex)

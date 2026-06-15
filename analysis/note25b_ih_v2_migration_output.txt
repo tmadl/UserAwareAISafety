@@ -1,0 +1,32 @@
+IH v2 text-match: 1783 of 1783 initial texts matched; 1783 unique participantIds
+Frame: 1783 rows; duplicate participantIds dropped: 0; final N = 1783
+
+=== descriptives / correlations ===
+IH_v2: n=1783, mean=3.39, SD=1.56
+IH_ck100: n=1782, mean=3.30, SD=0.99
+IH_rubric: n=1783, mean=4.52, SD=1.61
+r(IC_q400, IH_v2) = 0.368  (n=1782)
+r(IC_q400, IH_ck100) = 0.279  (n=1782)
+r(IC_q400, IH_rubric) = 0.359  (n=1782)
+r(IH_v2, IH_ck100) = 0.574  (n=1782)
+r(IH_v2, IH_rubric) = 0.499  (n=1783)
+
+=== standalone quadratic (DV ~ z(X)+z(X^2)+pre+wc) ===
+IH v2                     : n=1783, b_lin=+4.05 (p=0.266), b_quad=-0.55 (p=0.879), BF_quad=0.024
+IH ckpt100                : n=1782, b_lin=+9.46 (p=0.017), b_quad=-3.53 (p=0.372), BF_quad=0.0354
+IH rubric (gpt-4.1-mini)  : n=1783, b_lin=+14.55 (p=0.000), b_quad=-10.55 (p=0.005), BF_quad=1.29
+
+=== residual-on-IC_q400 quadratic ===
+IH v2                     : n=1782, b_lin=+3.41 (p=0.000), b_quad=+0.07 (p=0.914), BF_quad=0.0238
+IH ckpt100                : n=1782, b_lin=+5.59 (p=0.000), b_quad=-1.45 (p=0.011), BF_quad=0.583
+IH rubric (gpt-4.1-mini)  : n=1782, b_lin=+3.35 (p=0.000), b_quad=-1.97 (p=0.001), BF_quad=4.75
+attenuation rubric->v2: 200x (rubric BF 4.75 / v2 BF 0.0238)
+NOTE: rubric residualisation here uses IC_q400; the published BF=285 residualises rubric-IH on gpt-4.1-mini full-dialogue IC (same-channel pairing) — see note25 script for that pairing.
+
+=== linear-only model (DV ~ z(IH)+pre+wc) ===
+IH v2       : n=1783, b_lin=+3.51, p=0.00000
+IH ckpt100  : n=1782, b_lin=+5.96, p=0.00000
+
+=== Study-1 Likert self-report convergence ===
+IH v2       : n=325, Pearson r=0.167 (p=0.0025), Spearman rho=0.135 (p=0.0146)
+IH ckpt100  : n=325, Pearson r=0.237 (p=0.0000), Spearman rho=0.208 (p=0.0002)

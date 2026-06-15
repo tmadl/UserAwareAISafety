@@ -47,6 +47,9 @@ ENV/
 *.swp
 *~
 
+# Local data backups (pre-migration safety copies; not for publication)
+*.bak
+
 # Local model caches (downloaded from HuggingFace at runtime)
 hf_cache/
 .cache/
@@ -58,3 +61,4 @@ results/
 
 # Embedding caches — regenerable from OpenAI API
 data/openai_embeddings/
+data/costello2024/Data 8.28.24

@@ -1,0 +1,68 @@
+==============================================================================
+ANCHOR: Costello headline beta_IC2 (z(IC)^2)
+==============================================================================
+[MATCH   ] Headline beta_IC2                                si=   -1.99 mine=   -1.987 n=1782 apex=2.76 BF=1205
+==============================================================================
+ITEM 4: tab:costello_movers (|Delta| thresholds)
+==============================================================================
+ full n=1782
+[MATCH   ] |D|>0                                            si=    -1.8 mine=     -1.8 n=1289 kept=72.3% apex=2.76 BF=11.3 p=0.0005
+[MATCH   ] |D|>1                                            si=   -1.99 mine=    -1.99 n=1187 kept=66.6% apex=2.78 BF=20.0 p=0.0003
+[MATCH   ] |D|>2                                            si=   -2.12 mine=    -2.12 n=1125 kept=63.1% apex=2.78 BF=31.3 p=0.0002
+[MATCH   ] |D|>5                                            si=   -2.48 mine=    -2.48 n=948 kept=53.2% apex=2.85 BF=95.1 p=0.0001
+[MATCH   ] |D|>10                                           si=   -2.55 mine=    -2.55 n=757 kept=42.5% apex=2.87 BF=26.3 p=0.0003
+==============================================================================
+ITEM 2: tab:incremental_validity (demographic adj)
+==============================================================================
+ analysis_data has: ['AgeYears', 'Education_Cat', 'Extremism', 'religion', 'genai_trust']
+[MATCH   ] Canonical full sample                            si=   -1.99 mine=    -1.99 n=1782 BF=1205
+[MATCH   ] 5-cov (Age+Edu+Extrem+Relig+GenAI)               si=   -1.91 mine=    -1.92 n=1775 covs=['AgeYears', 'edu_num', 'Extremism', 'religion', 'genai_trust'] apex=2.78
+[MATCH   ] Composition-only subsample (canon)               si=   -1.97 mine=    -1.98 n=1775
+[MATCH   ] Verbal-fluency variant (Age+Edu+Ext+TTR)         si=   -1.95 mine=    -1.96 n=1776 covs=['AgeYears', 'edu_num', 'Extremism', 'surf_ttr']
+  retention (5cov vs composition-only) = 96.7% (si says 97.9%)
+  5cov / canonical-full = 96.5% (96.0% in si text)
+==============================================================================
+ITEM 3: tab:aiic_survival (AI-side controls)
+==============================================================================
+[MATCH   ] (none) reference                                 si=   -1.99 mine=    -1.99 n=1782
+[MATCH   ] +gpt_mean                                        si=    -2.0 mine=     -2.0 n=1782 R2=0.060
+[MATCH   ] +gpt_concat                                      si=   -1.98 mine=    -1.97 n=1782 R2=0.036
+[MATCH   ] +mean,slope,SD                                   si=   -1.88 mine=    -1.87 n=1782 R2=0.071
+==============================================================================
+ITEM 5: tab:surface_ablation
+==============================================================================
+[MATCH   ] surf_wc beta_quad                                si=   -0.22 mine=    -0.22 n=1782 p=0.005 BF=1.35
+[MATCH   ] surf_fk beta_quad                                si=   -0.04 mine=    -0.04 n=1782 p=0.839 BF=0.02
+[MATCH   ] surf_dc beta_quad                                si=   -0.57 mine=    -0.57 n=1782 p=0.025 BF=0.29
+[MATCH   ] surf_smog beta_quad                              si=   -0.43 mine=    -0.42 n=1782 p=0.121 BF=0.08
+[MATCH   ] surf_asl beta_quad                               si=   -0.24 mine=    -0.24 n=1782 p=0.164 BF=0.06
+[MATCH   ] surf_ttr beta_quad                               si=   -0.71 mine=    -0.71 n=1782 p=0.090 BF=0.10
+[MATCH   ] surf_marker beta_quad                            si=   -0.69 mine=    -0.69 n=1782 p=0.011 BF=0.60
+[MATCH   ] omnibus IC^2 (14 surface controls)               si=   -1.71 mine=    -1.71 n=1782 p=0.0001 BF=50.0
+==============================================================================
+ITEM 6: tab:costello_engagement (interaction BFs)
+==============================================================================
+  Topic importance     n=1210  ICxM b=-5.55 p=0.000 BF=0.031 | IC2xM b=-0.19 p=0.765 BF=0.153 | jointBF=0.0048
+  Pre-belief strength  n=1782  ICxM b=+3.77 p=0.000 BF=0.034 | IC2xM b=-0.44 p=0.438 BF=0.037 | jointBF=0.0013
+  Word count           n=1782  ICxM b=+0.66 p=0.390 BF=0.031 | IC2xM b=-1.60 p=0.095 BF=0.167 | jointBF=0.0052
+  MAX first-order BF = 0.034 (si: <=0.04)
+  MAX second-order BF = 0.167 (si: <=0.17; main text <=0.15)
+  MAX joint BF = 0.0052 (si: <=0.006; main text <=0.005)
+==============================================================================
+ITEM 1: tab:alt_constructs (z(C)^2, gpt-mini IC ref)
+==============================================================================
+[MATCH   ] ICg                                              si=   -3.04 mine=    -3.04 n=1783 apex=3.75 BF=6.94e+04
+[MATCH   ] AOT_ev                                           si=   -2.36 mine=    -2.36 n=1783 apex=4.82 BF=6.62
+[MATCH   ] IH_ev                                            si=   -2.06 mine=    -2.06 n=1783 apex=5.67 BF=1.29
+[MATCH   ] NFC_ev                                           si=    -4.7 mine=     -4.7 n=1783 apex=3.56 BF=3.73e+09
+[MATCH   ] OMI_ev                                           si=   -1.91 mine=    -1.91 n=1783 apex=5.81 BF=0.987
+==============================================================================
+ITEM 8: tab:discriminant Costello row (2-df inc-F)
+==============================================================================
+[MATCH   ] Costello dR2                                     si=    .013 mine=    0.013 F(2,1777)=11.7 p=8.93e-06 (si F=11.7)
+  (Boissin/Cheng rows: see note_discriminant_table.py; all scale-invariant 2-df inc-F)
+==============================================================================
+ITEM 9: Note 25 Likert subsample -1.68
+==============================================================================
+  Study-1 ALL: n=495 beta_IC2=-1.871 p=0.059
+[MISMATCH] Likert subsample (Study1+IH&AOT, N=325)          si=   -1.68 mine=    -0.44 n=325 p=0.724 BF=0.059

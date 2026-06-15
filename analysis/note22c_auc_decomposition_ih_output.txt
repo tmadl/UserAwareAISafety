@@ -1,0 +1,21 @@
+N = 1782, adverse = 213 (12.0%); IC = IC_q400_logit; IH = ens_ev_mean (pre-treatment text, 3-seed ensemble); GBM = LightGBM
+IH descriptives: mean = 3.39, SD = 1.56, range = [1.00, 5.00]; r(IC, IH) = 0.368
+
+features               model                LOSO  pooled5f   within-study 5f (S1/S2/S3)
+---------------------------------------------------------------------------------------
+IC alone               logit               0.528     0.532            0.529/0.563/0.543
+IC alone               LightGBM            0.466     0.464            0.501/0.514/0.514
+IC + IC^2              logit               0.536     0.518            0.444/0.548/0.548
+IC + IC^2              LightGBM            0.466     0.464            0.501/0.514/0.514
+IH alone               logit               0.537     0.532            0.460/0.597/0.448
+IH alone               LightGBM            0.479     0.474            0.531/0.465/0.520
+IH + IH^2              logit               0.496     0.504            0.540/0.566/0.455
+IH + IH^2              LightGBM            0.479     0.474            0.531/0.465/0.520
+IC+IH (+squares)       logit               0.516     0.500            0.509/0.543/0.531
+IC+IH (+squares)       LightGBM            0.477     0.468            0.488/0.505/0.554
+pre-belief alone       logit               0.701     0.698            0.724/0.688/0.686
+pre-belief alone       LightGBM            0.684     0.683            0.686/0.730/0.654
+full (IC,IC2,PB,WC)    logit               0.689     0.683            0.698/0.656/0.670
+full (IC,IC2,PB,WC)    LightGBM            0.671     0.698            0.678/0.756/0.668
+full + IH,IH^2         logit               0.685     0.679            0.689/0.632/0.666
+full + IH,IH^2         LightGBM            0.689     0.703            0.668/0.769/0.692

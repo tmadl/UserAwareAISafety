@@ -8,11 +8,11 @@ text_initial), covariates (none vs +PreBelief vs +PreBelief+wc), subset
 AI×HL cell, movers), and outlier rule (none, 3 SD, 2 SD).
 
 Reproduces the Note 13 aggregate stats:
-  - Significant (p < .05): 22.5%
-  - Direction-consistent: 91.4%
-  - Sig + right direction: 22.5%
-  - text_all source: 39% sig+right
-  - text_initial source: 6% sig+right
+  - Significant (p < .05): 25.3%
+  - Direction-consistent: 92.3%
+  - Sig + right direction: 25.3%
+  - text_all source: 42% sig+right
+  - text_initial source: 9% sig+right
   - Headline specifications table.
 """
 import json
@@ -87,7 +87,7 @@ def main():
         "Expert only":   lambda d: d[d["Speaker"] == "Expert"],
         "Human-like":    lambda d: d[d["PromptType"] == "Human-like"],
         "Neutral":       lambda d: d[d["PromptType"] == "Neutral"],
-        "Conspiracy":    lambda d: d[d["BeliefType"] == "Conspiracy theories"],
+        "Conspiracy":    lambda d: d[d["BeliefType"] == "Conspiracy beliefs"],
         "Epistemic":     lambda d: d[d["BeliefType"] == "Epistemically unwarranted beliefs"],
         "AI × HL":       lambda d: d[(d["Speaker"] == "AI") & (d["PromptType"] == "Human-like")],
         "movers":        lambda d: d[d["movers_mask"]],

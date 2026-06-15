@@ -1,0 +1,38 @@
+SI Note 21b — density-mechanism tightening
+Complete-cases N = 1782
+Topic clusters: k=20
+
+========================================================================
+  PART A — continuous IC^2 x density interaction
+========================================================================
+  r(density composite, AI-side IC gpt_mean) = +0.115
+
+  Specification                      b(IC^2 x dens)        p   b(IC^2)
+  base                                       -0.684    0.119    -1.992
+  + topic FE (k=20)                          -0.574    0.180    -1.166
+  + AI-side IC (gpt_mean)                    -0.533    0.219    -2.003
+  + topic FE + AI-side IC                    -0.424    0.316    -1.181
+
+========================================================================
+  PART B — median-density split, within topic FE + AI-side IC
+========================================================================
+
+  paper spec (no FE, no AI-IC):
+    half      n   b_IC^2       p      BF10   apex
+    low     891    -1.06   0.075      0.17  +2.44
+    high    891    -3.07   <.001   8915.63  +2.80
+
+  + topic FE (k=20):
+    half      n   b_IC^2       p      BF10   apex
+    low     891    -0.34   0.570      0.04  +1.60
+    high    891    -2.31   <.001     40.65  +2.66
+
+  + AI-side IC (gpt_mean):
+    half      n   b_IC^2       p      BF10   apex
+    low     891    -1.15   0.050      0.23  +2.74
+    high    891    -3.02   <.001   6969.16  +2.85
+
+  + topic FE + AI-side IC:
+    half      n   b_IC^2       p      BF10   apex
+    low     891    -0.45   0.443      0.05  +2.52
+    high    891    -2.21   <.001     25.98  +2.73

@@ -1,0 +1,16 @@
+N = 1782, adverse = 213 (12.0%); scorer column = IC_q400_logit; GBM = LightGBM
+
+features               model                LOSO  pooled5f   within-study 5f (S1/S2/S3)
+---------------------------------------------------------------------------------------
+IC alone               logit               0.526     0.530            0.528/0.559/0.542
+IC alone               LightGBM            0.488     0.501            0.480/0.532/0.489
+IC + IC^2              logit               0.533     0.516            0.446/0.541/0.547
+IC + IC^2              LightGBM            0.488     0.501            0.480/0.532/0.489
+pre-belief alone       logit               0.701     0.698            0.724/0.688/0.686
+pre-belief alone       LightGBM            0.684     0.683            0.686/0.730/0.654
+pre-belief + WC        logit               0.698     0.692            0.713/0.660/0.668
+pre-belief + WC        LightGBM            0.691     0.711            0.701/0.771/0.655
+full (IC,IC2,PB,WC)    logit               0.688     0.682            0.697/0.656/0.670
+full (IC,IC2,PB,WC)    LightGBM            0.671     0.699            0.665/0.755/0.675
+
+Reference: monotone -IC ranking (published 0.53): per-study mean = 0.526

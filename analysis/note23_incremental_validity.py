@@ -56,16 +56,18 @@ def fit_quadratic(df, extras=()):
     s = df.dropna(subset=["IC", "DV_BeliefChange_Specific", *covars]).copy()
     y = s["DV_BeliefChange_Specific"].to_numpy(dtype=float)
     raw = s["IC"].to_numpy(dtype=float)
-    ic = zs(raw); ic2 = zs(raw ** 2)
+    # Headline parameterisation: z(IC)^2 (z-score, then square), matching the
+    # main-text -1.99 convention; NOT the earlier z(IC^2) scale (~7.69x larger).
+    ic = zs(raw); ic2 = ic ** 2
     cov_z = [zs(s[c].to_numpy(dtype=float)) for c in covars]
     X1 = sm.add_constant(np.column_stack([ic, *cov_z]))
     X2 = sm.add_constant(np.column_stack([ic, ic2, *cov_z]))
     m1 = sm.OLS(y, X1).fit()
     m2 = sm.OLS(y, X2).fit()
     bf = float(np.exp((m1.bic - m2.bic) / 2))
-    sig1, sig2 = float(np.std(raw, ddof=0)), float(np.std(raw ** 2, ddof=0))
+    sig1 = float(np.std(raw, ddof=0))
     b_lin, b_q = float(m2.params[1]), float(m2.params[2])
-    apex = -b_lin * sig2 / (2 * b_q * sig1) if b_q != 0 else np.nan
+    apex = np.mean(raw) + (-b_lin / (2 * b_q)) * sig1 if b_q != 0 else np.nan
     return dict(n=len(s), b_lin=b_lin, p_lin=float(m2.pvalues[1]),
                 b_q=b_q, p_q=float(m2.pvalues[2]), BF10=bf, apex=apex)
 

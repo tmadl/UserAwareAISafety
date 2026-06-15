@@ -51,7 +51,9 @@ def zs(x):
 def quadratic_fit(df, pred, covars):
     y = df["DV_BeliefChange_Specific"].to_numpy(dtype=float)
     raw = df[pred].to_numpy(dtype=float)
-    lin, quad = zs(raw), zs(raw ** 2)
+    # Headline z(feature)^2 scale (z-score, then square); BF/p are
+    # parameterisation-invariant.
+    lin = zs(raw); quad = lin ** 2
     cov_z = [zs(df[c].to_numpy(dtype=float)) for c in covars]
     X1 = sm.add_constant(np.column_stack([lin, *cov_z]))
     X2 = sm.add_constant(np.column_stack([lin, quad, *cov_z]))
@@ -97,7 +99,11 @@ def main():
 
     # Omnibus ablation
     y = df["DV_BeliefChange_Specific"].to_numpy(dtype=float)
-    ic_lin = zs(df["IC_q4"].values); ic_q = zs(df["IC_q4"].values ** 2)
+    # IC curvature on the headline z(IC)^2 scale (z-score, then square), so the
+    # surface-controlled beta_IC^2 is comparable to the -1.99 headline. The
+    # surface-feature standalone rows (quadratic_fit) remain on their declared
+    # z(feature^2) scale (see tab:surface_ablation caption).
+    ic_lin = zs(df["IC_q4"].values); ic_q = ic_lin ** 2
     base_cov = [zs(df[c].values) for c in COV]
     surf_lin = [zs(df[c].values) for c in surf_cols]
     surf_q   = [zs(df[c].values ** 2) for c in surf_cols]

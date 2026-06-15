@@ -1,0 +1,15 @@
+alignment check: 2172/2172 normalised-text exact matches (100.000%)
+wrote /mnt/workvm/UserAwareAISafety_release/data/costello2024/costello_conway_ic.csv (2172 rows)
+
+Primary-sample N = 1782 (must be 1782 to match the headline fit)
+Conway IC: mean = 2.22, SD = 0.82, range = [1.00, 6.25]
+
+Conway quadratic moderation (canonical spec):
+  z(IC)^2  [HEADLINE SCALE]  beta_IC2 = +0.180, p = 0.593, BF10(quad/lin) = 0.027
+  raw IC^2                   beta_IC2 = +0.270, p = 0.593, BF10(quad/lin) = 0.027
+  z(IC^2)                    beta_IC2 = +1.123, p = 0.593, BF10(quad/lin) = 0.027
+
+Contrast: primary Q400 scorer on this sample = beta_IC2 = -1.97 (z(IC)^2), p < .001.
+Conway is null on every scale (p > .5, BF << 1): the dictionary scorer
+does not recover the inverted-U -- a scorer-fidelity counterexample
+(Conway fails Suedfeld/Jakob ground-truth validation; SI Note 2).

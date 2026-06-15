@@ -64,7 +64,10 @@ def quad_fit(sub, dv_col, ic_col):
     """Canonical Costello quadratic on a subset. Returns β_IC², p, BF, apex(raw)."""
     y = sub[dv_col].values.astype(float)
     raw = sub[ic_col].values.astype(float)
-    ic_z, ic2_z = zs(raw), zs(raw ** 2)
+    # Headline parameterisation: z(IC)^2 (z-score, then square), matching the
+    # main-text -1.99 convention; NOT the earlier z(IC^2) scale (~7.69x larger).
+    ic_z = zs(raw)
+    ic2_z = ic_z ** 2
     pre = zs(sub["Pre_Belief_Specific"].values)
     wc = zs(sub["OpenendedResponseWordCount"].values)
     X_lin = sm.add_constant(np.column_stack([ic_z, pre, wc]))
@@ -72,9 +75,9 @@ def quad_fit(sub, dv_col, ic_col):
     m_lin = sm.OLS(y, X_lin).fit()
     m_quad = sm.OLS(y, X_quad).fit()
     bf = float(np.exp((m_lin.bic - m_quad.bic) / 2))
-    sd_ic, sd_sq = np.std(raw), np.std(raw ** 2)
+    sd_ic = np.std(raw)
     b1, b2 = m_quad.params[1], m_quad.params[2]
-    apex = -b1 * sd_sq / (2 * b2 * sd_ic) if abs(b2) > 1e-12 else np.nan
+    apex = np.mean(raw) + (-b1 / (2 * b2)) * sd_ic if abs(b2) > 1e-12 else np.nan
     return dict(n=len(sub), beta=m_quad.params[2], p=m_quad.pvalues[2],
                 bf=bf, apex=apex)
 

@@ -2,7 +2,7 @@
 
 Reproducibility code, derived scored data, figure scripts, and scorer utilities for:
 
-> Madl, T. (2026). *Text-measured cognitive complexity predicts belief revision in AI persuasion.* PsyArXiv preprint / manuscript under review. <https://osf.io/preprints/psyarxiv/mdxvs_v2>
+> Madl, T. (2026). *Text-measured cognitive complexity predicts belief revision in AI persuasion.* PsyArXiv preprint / manuscript under review. <https://osf.io/preprints/psyarxiv/mdxvs_v3>
 
 This repository is primarily the reproducibility package for the Costello AI-persuasion reanalysis. It also serves as a public code and measurement-tooling entry point for the broader research programme **Human Cognitive Autonomy in AI Interaction**, which studies how AI dialogue affects users' reflective agency and reasoning processes.
 

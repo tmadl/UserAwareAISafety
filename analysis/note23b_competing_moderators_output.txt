@@ -1,0 +1,62 @@
+Loaded treatment N = 2250 (age column: present)
+
+==============================================================================
+SPEC A: covs = pre-belief only (14's minimal spec)
+==============================================================================
+  Moderator                            n     b_lin      p   b_quad         p     dR2  collin
+  IC                                1782     +0.84   0.13    -1.96  3.95e-06  0.0116   0.008
+  IC (gpt-4.1-mini baseline)        1782     +1.46   0.01    -2.09  5.33e-09  0.0185   0.021
+  IC (Conway AutoIC)                1782     -0.95   0.09    +0.24     0.479  0.0003   0.000
+  AI-side IC (GPT mean, logit-EV)   1782     -3.50   0.00    -1.49  0.000534  0.0064   0.004
+  Belief sureness                   2168     DEGEN   0.00    -3.00  3.57e-14  0.0255   1.000
+  Topic importance                  1492     -5.75   0.00    -0.63     0.325  0.0006   0.150
+  Age                               2162     +2.00   0.00    +0.12  2.31e-05  0.0080   0.003
+  Education                         2168     +0.58   0.26    -0.33     0.371  0.0004   0.006
+  Gender (male)                     2168     -0.11   0.83     --         --     --     0.001
+  Religiosity                       2168     -0.80   0.12    -1.49    0.0855  0.0013   0.010
+  Pol. extremism                    2168     -0.09   0.85    -1.87    0.0113  0.0029   0.001
+  Intellectual humility              343     +5.48   0.00    +0.13     0.859  0.0001   0.008
+  Open-minded thinking               343     +5.19   0.00    -0.82     0.428  0.0018   0.014
+  Social influence                  1572     +7.81   0.00    -1.45   0.00103  0.0060   0.109
+  Misinfo resistance                1570     +5.69   0.00    -1.19      0.02  0.0032   0.065
+  Institutional trust               1555     +2.35   0.00    -0.97    0.0436  0.0025   0.011
+  Personal trust                    1571     +1.35   0.02    +0.16     0.668  0.0001   0.001
+  Trust in AI                       2167     +2.86   0.00    -0.76    0.0991  0.0012   0.000
+  Word count                        1782     +0.46   0.41    -0.22   0.00515  0.0043   0.000
+
+  [collinear b_lin (R^2(mod~cov) > 0.98), linear term NOT identified]: Belief sureness
+
+  q400 IC dR2 = 0.0116
+  largest non-IC quadratic moderator: Age dR2 = 0.0080
+  ratio IC / Age = 1.45x
+
+==============================================================================
+SPEC B: covs = pre-belief + word count (headline spec)
+==============================================================================
+  Moderator                            n     b_lin      p   b_quad         p     dR2  collin
+  IC                                1782     +0.86   0.20    -1.99  3.35e-06  0.0118   0.313
+  IC (gpt-4.1-mini baseline)        1782     +1.77   0.01    -2.08  6.95e-09  0.0182   0.332
+  IC (Conway AutoIC)                1782     -1.50   0.02    +0.18     0.593  0.0002   0.227
+  AI-side IC (GPT mean, logit-EV)   1782     -3.62   0.00    -1.55  0.000332  0.0069   0.022
+  Belief sureness                   2168     DEGEN   0.21    -2.99  4.18e-14  0.0314   1.000
+  Topic importance                  1492     -5.76   0.00    -0.62     0.332  0.0006   0.151
+  Age                               2162     +1.99   0.00    +0.12  2.28e-05  0.0080   0.003
+  Education                         2168     +0.57   0.27    -0.33     0.384  0.0003   0.007
+  Gender (male)                     2168     -0.11   0.83     --         --     --     0.001
+  Religiosity                       2168     -0.80   0.12    -1.49    0.0845  0.0013   0.010
+  Pol. extremism                    2168     -0.11   0.83    -1.89    0.0106  0.0029   0.003
+  Intellectual humility              343     +5.67   0.00    +0.07     0.918  0.0000   0.018
+  Open-minded thinking               343     +5.33   0.00    -0.90     0.382  0.0022   0.021
+  Social influence                  1572     +7.88   0.00    -1.47  0.000878  0.0061   0.114
+  Misinfo resistance                1570     +5.73   0.00    -1.18    0.0212  0.0031   0.068
+  Institutional trust               1555     +2.36   0.00    -0.97    0.0458  0.0025   0.013
+  Personal trust                    1571     +1.34   0.02    +0.17     0.659  0.0001   0.002
+  Trust in AI                       2167     +2.90   0.00    -0.79    0.0899  0.0013   0.007
+  Word count                        1782     DEGEN   0.34    -0.22   0.00451  0.0044   0.999
+
+  [collinear b_lin (R^2(mod~cov) > 0.98), linear term NOT identified]: Belief sureness, Word count
+
+  q400 IC dR2 = 0.0118
+  largest non-IC quadratic moderator: Age dR2 = 0.0080
+  ratio IC / Age = 1.47x
+

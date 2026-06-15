@@ -1,0 +1,21 @@
+Treatment N = 1782, Control N = 1100
+(0a) |Delta| mean: treatment = 16.25, control = 4.87, ratio = 3.34x  [published ~3.3x]
+(0b) treatment |Delta| quad: z(IC)^2 b = -1.73 (p = 0.0000)  [published -1.72]; raw IC^2 b = -3.56  [published -3.53]
+(0c) control   |Delta| quad: z(IC)^2 b = -0.50 (p = 0.0316); raw-scale ratio treat/control = 3.41x
+
+(0d) tab:absdv_extremity Costello (quad), raw IC^2 scale:
+     M0 (IC+IC^2+controls)        : beta_IC^2 = -3.557, p = 0.0000  [table -3.56]
+     M1 (M0 + |pre-50|)           : beta_IC^2 = -3.444, p = 0.0000  [table -3.44]
+     M2 (M1 + IC x |pre-50|)      : beta_IC^2 = -3.191, p = 0.0001; interaction p = 0.1140  [table -3.19, interaction p=.11]
+
+(1) GAMMA(log) GLM on |Delta|+1, arm x [z(IC)+z(IC)^2] interaction:
+    joint interaction LR(df=2) = 0.03, p = 0.986
+    arm x z(IC)^2 (log scale): b = +0.0066 (p = 0.8757); negative = treatment curvature exceeds pure multiplicative scaling
+    [interpretation: if ~0, the 3.3x raw-curvature ratio is explained by the 3.3x mean ratio alone]
+
+(2) robustness, |Delta|>0 subset (n = 1891): interaction LR(df=2) = 0.85, p = 0.654; arm x z(IC)^2 b = +0.0270 (p = 0.5569)
+
+CAVEAT (paper must state): treatment IC scored on pre-treatment text,
+control IC on the post-dialogue conRestatement -- a scoring-window
+asymmetry that this arm contrast cannot disentangle from a genuine
+treatment effect on curvature shape.

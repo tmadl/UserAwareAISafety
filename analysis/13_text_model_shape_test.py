@@ -187,8 +187,10 @@ def fit_quadratic_on_x(df, x_col, controls=("Pre_Belief_Specific", "OpenendedRes
     s = df.dropna(subset=["DV_BeliefChange_Specific", x_col, *controls]).copy()
     y = s["DV_BeliefChange_Specific"].to_numpy(dtype=float)
     raw = s[x_col].to_numpy(dtype=float)
+    # Headline parameterisation: z(x)^2 (z-score, then square), matching the
+    # main-text -1.99 convention; NOT the earlier z(x^2) scale (~7.69x larger).
     x_z = zs(raw)
-    x2_z = zs(raw ** 2)
+    x2_z = x_z ** 2
     cov_z = [zs(s[c].to_numpy(dtype=float)) for c in controls]
     X1 = sm.add_constant(np.column_stack([x_z, *cov_z]))
     X2 = sm.add_constant(np.column_stack([x_z, x2_z, *cov_z]))

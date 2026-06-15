@@ -1,0 +1,11 @@
+==============================================================================
+SI Table tab:discriminant — recompute on length-fixed Q400 IC
+IC block = z(IC) + z(IC^2) (2 df) added over covariate-only model
+==============================================================================
+Costello (Specific belief change)  n=1782  cov R2=0.022  +IC R2=0.035  dR2=0.013  F(2,1777)=11.70  p=<.001
+Boissin (pooled)                   n= 955  cov R2=0.003  +IC R2=0.009  dR2=0.006  F(2,951)=2.96  p=0.052
+Boissin (AI x HL)                  n= 244  cov R2=0.000  +IC R2=0.028  dR2=0.027  F(2,240)=3.39  p=0.035
+Cheng S3 (gpt-4.1 baseline)        n= 799  cov R2=0.000  +IC R2=0.034  dR2=0.034  F(2,795)=13.78  p=<.001
+
+Note: Costello/Boissin rows on length-fixed Q400; Cheng row on the
+gpt-4.1-mini baseline (IC_openai), scorer family unchanged.

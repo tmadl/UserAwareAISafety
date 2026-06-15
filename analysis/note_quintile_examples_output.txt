@@ -1,0 +1,88 @@
+analysis sample N = 1782
+
+quintile IC ranges (logit-EV):
+  Q1: n=357  IC [1.03, 2.04]  median 1.65  mean DV 9.0
+  Q2: n=356  IC [2.04, 2.48]  median 2.30  mean DV 13.5
+  Q3: n=356  IC [2.48, 2.79]  median 2.64  mean DV 12.1
+  Q4: n=356  IC [2.79, 3.24]  median 2.98  mean DV 14.0
+  Q5: n=357  IC [3.24, 5.17]  median 3.55  mean DV 10.6
+
+==============================================================================
+Q1 candidates (near-median IC, 20-120 words)
+==============================================================================
+
+  IC=1.67  DV=+41  pre=71  wc=21  study=2  pid=AA175CE8
+    JFK assassination was a setup I feel that there was alot of evidence and facts that supported the conspiracy theory claims
+
+  IC=1.67  DV=+0  pre=100  wc=39  study=3  pid=9A3190D0
+    I believe in the conspiracy theory that the Catholic Church has been covering up allegations of sexual abuse based on numerous witnesses. I believe the victims and their stories of the Church hiding allegations or making stories go away.
+
+  IC=1.68  DV=+16  pre=91  wc=25  study=1  pid=76B0C2F3
+    I don't find any of them credible or compelling honestly. None of them have any evidence that I believe. I believe the commonly accepted explanations.
+
+  IC=1.68  DV=+0  pre=0  wc=28  study=3  pid=E01E3EE1
+    That Tupac is still alive. He had so much music come out after he died. It was just fascinating that people felt he was and is still alive
+
+==============================================================================
+Q2 candidates (near-median IC, 20-120 words)
+==============================================================================
+
+  IC=2.30  DV=+17  pre=23  wc=54  study=3  pid=72625F9F
+    The existence of UF0's is a conspiracy theory I'm leaning towards, several people claimed to have seen aircrafts move at technologically impossible speed and control. I once read a book by one Cooper where he claimed to have seen an aircraft come to a total stop midair after moving at the speed of sound.
+
+  IC=2.30  DV=+18  pre=83  wc=99  study=1  pid=3D57AC14
+    A significant conspiracy I find credible and compelling is the one that Diana was killed by the Royals. It resonates with me because I feel she was more of an everyday person and to me it is amazing that they could just get rid of her like that I think some of the past statements from some of the people involved and al
+
+  IC=2.30  DV=+0  pre=34  wc=66  study=2  pid=96CFE18C
+    There is a common theory that the NFL scripts their games and seasons. I find it convincing because it is such a large corporation that they totally could, and especially recently there have been many inexplicable occurences that point towards this conclusion The Taylor Swift stuff really adds to this idea as the Chief
+
+  IC=2.29  DV=+20  pre=49  wc=32  study=3  pid=C623A7ED
+    Area 51 and the theory that there are aliens there. I just think it is really fascinating and also a little scary that the government could keep such big things from us.
+
+==============================================================================
+Q3 candidates (near-median IC, 20-120 words)
+==============================================================================
+
+  IC=2.64  DV=+50  pre=100  wc=57  study=2  pid=1304BAAA
+    I would say the moon landing. I find it compelling because people are split in if people actually went to the moon or not. I do not have any evidence but I just think it is compelling that even if they did go to the moon and they actually did not, why would they lie about it?
+
+  IC=2.64  DV=+40  pre=65  wc=90  study=2  pid=14F37F48
+    The CIA being involved with the trafficking of cocaine. From everything I've seen and read it appears that people within the CIA helped people get away with bringing cocaine into the US. I find it interesting because crack cocaine got so many people hooked and caused such bad problems for communities and its mind blowi
+
+  IC=2.64  DV=+2  pre=81  wc=41  study=2  pid=C1D9EBE5
+    the fact that we are not alone in the universe. The terrifying idea that we are not alone in the universe or we are lone in the vast universe but very limited with knowledge. we cant go to our original origins.
+
+  IC=2.64  DV=+2  pre=62  wc=41  study=2  pid=EA58A17E
+    I don't believe Jeffrey Epstein killed himself. The government is biased towards the wealthy, no matter how horrific the crimes committed are. He might be still alive. I've watched documentaries online and I know the world is biased towards the wealthy.
+
+==============================================================================
+Q4 candidates (near-median IC, 20-120 words)
+==============================================================================
+
+  IC=2.97  DV=+20  pre=35  wc=94  study=2  pid=6FE3E720
+    There seems to be a somewhat factual beginning for most of them. At least a grain of truth to allow for the greater story to seem compelling. The Government cover up of space aliens is the most compelling to me. As a child I was a UFO follower. There was a local radio show about UFO. My friend and I got plans from the 
+
+  IC=2.98  DV=+70  pre=100  wc=67  study=1  pid=E2047E29
+    I find compelling the conspiracy theory that health insurance companies are driven more by profits than by the health of their subscribers. This is compelling to me because I have struggled with payments from health insurance companies. I have had trouble getting health insurance companies to pay reasonable claims. The
+
+  IC=2.97  DV=+4  pre=59  wc=84  study=3  pid=5E8EDCB5
+    I find the JFK assassination to be compelling. Lee Harvey Oswald was murdered before he could provide information on his guilt and others involved. In addition, there appears to have been multiple shooters, but no hard evidence has been publicly available. It appears as though the government is hiding something. There 
+
+  IC=2.98  DV=+50  pre=50  wc=55  study=1  pid=C5AF9283
+    We knew that the Japanese were going to attack at Pearl Harbor. It's unlikely we didn't know what was going to happen. I think I read that we had broke their code and intercepted the message. It was important to hide that information from the Japanese so of course we were "surprised" by the bombing.
+
+==============================================================================
+Q5 candidates (near-median IC, 20-120 words)
+==============================================================================
+
+  IC=3.45  DV=+0  pre=55  wc=108  study=3  pid=A18B470C
+    I try not to engage with the type of magical thinking that justifies most conspiracy theories, but if I had to pick one that seems "compelling" I'd probably say that world governments probably aren't telling us everything that they know about UFOs/UAPs. Its just such a wide ranging theory that has been around for so lo
+
+  IC=3.45  DV=+22  pre=65  wc=97  study=3  pid=D0EC4976
+    I wouldn't say it's credible, but the conspiracy theory that is compelling to me is the JFK assassination. The whole circumstances around it are bizarre and lead to a lot of questions. The main suspect is murdered by a mob figure within days of the assassination? What would be the reasoning behind that? The main part t
+
+  IC=3.45  DV=+0  pre=1  wc=74  study=3  pid=828E2A52
+    I do not find any of the conspiracy theories credible, some however are interesting to me. I occasionally engage with flat earthers on social media. They have an interesting albeit I believe flawed perspective. It's more the lack of evidence and their conviction that I find entertaining. I don't find their "evidence" c
+
+  IC=3.44  DV=+25  pre=86  wc=103  study=1  pid=41004804
+    I generally do not believe in conspiracy theories. But, I do fully believe that the US knew about Agent Orange's effect and it intended to commit mass destruction. I'm not sure if this is more of a conspiracy or a matter or opinion. I think it resonates because the US government has committed so many atrocities that ar

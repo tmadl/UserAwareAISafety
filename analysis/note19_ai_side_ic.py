@@ -68,7 +68,8 @@ def load_frame() -> pd.DataFrame:
           .merge(gpt[keep], on="participantId", how="inner")
           .merge(ad[["participantId", "DV_BeliefChange_Specific", *COVARS]],
                  on="participantId", how="inner"))
-    return df.dropna(subset=["user_ic", "gpt_mean", "DV_BeliefChange_Specific",
+    return df.dropna(subset=["user_ic", "gpt_mean", "gpt_concat", "gpt_slope",
+                              "gpt_sd", "DV_BeliefChange_Specific",
                               *COVARS]).reset_index(drop=True)
 
 
@@ -83,7 +84,9 @@ def main():
 
     y = df["DV_BeliefChange_Specific"].to_numpy(dtype=float)
     cov_z = [zs(df[c].values) for c in COVARS]
-    ic = zs(df["user_ic"].values); ic2 = zs(df["user_ic"].values ** 2)
+    # Headline parameterisation: z(IC)^2 (z-score, then square), matching the
+    # main-text -1.99 convention; NOT the earlier z(IC^2) scale (~7.69x larger).
+    ic = zs(df["user_ic"].values); ic2 = ic ** 2
     gm = zs(df["gpt_mean"].values); gs = zs(df["gpt_slope"].values)
     gsd = zs(df["gpt_sd"].values);  gc = zs(df["gpt_concat"].values)
 
@@ -176,7 +179,7 @@ def main():
 
     print(f"\nTable 3 — Topic fixed-effects (TF-IDF + KMeans k=20, n={len(df_t)}):")
     y_t = df_t["DV_BeliefChange_Specific"].to_numpy(dtype=float)
-    u_t = zs(df_t["user_ic"].values); u2_t = zs(df_t["user_ic"].values ** 2)
+    u_t = zs(df_t["user_ic"].values); u2_t = u_t ** 2  # z(IC)^2 headline scale
     cov_t = [zs(df_t[c].values) for c in COVARS]
 
     print(f"  {'Predictor':<28}  {'no FE':>10}  {'+ topic FE':>10}")

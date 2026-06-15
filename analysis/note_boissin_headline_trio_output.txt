@@ -1,0 +1,13 @@
+Boissin headline trio (Qwen3.5-ORPO-400 logit-EV, text_all, length-fixed)
+N (complete cases) = 955
+
+(1) |Delta| monotone-descent leg  [manuscript: -2.27, p=.001, BF10=8.72]
+    |Delta| ~ IC + PreBelief : beta_lin = -2.311, p = <.001, BF10 = 11.47, n = 955
+    AI x Human-like cell     : beta_lin = -3.480, p = 0.005, BF10 = 3.25, n = 244  [manuscript: -3.47, p=.006]
+
+(2) Raw signed-DV slope (weak opposite leg)  [manuscript: +1.60, p=.035, BF10=0.30]
+    belief_change ~ IC + PreBelief : beta_lin = +1.720, p = 0.023, BF10 = 0.44, n = 955
+
+(3) Directional movers (signed Delta = post-pre)  [manuscript toward: +4.11, p<.001; away: -0.67, p=.22]
+    toward-target (Delta<0): beta_lin = +4.162, p = <.001, n = 487
+    away-target   (Delta>0): beta_lin = -0.588, p = 0.275, n = 234

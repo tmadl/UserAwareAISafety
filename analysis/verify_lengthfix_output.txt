@@ -1,0 +1,8 @@
+|Delta| apex = 2.47 CI[2.17,2.68]  (was 2.47 [2.17,2.68])
+signed treat raw IC^2 b = -4.08, p = 0.000  (was -4.05)
+signed control raw IC^2 b = -0.96, p = 0.072  (was -0.96 (p=.082))
+adverse rate: treatment 12.5% / control 11.7%  (was 12.0/12.2)
+
+--- note19 AI-side (key lines) ---
+
+--- note21 reception (key lines) ---

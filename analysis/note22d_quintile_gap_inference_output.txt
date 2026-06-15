@@ -1,0 +1,72 @@
+Treatment N = 1782 (adverse 12.0%); Control N = 1075 (adverse 12.2%)
+
+Per-quintile treatment-vs-control adverse-rate gaps (two-proportion z, two-tailed):
+ Q   n_t  rate_t   n_c  rate_c  gap_pp      z       p
+ 1   357   14.3%   215   10.7%    +3.6   1.24   0.216
+ 2   356   13.2%   215   14.0%    -0.8  -0.25   0.799
+ 3   356   11.0%   215   14.0%    -3.0  -1.07   0.287
+ 4   356    9.8%   215   13.5%    -3.7  -1.34   0.180
+ 5   357   11.5%   215    8.8%    +2.6   1.00   0.317
+
+Joint arm x quintile interaction (logistic LR, df=4): chi2 = 5.51, p = 0.239
+
+========================================================================
+RESOLUTION SWEEP (per-bin two-proportion z, two-tailed)
+
+-- k = 2 --
+ bin   n_t  rate_t   n_c  rate_c  gap_pp      z       p
+   1   891   13.0%   538   12.5%    +0.6   0.31   0.757
+   2   891   10.9%   537   11.9%    -1.0  -0.60   0.551
+
+-- k = 3 --
+ bin   n_t  rate_t   n_c  rate_c  gap_pp      z       p
+   1   594   14.1%   358   13.1%    +1.0   0.44   0.660
+   2   594   10.9%   358   13.4%    -2.5  -1.14   0.255
+   3   594   10.8%   359   10.0%    +0.7   0.36   0.716
+  planned tails-vs-middle contrast (arm x tail): b = +0.315, z = 1.26, p = 0.209
+
+-- k = 4 --
+ bin   n_t  rate_t   n_c  rate_c  gap_pp      z       p
+   1   446   14.6%   269   11.2%    +3.4   1.31   0.192
+   2   445   11.5%   269   13.8%    -2.3  -0.90   0.366
+   3   445    9.9%   268   15.3%    -5.4  -2.16   0.031
+   4   446   11.9%   269    8.6%    +3.3   1.40   0.161
+  planned tails-vs-middle contrast (arm x tail): b = +0.685, z = 2.86, p = 0.004
+
+-- k = 5 --
+ bin   n_t  rate_t   n_c  rate_c  gap_pp      z       p
+   1   357   14.3%   215   10.7%    +3.6   1.24   0.216
+   2   356   13.2%   215   14.0%    -0.8  -0.25   0.799
+   3   356   11.0%   215   14.0%    -3.0  -1.07   0.287
+   4   356    9.8%   215   13.5%    -3.7  -1.34   0.180
+   5   357   11.5%   215    8.8%    +2.6   1.00   0.317
+  planned tails-vs-middle contrast (arm x tail): b = +0.538, z = 2.17, p = 0.030
+
+-- k = 10 --
+ bin   n_t  rate_t   n_c  rate_c  gap_pp      z       p
+   1   179   12.8%   108   12.0%    +0.8   0.20   0.841
+   2   178   15.7%   107    9.3%    +6.4   1.54   0.125
+   3   178   14.0%   108   14.8%    -0.8  -0.18   0.857
+   4   178   12.4%   107   13.1%    -0.7  -0.18   0.858
+   5   178   10.1%   108   13.0%    -2.9  -0.74   0.458
+   6   178   11.8%   107   15.0%    -3.2  -0.77   0.443
+   7   178    9.0%   107   15.0%    -6.0  -1.54   0.122
+   8   178   10.7%   108   12.0%    -1.4  -0.35   0.723
+   9   178    8.4%   107    7.5%    +1.0   0.29   0.775
+  10   179   14.5%   108   10.2%    +4.3   1.06   0.288
+  planned tails-vs-middle contrast (arm x tail): b = +0.327, z = 1.10, p = 0.271
+
+========================================================================
+CONTINUOUS TEST (no binning; IC z-scored within arm)
+arm x [z(IC)+z(IC)^2] joint LR (df=2): chi2 = 1.30, p = 0.522
+  arm x z(IC):   b = -0.024 (p = 0.842)
+  arm x z(IC)^2: b = +0.105 (p = 0.264)
+
+========================================================================
+SAME-FRAME DV COMPARISON (why binary-adverse differs from belief-change)
+(i) OLS belief change ~ arm x [z(IC)+z(IC)^2] + pre (N=2857):
+    joint interaction F(2,2850) = 3.55, p = 0.02879; arm x z(IC)^2 b = -1.51 (p = 0.0097)
+(ii) logistic adverse ~ arm x [z(IC)+z(IC)^2] + pre:
+    joint LR (df=2) chi2 = 4.14, p = 0.126; arm x z(IC)^2 b = +0.174 (p = 0.074)
+(iii) LPM adverse (HC1): arm x z(IC)^2 b = +0.0175 (p = 0.084); joint F approx p = 0.130
+Treatment-arm adverse ~ z(IC) + z(IC)^2 logistic: b_lin = -0.080 (p = 0.258), b_quad = +0.065 (p = 0.218)

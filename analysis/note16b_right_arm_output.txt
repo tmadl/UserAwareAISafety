@@ -1,0 +1,19 @@
+N = 1782 (treatment arm, complete case)
+(0) positive control: b_quad = -1.99 (p = 3.35e-06), BF_quad-vs-lin = 1,205 [published: -1.97, p<.001, BF 1,086]
+
+(1) Q5 vs Q2-Q4 (covariate-adjusted, n = 1425):
+    b(Q5) = -2.44 points, 95% CI [-5.53, +0.65], t = -1.55, p = 0.1213 (two-tailed; one-tailed 0.0606 under the directional prediction)
+    unadjusted: b(Q5) = -2.58, p = 0.0756
+
+(2) functional-form race (BIC; lower = better; knot grid 15th-85th pct):
+    linear                           BIC =   16330.1  BF(quad vs this) =  1205.37
+    quadratic (paper)                BIC =   16315.9  BF(quad vs this) =     1.00
+    plateau (rise-then-flat)         BIC =   16312.6  BF(quad vs this) =     0.19 (knot IC = 1.87)
+    piecewise free (rise-then-any)   BIC =   16315.1  BF(quad vs this) =     0.67 (knot IC = 2.25)
+    piecewise-free post-knot slope: b = -1.77 (p = 0.0136; negative = decline after knot)
+
+(3) influence/trimming:
+    drop top 1% Cook's D (n = 1764): b_quad = -2.40 (p = 0.0000)
+    trim IC < 97.5th pct (n = 1737): b_quad = -2.27 (p = 0.0000), BF = 2,214.9, apex = 2.66
+    trim IC < 4.0 (n = 1745): b_quad = -2.25 (p = 0.0000), BF = 2,278.4, apex = 2.67
+    IC percentiles: 1st = 1.17, 2.5th = 1.29, 97.5th = 3.95, 99th = 4.16, max = 5.17

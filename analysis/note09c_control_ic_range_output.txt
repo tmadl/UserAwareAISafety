@@ -1,0 +1,22 @@
+Costello pooled N = 2915 (treatment 1782, control 1133)
+
+Primary scorer (Qwen3-ORPO-400 logit-EV):
+  Treatment (pre-treatment essay) N=1782  mean=2.63  SD=0.70  IQR=0.91  5-95=[1.43,3.81]  range=[1.03,5.17]
+  Control (post-conv. restatement) N=1133  mean=2.15  SD=0.69  IQR=0.99  5-95=[1.11,3.31]  range=[1.00,5.02]
+  variance ratio treat/control = 1.018  (SD ratio = 1.009; Levene p = 0.674)
+  => NO range restriction (spreads equal)
+
+Cross-scorer (prompt-only gpt-4.1-mini):
+  Treatment (pre-treatment essay) N=1782  mean=2.42  SD=0.84  IQR=1.00  5-95=[1.00,4.00]  range=[1.00,5.80]
+  Control (post-conv. restatement) N=1132  mean=2.20  SD=0.79  IQR=0.70  5-95=[1.00,4.00]  range=[1.00,5.00]
+  variance ratio treat/control = 1.112  (SD ratio = 1.054; Levene p = 0.000)
+  => spread differs -- examine
+
+CONCLUSION: the scoring-window asymmetry shifts the control IC MEAN
+(terser restatement text) but not its SPREAD; with equal dispersion the
+control arm has equal leverage to detect tail curvature, so the near-
+null control curvature is substantive, not a range-restriction artifact.
+The treatment/control curvature ratio in the signed interaction is
+therefore interpretable; the scoring-window asymmetry is a footnote-
+level caveat for the signed outcome (and is moot for regression to the
+mean, which is directionless and cannot generate a signed inverted-U).

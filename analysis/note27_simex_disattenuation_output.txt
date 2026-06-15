@@ -1,0 +1,14 @@
+N = 1782;  observed beta_IC2 (z(IC)^2) = -1.989
+SD(IC) = 0.698
+
+reliability rho = 0.704 (Suedfeld-155): sigma_err = 0.380
+  SIMEX curve beta(lambda): 0.0:-1.99, 0.5:-1.66, 1.0:-1.47, 1.5:-1.29, 2.0:-1.16
+  corrected beta_IC2 (lambda=-1) = -2.736  (1.38x the observed)
+
+reliability rho = 0.784 (Jakob-2275): sigma_err = 0.324
+  SIMEX curve beta(lambda): 0.0:-1.99, 0.5:-1.72, 1.0:-1.56, 1.5:-1.40, 2.0:-1.26
+  corrected beta_IC2 (lambda=-1) = -2.561  (1.29x the observed)
+
+Interpretation: SIMEX moves beta_IC2 AWAY from zero (more negative),
+confirming the observed curvature is attenuated by IC measurement error
+and is a conservative lower bound on the true moderation.

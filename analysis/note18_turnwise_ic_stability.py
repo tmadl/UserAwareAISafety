@@ -33,7 +33,7 @@ def fit(df, ic_col):
     s = df[need].dropna().copy()
     y = s["DV_BeliefChange_Specific"].values.astype(float)
     raw = s[ic_col].values.astype(float)
-    ic_z, ic2_z = zs(raw), zs(raw ** 2)
+    ic_z, ic2_z = zs(raw), zs(raw) ** 2  # z(IC)^2 headline parameterisation
     pre = zs(s["Pre_Belief_Specific"].values)
     wc = zs(s["OpenendedResponseWordCount"].values)
     X_lin = sm.add_constant(np.column_stack([ic_z, pre, wc]))
@@ -41,9 +41,10 @@ def fit(df, ic_col):
     m_lin = sm.OLS(y, X_lin).fit()
     m_quad = sm.OLS(y, X_quad).fit()
     bf = float(np.exp((m_lin.bic - m_quad.bic) / 2))
-    sd_ic, sd_sq = np.std(raw), np.std(raw ** 2)
+    sd_ic = np.std(raw)
     b1, b2 = m_quad.params[1], m_quad.params[2]
-    apex = -b1 * sd_sq / (2 * b2 * sd_ic) if abs(b2) > 1e-12 else np.nan
+    # peak in z: z* = -b1/(2 b2); raw apex = mean + z* * SD(IC)  (z(IC)^2 scale)
+    apex = raw.mean() - b1 / (2 * b2) * sd_ic if abs(b2) > 1e-12 else np.nan
     return dict(n=len(s), beta=m_quad.params[2], p=m_quad.pvalues[2],
                 bf=bf, apex=apex)
 
@@ -74,20 +75,14 @@ def main():
               "OpenendedResponseWordCount"]:
         ad[c] = pd.to_numeric(ad[c], errors="coerce")
 
-    # Match turns row → analysis_data row by first-segment text
-    # (`Paragraph` column in turns CSV contains the full dialogue with `|||` separators;
-    # `Paragraph` in the initial CSV contains text_initial alone)
-    turns["turn_0_text"] = (turns["Paragraph"].astype(str)
-                            .str.split(r"\|\|\|", regex=True, n=1).str[0].str.strip())
-    init["init_text"] = init["Paragraph"].astype(str).str.strip()
-    text_to_idx = {t: i for i, t in enumerate(init["init_text"])}
-    turns["ad_idx"] = turns["turn_0_text"].map(text_to_idx)
-    assert turns["ad_idx"].notna().all(), "unmatched rows in turns merge"
+    # Match turns row → analysis_data by participantId (the regenerated turns file
+    # carries participantId; the length-fixed initial CSV no longer stores text).
     merged = turns.merge(
-        ad[["DV_BeliefChange_Specific", "Pre_Belief_Specific",
-            "OpenendedResponseWordCount"]].reset_index().rename(columns={"index": "ad_idx"}),
-        on="ad_idx", how="left",
+        ad[["participantId", "DV_BeliefChange_Specific", "Pre_Belief_Specific",
+            "OpenendedResponseWordCount"]],
+        on="participantId", how="left",
     )
+    assert merged["DV_BeliefChange_Specific"].notna().all(), "unmatched rows in turns merge"
 
     # Per-turn descriptive table (tab:turnwise_descriptives)
     print("SI Note 18 — Turnwise IC scoring (Costello within-dialogue subset)\n")

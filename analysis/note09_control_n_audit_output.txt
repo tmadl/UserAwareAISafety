@@ -1,0 +1,7 @@
+SI Note 9 — Costello control-arm Ns (length-fixed IC)
+  full active control arm (IC-scored set)        =  1152   [manuscript: 1,152]
+  control rows merged with per-participant IC    =  1133   [manuscript: 1,107]
+  + post-dialogue belief re-measurement (DV)     =  1100   [manuscript: 1,075]
+  + canonical placebo spec (DV+pre+wc)           =  1100
+
+  AllData raw control rows (dedup participantId)  =  1108

@@ -1,0 +1,32 @@
+SI Note 25 — joint incremental discriminant model
+DV ~ z(IC) + z(IC)^2 + z(Alt) + z(Alt)^2 + z(pre) + z(wc)
+
+Construct | IC channel                            n b_IC2(joint)   p_IC2   b_Alt2  p_Alt2  BF(Alt2|IC+IC2+Alt)
+----------------------------------------------------------------------------------------------------------
+AOT  (rubric)        | gpt full-dialogue IC    1783       -2.591   0.000   -0.570   0.495               0.0299
+IH   (rubric)        | gpt full-dialogue IC    1783       -2.669   0.000   -0.488   0.533               0.0288
+NFC  (rubric)        | gpt full-dialogue IC    1783       -1.046   0.119   -3.728   0.000             1.38e+03
+OMI  (rubric)        | gpt full-dialogue IC    1783       -2.546   0.000   +0.022   0.978               0.0237
+IH-v2 (Guo-validated)| Q400 pre-treatment IC   1782       -1.885   0.000   +0.103   0.914               0.0238
+
+Detail (incremental tests):
+  AOT  (rubric)        | gpt full-dialogue IC
+     IC^2: solo b=-3.037 -> joint b=-2.591 (p=0.000);  r(IC,Alt)=+0.73
+     Alt^2 incremental over IC+IC^2+Alt: F(1,df)=0.47 p=0.495  BF10=0.0299
+     {Alt+Alt^2} block over IC+IC^2: F(2,df)=21.07 p=0.000  BF10=6.74e+05
+  IH   (rubric)        | gpt full-dialogue IC
+     IC^2: solo b=-3.037 -> joint b=-2.669 (p=0.000);  r(IC,Alt)=+0.57
+     Alt^2 incremental over IC+IC^2+Alt: F(1,df)=0.39 p=0.533  BF10=0.0288
+     {Alt+Alt^2} block over IC+IC^2: F(2,df)=35.85 p=0.000  BF10=1.19e+12
+  NFC  (rubric)        | gpt full-dialogue IC
+     IC^2: solo b=-3.037 -> joint b=-1.046 (p=0.119);  r(IC,Alt)=+0.78
+     Alt^2 incremental over IC+IC^2+Alt: F(1,df)=22.00 p=0.000  BF10=1.38e+03
+     {Alt+Alt^2} block over IC+IC^2: F(2,df)=27.31 p=0.000  BF10=2.99e+08
+  OMI  (rubric)        | gpt full-dialogue IC
+     IC^2: solo b=-3.037 -> joint b=-2.546 (p=0.000);  r(IC,Alt)=+0.68
+     Alt^2 incremental over IC+IC^2+Alt: F(1,df)=0.00 p=0.978  BF10=0.0237
+     {Alt+Alt^2} block over IC+IC^2: F(2,df)=48.28 p=0.000  BF10=1.77e+17
+  IH-v2 (Guo-validated)| Q400 pre-treatment IC
+     IC^2: solo b=-1.987 -> joint b=-1.885 (p=0.000);  r(IC,Alt)=+0.37
+     Alt^2 incremental over IC+IC^2+Alt: F(1,df)=0.01 p=0.914  BF10=0.0238
+     {Alt+Alt^2} block over IC+IC^2: F(2,df)=17.48 p=0.000  BF10=1.99e+04
