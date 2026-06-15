@@ -4,10 +4,7 @@ Reproducibility code, derived scored data, figure scripts, and scorer utilities 
 
 > Madl, T. (2026). *Text-measured cognitive complexity predicts belief revision in AI persuasion.* PsyArXiv preprint / manuscript under review. <https://osf.io/preprints/psyarxiv/mdxvs_v3>
 
-**What this shows — and why it matters.** AI persuasion is not uniform across users. This reanalysis shows that a cognitive style measurable from text people already write — *integrative complexity* — predicts who revises their beliefs after AI debunking (a theory-predicted inverted-U) and which users bear a disproportionate share of adverse, belief-strengthening movement. It is a worked example of a **user-side** signal for AI-safety evaluation, complementing output-level (toxicity, factuality, sycophancy) checks.
-
-*Who this is for:* anyone who builds or evaluates persuasive or debunking AI and wants to measure user-side heterogeneity in benefit and harm from text users already produce.
-
+**What this shows.** AI-persuasion effects, often reported as uniform across users, are not. This reanalysis finds that a cognitive style measurable from text people already write — *integrative complexity* — predicts who revises their beliefs after AI debunking (a theory-predicted inverted-U) and which users bear a disproportionate share of adverse, belief-strengthening movement. It illustrates how a **user-side** signal can complement output-level (toxicity, factuality, sycophancy) AI-safety evaluation.
 This repository is primarily the reproducibility package for the Costello AI-persuasion reanalysis. It also serves as a public code and measurement-tooling entry point for the broader research programme **Human Cognitive Autonomy in AI Interaction**, which studies how AI dialogue affects users' reflective agency and reasoning processes.
 
 The reproducibility package contains the analysis pipeline, derived score tables, figure scripts, and scoring scripts needed to reproduce the main-text empirical claims and SI Appendix robustness checks. A coverage matrix in `docs/REPRODUCIBILITY.md` lists each SI Note's status; the numerical Notes covered by the matrix reproduce from this repository, with some requiring the raw Costello publication CSV from Dryad for participant-level fields not redistributed here. Model weights for the released scorers are hosted separately on Hugging Face.
@@ -45,7 +42,7 @@ The result is robust across IC-scoring variants, within-study refits, demographi
 
 The effect is modest in aggregate variance explained, as expected for an individual-difference moderator whose relevance concentrates at the tails. That tail concentration is the practically meaningful part: the bottom IC quintile holds **24%** (23.9%) of post-conversation belief-strengthening (adverse-movement) cases but only **14%** of large belief revisions, so **86%** of large revisions fall outside it.
 
-This is a *population-level* concentration, not an individual-risk model. Out-of-sample discrimination of adverse movement reaches **AUC = 0.69** for the full paper-specification predictors, but that is carried almost entirely by pre-treatment belief strength; IC-only models are near chance (**AUC ≈ 0.44–0.56**). The pattern is therefore descriptive — useful for population-level auditing and for studying support mechanisms that preserve reflection under specified task conditions, not for assigning users to exclusion, gating, profiling, or persistent labels.
+This is a *population-level* concentration, not an individual-risk model. Out-of-sample discrimination of adverse movement reaches **AUC = 0.69** for the full paper-specification predictors, but that is carried almost entirely by pre-treatment belief strength; IC-only models are near chance (**AUC ≈ 0.44–0.56**). The pattern is therefore descriptive — a candidate for population-level auditing and for studying support mechanisms that preserve reflection under specified task conditions, not for assigning users to exclusion, gating, profiling, or persistent labels.
 
 ### Scope and boundary conditions
 
