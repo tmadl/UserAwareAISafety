@@ -4,7 +4,8 @@
 Prints the four headline numbers from the Costello inverted-U with the
 primary Q400 logit-EV scorer:
 
-  beta_IC^2 = -15.17    p < 10^-6    BF_10 = 1086    apex = 2.76 [2.50, 3.02]
+  beta_IC^2 = -1.99 (headline z(IC)^2 scale; = -15.28 on z(IC^2))
+  p < .001    BF_10 = 1,205    apex = 2.76 [2.50, 3.03]
 
 If any number drifts beyond rounding, something has changed downstream
 of the bundled scored data; investigate before trusting the rest.
@@ -45,15 +46,19 @@ def main():
     n = len(df)
     y = df["DV_BeliefChange_Specific"].values.astype(float)
     raw = df["IC"].values.astype(float)
-    ic_z, ic2_z = zs(raw), zs(raw ** 2)
+    ic_z, ic2_z = zs(raw), zs(raw ** 2)   # ic2_z: z(IC^2) scale
+    ic2_head = ic_z ** 2                   # z(IC)^2 headline scale (paper -1.99)
     pre_z, wc_z = zs(df["Pre_Belief_Specific"].values), zs(df["OpenendedResponseWordCount"].values)
 
     X1 = sm.add_constant(np.column_stack([ic_z, pre_z, wc_z]))
     X2 = sm.add_constant(np.column_stack([ic_z, ic2_z, pre_z, wc_z]))
+    X2h = sm.add_constant(np.column_stack([ic_z, ic2_head, pre_z, wc_z]))
     m1 = sm.OLS(y, X1).fit()
     m2 = sm.OLS(y, X2).fit()
+    m2h = sm.OLS(y, X2h).fit()
     bf = float(np.exp((m1.bic - m2.bic) / 2))
     b_lin, b_quad = float(m2.params[1]), float(m2.params[2])
+    b_quad_head = float(m2h.params[2])    # paper headline scale, z(IC)^2
     p_quad = float(m2.pvalues[2])
 
     sd_ic, sd_sq = float(np.std(raw, ddof=0)), float(np.std(raw ** 2, ddof=0))
@@ -79,11 +84,12 @@ def main():
     lo, hi = np.percentile(peaks, [2.5, 97.5])
 
     print("Costello inverted-U headline (Q400 logit-EV, paper-spec model)")
-    print(f"  n           = {n:,}")
-    print(f"  beta_IC^2   = {b_quad:+.2f}   (paper: -15.17)")
-    print(f"  p_IC^2      = {p_quad:.2e}   (paper: <1e-6)")
-    print(f"  BF10(quad)  = {bf:,.1f}   (paper: 1,086)")
-    print(f"  apex IC     = {apex:.2f} [{lo:.2f}, {hi:.2f}]   (paper: 2.76 [2.50, 3.02])")
+    print(f"  n                    = {n:,}")
+    print(f"  beta_IC^2 (z(IC)^2)  = {b_quad_head:+.2f}    (paper headline: -1.99)")
+    print(f"  beta_IC^2 (z(IC^2))  = {b_quad:+.2f}   (paper: -15.28; same fit, other scale)")
+    print(f"  p_IC^2               = {p_quad:.2e}   (paper: <.001)")
+    print(f"  BF10(quad)           = {bf:,.1f}   (paper: 1,205)")
+    print(f"  apex IC              = {apex:.2f} [{lo:.2f}, {hi:.2f}]   (paper: 2.76 [2.50, 3.03])")
 
 
 if __name__ == "__main__":

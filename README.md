@@ -4,6 +4,10 @@ Reproducibility code, derived scored data, figure scripts, and scorer utilities 
 
 > Madl, T. (2026). *Text-measured cognitive complexity predicts belief revision in AI persuasion.* PsyArXiv preprint / manuscript under review. <https://osf.io/preprints/psyarxiv/mdxvs_v3>
 
+**What this shows — and why it matters.** AI persuasion is not uniform across users. This reanalysis shows that a cognitive style measurable from text people already write — *integrative complexity* — predicts who revises their beliefs after AI debunking (a theory-predicted inverted-U) and which users bear a disproportionate share of adverse, belief-strengthening movement. It is a worked example of a **user-side** signal for AI-safety evaluation, complementing output-level (toxicity, factuality, sycophancy) checks.
+
+*Who this is for:* anyone who builds or evaluates persuasive or debunking AI and wants to measure user-side heterogeneity in benefit and harm from text users already produce.
+
 This repository is primarily the reproducibility package for the Costello AI-persuasion reanalysis. It also serves as a public code and measurement-tooling entry point for the broader research programme **Human Cognitive Autonomy in AI Interaction**, which studies how AI dialogue affects users' reflective agency and reasoning processes.
 
 The reproducibility package contains the analysis pipeline, derived score tables, figure scripts, and scoring scripts needed to reproduce the main-text empirical claims and SI Appendix robustness checks. A coverage matrix in `docs/REPRODUCIBILITY.md` lists each SI Note's status; the numerical Notes covered by the matrix reproduce from this repository, with some requiring the raw Costello publication CSV from Dryad for participant-level fields not redistributed here. Model weights for the released scorers are hosted separately on Hugging Face.
@@ -19,33 +23,18 @@ The reproducibility package contains the analysis pipeline, derived score tables
 | Understand the broader research programme | See [Programme context](#programme-context). |
 | Cite the paper, code, or models | See [Citation](#citation). |
 
-## Programme context
-
-This repository anchors one empirical component of a broader programme on
-Human Cognitive Autonomy in AI Interaction: when AI dialogue supports users'
-reflective agency, and when it instead narrows, substitutes for, or weakens 
-users' own reasoning processes.
-
-The present repository implements the reproducibility package for the Costello
-AI-persuasion reanalysis. It does not attempt to reproduce or document the broader 
-theoretical framework, which is developed in a separate manuscript currently under review.
-
-Related scorer model cards are linked below for transparency and reuse. Only
-the IC scorer is required for the main Costello reproduction; the IH scorers
-are included because they are used in construct-neighbour and reproducibility
-checks. Other programme-related instruments are documented separately and are
-not required to reproduce this paper.
-
 ## About the paper
 
 This paper reanalyses Costello et al.'s 2024 conversational-AI conspiracy-debunking experiment, in which 1,782 participants discussed personally held conspiracy beliefs with GPT-4. It asks whether **integrative complexity** (IC)—a text-measured cognitive-style signal capturing how people differentiate and integrate competing perspectives—predicts who revises their beliefs after AI persuasion.
 
 ### Headline result
 
-IC moderates belief change in an **inverted-U** pattern. Belief revision is largest at mid-sample IC and declines at both low and high IC:
+IC moderates belief change in an **inverted-U** pattern: belief revision is largest at mid-sample IC and declines at both low and high IC. Across the IC range, fitted revision spans **about five points peak-to-trough** on the 0–100 belief scale — roughly 43% of the sample's average 11.8-point debunking effect, marking a tail-concentrated moderator rather than a uniform shift.
 
-- $\beta_{\text{IC}^2} = -15.17$
-- $\text{BF}_{10} = 1{,}086$
+Technical headline (primary Q400 logit-EV scorer, $N = 1{,}782$):
+
+- $\beta_{\text{IC}^2} = -1.99$ on the headline $z(\text{IC})^2$ scale (equivalently $-15.28$ on $z(\text{IC}^2)$, the scale the reproduction scripts print, and $-4.08$ on raw $\text{IC}^2$ — same fit, $p$, and BF)
+- $\text{BF}_{10} = 1{,}205$
 - $p < .001$
 
 This matches the inverted-U pattern predicted by McGuire's reception–yielding trade-off under reception-demanding, evidence-dense persuasion. Low-IC pre-treatment texts are associated with reduced revision under dense, multi-step evidence; high-IC pre-treatment texts are associated with attenuated revision, consistent with greater yielding resistance or integration of new evidence into an already structured belief system. Mid-IC contexts revise most.
@@ -54,13 +43,30 @@ The result is robust across IC-scoring variants, within-study refits, demographi
 
 ### Practical significance
 
-The effect is modest in aggregate variance explained, as expected for an individual-difference moderator concentrated at the tails. But the tail pattern is practically meaningful: in a post hoc enrichment analysis, assigning the lowest-IC quintile to a hypothetical adaptive-support path would preserve **86%** of substantial belief revisions while capturing **24%** of post-conversation belief-strengthening cases. Leave-one-study-out performance gives **AUC = 0.69**.
+The effect is modest in aggregate variance explained, as expected for an individual-difference moderator whose relevance concentrates at the tails. That tail concentration is the practically meaningful part: the bottom IC quintile holds **24%** (23.9%) of post-conversation belief-strengthening (adverse-movement) cases but only **14%** of large belief revisions, so **86%** of large revisions fall outside it.
 
-This operating point is illustrative, not a proposed deployment threshold. The intended design implication is to study support mechanisms that preserve reflection under specified task conditions, not to assign users to exclusion, gating, profiling, or persistent labels.
+This is a *population-level* concentration, not an individual-risk model. Out-of-sample discrimination of adverse movement reaches **AUC = 0.69** for the full paper-specification predictors, but that is carried almost entirely by pre-treatment belief strength; IC-only models are near chance (**AUC ≈ 0.44–0.56**). The pattern is therefore descriptive — useful for population-level auditing and for studying support mechanisms that preserve reflection under specified task conditions, not for assigning users to exclusion, gating, profiling, or persistent labels.
 
 ### Scope and boundary conditions
 
 Across four additional conversational-AI datasets, IC moderation appears bounded by task structure. The Costello inverted-U appears in an evidence-dense, personally held, directional debunking dialogue. In the shorter Boissin debunking paradigm, IC shows the predicted yielding-resistance pattern rather than the full inverted-U. In paradigms lacking either a directional persuasion target or a personally held belief, the predicted Costello-style pattern is not recovered.
+
+## Programme context
+
+This repository anchors one empirical component of a broader programme on
+Human Cognitive Autonomy in AI Interaction: when AI dialogue supports users'
+reflective agency, and when it instead narrows, substitutes for, or weakens
+users' own reasoning processes.
+
+The present repository implements the reproducibility package for the Costello
+AI-persuasion reanalysis. It does not attempt to reproduce or document the broader
+theoretical framework, which is developed in a separate manuscript currently under review.
+
+Related scorer model cards are linked below for transparency and reuse. Only
+the IC scorer is required for the main Costello reproduction; the IH scorers
+are included because they are used in construct-neighbour and reproducibility
+checks. Other programme-related instruments are documented separately and are
+not required to reproduce this paper.
 
 ## What's in here
 
@@ -105,18 +111,22 @@ or deployment as standalone safety filters.
 git clone https://github.com/tmadl/UserAwareAISafety.git
 cd UserAwareAISafety
 pip install -r requirements.txt
-python analysis/01_costello_analysis.py
+python reproduce_headline.py
 ```
 
-The Costello analysis script prints the headline result:
+This 30-second sanity check prints the headline result:
 
 ```
-QUADRATIC MODERATION — Primary (Q400 logit-EV)
-  n = 1782
-  β_IC²            = -15.17, p < .001
-  BF₁₀(quad/lin)   = 1086.4
-  bootstrap apex   = 2.76 IC, 95% CI [2.50, 3.02]
+Costello inverted-U headline (Q400 logit-EV, paper-spec model)
+  n                    = 1,782
+  beta_IC^2 (z(IC)^2)  = -1.99    (paper headline: -1.99)
+  beta_IC^2 (z(IC^2))  = -15.28   (same fit, other scale)
+  p_IC^2               = 3.35e-06
+  BF10(quad)           = 1,205.4
+  apex IC              = 2.76 [2.50, 3.03]
 ```
+
+For the full primary analysis (within-study replication, 24-moderator comparison, quintiles), run `python analysis/01_costello_analysis.py`.
 
 ## Reproducing each paper claim
 
@@ -125,7 +135,7 @@ For a 30-second sanity check on the main-text headline:
 ```bash
 python reproduce_headline.py
 # Costello inverted-U headline (Q400 logit-EV, paper-spec model)
-#   beta_IC^2   = -15.17    p_IC^2 = 3.7e-06    BF10 = 1,086    apex IC = 2.76 [2.50, 3.02]
+#   beta_IC^2 (z(IC)^2) = -1.99   (= -15.28 on z(IC^2))   p = 3.35e-6   BF10 = 1,205   apex IC = 2.76 [2.50, 3.03]
 ```
 
 To regenerate the main-text figures from data:
@@ -193,7 +203,7 @@ If you use this code, models, or scored data, please cite both the paper and the
   title        = {Text-measured cognitive complexity predicts belief revision in AI persuasion},
   year         = {2026},
   howpublished = {PsyArXiv preprint},
-  url          = {https://osf.io/preprints/psyarxiv/mdxvs_v2},
+  url          = {https://osf.io/preprints/psyarxiv/mdxvs_v3},
   note         = {Reproducibility: https://github.com/tmadl/UserAwareAISafety}
 }
 ```
