@@ -20,6 +20,13 @@ The reproducibility package contains the analysis pipeline, derived score tables
 | Understand the broader research programme | See [Programme context](#programme-context). |
 | Cite the paper, code, or models | See [Citation](#citation). |
 
+## Current AI safety work
+
+This repository is a reproducibility artifact for a user-aware AI persuasion study. For my current technical AI-safety tooling work, see:
+
+* [`distill-lint`](https://github.com/tmadl/distill-lint): a carrier-local audit tool for vocabulary-channel subliminal leakage in distilled language models. Given a student and its exact base model, it flags anomalously elevated tokens, tests whether the elevation appears readout-removable, and can scrub a confirmed-unwanted token with a self-check and rollback.
+* Paper: [*Channel Location Constrains the Auditability of Subliminal Learning*](https://arxiv.org/abs/2606.22019), preprint under review at TMLR.
+
 ## About the paper
 
 This paper reanalyses Costello et al.'s 2024 conversational-AI conspiracy-debunking experiment, in which 1,782 participants discussed personally held conspiracy beliefs with GPT-4. It asks whether **integrative complexity** (IC)—a text-measured cognitive-style signal capturing how people differentiate and integrate competing perspectives—predicts who revises their beliefs after AI persuasion.
